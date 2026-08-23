@@ -12,6 +12,26 @@
     {
       "source": "/admin/(.*)",
       "destination": "/api/index.js"
+    },
+    {
+      "source": "/images/(.*)",
+      "destination": "/api/index.js"
+    },
+    {
+      "source": "/css/(.*)",
+      "destination": "/api/index.js"
+    },
+    {
+      "source": "/js/(.*)",
+      "destination": "/api/index.js"
+    },
+    {
+      "source": "/assets/(.*)",
+      "destination": "/api/index.js"
+    },
+    {
+      "source": "/uploads/(.*)",
+      "destination": "/api/index.js"
     }
   ]
 }
