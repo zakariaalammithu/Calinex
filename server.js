@@ -136,23 +136,25 @@ function resolveStaticPath(reqPath) {
 }
 
 function serveStaticFile(res, filePath, ext) {
-  fs.stat(filePath, (err, stats) => {
-    if (err || !stats.isFile()) {
-      res.writeHead(404, { 'Content-Type': 'text/plain; charset=utf-8' });
-      res.end('404 Not Found');
+  try {
+    if (fs.existsSync(filePath) && fs.statSync(filePath).isFile()) {
+      const contentType = MIME_TYPES[ext] || 'application/octet-stream';
+      const fileBuffer = fs.readFileSync(filePath);
+      res.writeHead(200, {
+        'Content-Type': contentType,
+        'Content-Length': Buffer.byteLength(fileBuffer),
+        'Access-Control-Allow-Origin': '*',
+        'Cache-Control': 'public, max-age=86400'
+      });
+      res.end(fileBuffer);
       return;
     }
+  } catch (err) {
+    console.error('Error serving static file:', err);
+  }
 
-    const contentType = MIME_TYPES[ext] || 'application/octet-stream';
-    res.writeHead(200, {
-      'Content-Type': contentType,
-      'Access-Control-Allow-Origin': '*',
-      'Cache-Control': 'no-cache'
-    });
-
-    const stream = fs.createReadStream(filePath);
-    stream.pipe(res);
-  });
+  res.writeHead(404, { 'Content-Type': 'text/plain; charset=utf-8' });
+  res.end('404 Not Found');
 }
 
 // Export request handler for Vercel Serverless Functions
