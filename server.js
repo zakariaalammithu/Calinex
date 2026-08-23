@@ -28,92 +28,11 @@ const MIME_TYPES = {
   '.ttf': 'font/ttf'
 };
 
-const server = http.createServer((req, res) => {
-  const parsedUrl = new URL(req.url, `http://${req.headers.host || 'localhost'}`);
-  let reqPath = decodeURI(parsedUrl.pathname);
-
-  // -------------------------------------------------------------
-  // 1. PUBLIC API ROUTES (/api/public/*)
-  // -------------------------------------------------------------
-  if (reqPath.startsWith('/api/public/')) {
-    handlePublicApi(req, res).catch(err => {
-      console.error('Public API Error:', err);
-      res.writeHead(500, { 'Content-Type': 'application/json' });
-      res.end(JSON.stringify({ success: false, error: 'Service temporarily unavailable' }));
-    });
-    return;
-  }
-
-  // -------------------------------------------------------------
-  // 2. ADMIN API ROUTES (/api/admin/*)
-  // -------------------------------------------------------------
-  if (reqPath.startsWith('/api/admin/')) {
-    handleAdminApi(req, res).catch(err => {
-      console.error('Admin API Error:', err);
-      res.writeHead(500, { 'Content-Type': 'application/json' });
-      res.end(JSON.stringify({ success: false, error: 'Internal server error' }));
-    });
-    return;
-  }
-
-  // -------------------------------------------------------------
-  // 3. ADMIN DASHBOARD & AUTH ROUTING
-  // -------------------------------------------------------------
-  if (reqPath === '/admin' || reqPath === '/admin/') {
-    const cookies = parseCookies(req.headers['cookie']);
-    const user = cookies.calinex_session ? validateSession(cookies.calinex_session) : null;
-    res.writeHead(302, {
-      'Location': user ? '/admin/dashboard' : '/admin/login',
-      'Cache-Control': 'no-cache'
-    });
-    res.end();
-    return;
-  }
-
-  if (reqPath === '/admin/login' || reqPath === '/admin/login.html') {
-    const loginFile = path.join(PUBLIC_DIR, 'admin', 'login.html');
-    serveStaticFile(res, loginFile, '.html');
-    return;
-  }
-
-  if (reqPath === '/admin/dashboard' || reqPath === '/admin/dashboard.html') {
-    const dashboardFile = path.join(PUBLIC_DIR, 'admin', 'index.html');
-    serveStaticFile(res, dashboardFile, '.html');
-    return;
-  }
-
-  // Admin static assets (/admin/css/..., /admin/js/...)
-  if (reqPath.startsWith('/admin/')) {
-    const relativeAdminPath = reqPath.replace(/^\/admin\//, '');
-    const adminFilePath = path.join(PUBLIC_DIR, 'admin', relativeAdminPath);
-    const ext = path.extname(adminFilePath).toLowerCase();
-    serveStaticFile(res, adminFilePath, ext);
-    return;
-  }
-
-  // -------------------------------------------------------------
-  // 4. UPLOADS STATIC ROUTE (/uploads/*)
-  // -------------------------------------------------------------
-  if (reqPath.startsWith('/uploads/')) {
-    const uploadFilePath = path.join(PUBLIC_DIR, reqPath);
-    const ext = path.extname(uploadFilePath).toLowerCase();
-    serveStaticFile(res, uploadFilePath, ext);
-    return;
-  }
-
-  // -------------------------------------------------------------
-  // 5. PUBLIC WEBSITE STATIC ROUTING (100% UNTOUCHED & PRESERVED)
-  // -------------------------------------------------------------
+function resolveStaticPath(reqPath) {
   if (reqPath === '/' || reqPath === '') {
     reqPath = '/index.html';
   }
 
-  let filePath = resolveStaticPath(reqPath);
-  const ext = path.extname(filePath).toLowerCase();
-  serveStaticFile(res, filePath, ext);
-});
-
-function resolveStaticPath(reqPath) {
   let candidates = [
     path.join(PUBLIC_DIR, reqPath),
     path.join(__dirname, reqPath)
@@ -157,21 +76,49 @@ function serveStaticFile(res, filePath, ext) {
   res.end('404 Not Found');
 }
 
-// Export request handler for Vercel Serverless Functions
-module.exports = async (req, res) => {
-  try {
-    await handleRequest(req, res);
-  } catch (err) {
-    console.error('Serverless Execution Error:', err);
-    if (!res.headersSent) {
-      res.writeHead(500, { 'Content-Type': 'application/json' });
-      res.end(JSON.stringify({ success: false, error: 'Internal Server Error' }));
+async function handleRequest(req, res) {
+  const parsedUrl = new URL(req.url, `http://${req.headers.host || 'localhost'}`);
+  let reqPath = decodeURI(parsedUrl.pathname);
+
+  // 1. PUBLIC API ROUTES (/api/public/*)
+  if (reqPath.startsWith('/api/public/')) {
+    return handlePublicApi(req, res);
+  }
+
+  // 2. ADMIN API ROUTES (/api/admin/*)
+  if (reqPath.startsWith('/api/admin/')) {
+    return handleAdminApi(req, res);
+  }
+
+  // 3. ADMIN DASHBOARD ROUTE (/admin or /admin/*)
+  if (reqPath === '/admin' || reqPath.startsWith('/admin/')) {
+    const cookies = parseCookies(req.headers.cookie || '');
+    const sessionToken = cookies.calinex_session || (req.headers.authorization ? req.headers.authorization.replace('Bearer ', '') : null);
+
+    if (reqPath === '/admin-login' || reqPath === '/admin-login.html') {
+      return serveStaticFile(res, path.join(PUBLIC_DIR, 'admin-login.html'), '.html');
+    }
+
+    if (!sessionToken || !validateSession(sessionToken)) {
+      res.writeHead(302, { 'Location': '/admin-login.html' });
+      res.end();
+      return;
+    }
+
+    if (reqPath === '/admin' || reqPath === '/admin/') {
+      return serveStaticFile(res, path.join(PUBLIC_DIR, 'admin', 'index.html'), '.html');
     }
   }
-};
 
-// Run standalone server listeners ONLY in direct Node execution / local development
-if (require.main === module && !process.env.VERCEL) {
+  // 4. STATIC FILE SERVING
+  let filePath = resolveStaticPath(reqPath);
+  const ext = path.extname(filePath).toLowerCase();
+  return serveStaticFile(res, filePath, ext);
+}
+
+const server = http.createServer((req, res) => handleRequest(req, res));
+
+if (!process.env.VERCEL) {
   const ALT_PORT = 3001;
 
   server.listen(PORT, '0.0.0.0', () => {
@@ -181,10 +128,14 @@ if (require.main === module && !process.env.VERCEL) {
     console.log(`➔ Admin Dashboard (3000): http://localhost:${PORT}/admin`);
   });
 
-  const server3001 = http.createServer((req, res) => server.emit('request', req, res));
+  const server3001 = http.createServer((req, res) => handleRequest(req, res));
   server3001.listen(ALT_PORT, '0.0.0.0', () => {
     console.log(`CALINEX server (Dual Port) running live at http://localhost:${ALT_PORT}`);
     console.log(`➔ Public Website (3001): http://localhost:${ALT_PORT}/`);
     console.log(`➔ Admin Dashboard (3001): http://localhost:${ALT_PORT}/admin`);
   });
 }
+
+module.exports = async (req, res) => {
+  return handleRequest(req, res);
+};
