@@ -158,8 +158,16 @@ function serveStaticFile(res, filePath, ext) {
 }
 
 // Export request handler for Vercel Serverless Functions
-module.exports = (req, res) => {
-  server.emit('request', req, res);
+module.exports = async (req, res) => {
+  try {
+    await handleRequest(req, res);
+  } catch (err) {
+    console.error('Serverless Execution Error:', err);
+    if (!res.headersSent) {
+      res.writeHead(500, { 'Content-Type': 'application/json' });
+      res.end(JSON.stringify({ success: false, error: 'Internal Server Error' }));
+    }
+  }
 };
 
 // Run standalone server listeners ONLY in direct Node execution / local development

@@ -1,2 +1,4 @@
 const serverHandler = require('../server.js');
-module.exports = serverHandler;
+module.exports = async (req, res) => {
+  return serverHandler(req, res);
+};
