@@ -12,6 +12,26 @@
     {
       "source": "/admin/(.*)",
       "destination": "/server.js"
+    },
+    {
+      "source": "/images/(.*)",
+      "destination": "/server.js"
+    },
+    {
+      "source": "/css/(.*)",
+      "destination": "/server.js"
+    },
+    {
+      "source": "/js/(.*)",
+      "destination": "/server.js"
+    },
+    {
+      "source": "/assets/(.*)",
+      "destination": "/server.js"
+    },
+    {
+      "source": "/uploads/(.*)",
+      "destination": "/server.js"
     }
   ]
 }
