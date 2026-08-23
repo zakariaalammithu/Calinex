@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin Login — CALINEX</title>
+  <link rel="stylesheet" href="css/variables.css"/>
+  <link rel="stylesheet" href="css/base.css"/>
+  <link rel="stylesheet" href="css/admin.css"/>
+  <style>
+    .login-page {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      background: radial-gradient(circle at top, #181824 0%, #09090c 70%);
+      padding: 20px;
+    }
+    .login-box {
+      background: #121217;
+      border: 1px solid #20202a;
+      border-radius: 16px;
+      width: 100%;
+      max-width: 440px;
+      padding: 40px 36px;
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.4);
+    }
+    .login-brand {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .login-title {
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: #ffffff;
+      margin-top: 10px;
+      letter-spacing: -0.02em;
+    }
+    .login-subtitle {
+      font-size: 0.875rem;
+      color: var(--admin-text-muted);
+      margin-top: 4px;
+    }
+    .login-alert {
+      display: none;
+      padding: 12px 16px;
+      border-radius: 8px;
+      font-size: 0.875rem;
+      margin-bottom: 20px;
+    }
+    .login-alert.error {
+      display: block;
+      background: rgba(239, 68, 68, 0.15);
+      border: 1px solid rgba(239, 68, 68, 0.3);
+      color: #f87171;
+    }
+    .credentials-hint {
+      margin-top: 24px;
+      padding: 14px;
+      border-radius: 8px;
+      background: #181820;
+      border: 1px dashed #30303e;
+      font-size: 0.8125rem;
+      color: #a1a1aa;
+      line-height: 1.5;
+    }
+  </style>
+
+<!-- APPROVED ALINEX LOGO STYLES -->
+<style id="alinex-logo-styles">
+.nav_logo-wrap,
+.project_logo.nav_logo-wrap,
+.project_content .nav_logo-wrap {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  text-decoration: none !important;
+  cursor: pointer !important;
+  vertical-align: middle !important;
+  width: auto !important;
+  max-width: fit-content !important;
+  height: auto !important;
+}
+
+.nav_logo-icon,
+.project_logo .nav_logo-icon,
+.project_content .nav_logo-icon {
+  width: 36px !important;
+  height: 36px !important;
+  max-width: 36px !important;
+  max-height: 36px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  flex-shrink: 0 !important;
+  transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) !important;
+}
+
+.nav_logo-wrap:hover .nav_logo-icon {
+  transform: rotate(360deg) scale(1.1) !important;
+}
+
+.nav_logo-icon img,
+.nav_logo-icon svg,
+.project_logo .nav_logo-icon img,
+.project_content .nav_logo-icon img {
+  width: 36px !important;
+  height: 36px !important;
+  max-width: 36px !important;
+  max-height: 36px !important;
+  display: block !important;
+  object-fit: contain !important;
+}
+
+.logo_text,
+.project_logo .logo_text,
+.project_content .logo_text {
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+  font-weight: 900 !important;
+  font-size: 1.65rem !important;
+  letter-spacing: -0.035em !important;
+  color: #111114 !important;
+  text-transform: uppercase !important;
+  line-height: 1 !important;
+  display: inline-block !important;
+  vertical-align: middle !important;
+}
+
+.footer-logo-wrap {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+  text-decoration: none !important;
+  cursor: pointer !important;
+  vertical-align: middle !important;
+  margin-bottom: 24px !important;
+  width: auto !important;
+  max-width: fit-content !important;
+}
+
+.footer_logo_icon_box {
+  width: 42px !important;
+  height: 42px !important;
+  max-width: 42px !important;
+  max-height: 42px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  flex-shrink: 0 !important;
+  transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) !important;
+}
+
+.footer-logo-wrap:hover .footer_logo_icon_box {
+  transform: rotate(360deg) scale(1.1) !important;
+}
+
+.footer_logo_icon_box img,
+.footer_logo_icon_box svg {
+  width: 42px !important;
+  height: 42px !important;
+  max-width: 42px !important;
+  max-height: 42px !important;
+  display: block !important;
+  object-fit: contain !important;
+}
+
+.footer_logo_wordmark,
+.footer_logo_text {
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+  font-weight: 900 !important;
+  font-size: 1.85rem !important;
+  letter-spacing: -0.035em !important;
+  color: #ffffff !important;
+  text-transform: uppercase !important;
+  line-height: 1 !important;
+  display: inline-block !important;
+  vertical-align: middle !important;
+}
+
+@media (max-width: 767px) {
+  .nav_logo-icon,
+  .project_logo .nav_logo-icon,
+  .project_content .nav_logo-icon {
+    width: 30px !important;
+    height: 30px !important;
+    max-width: 30px !important;
+    max-height: 30px !important;
+  }
+  .nav_logo-icon img,
+  .nav_logo-icon svg,
+  .project_logo .nav_logo-icon img,
+  .project_content .nav_logo-icon img {
+    width: 30px !important;
+    height: 30px !important;
+    max-width: 30px !important;
+    max-height: 30px !important;
+  }
+  .logo_text {
+    font-size: 1.35rem !important;
+  }
+  .footer_logo_icon_box {
+    width: 34px !important;
+    height: 34px !important;
+    max-width: 34px !important;
+    max-height: 34px !important;
+  }
+  .footer_logo_icon_box img,
+  .footer_logo_icon_box svg {
+    width: 34px !important;
+    height: 34px !important;
+    max-width: 34px !important;
+    max-height: 34px !important;
+  }
+  .footer_logo_wordmark,
+  .footer_logo_text {
+    font-size: 1.5rem !important;
+  }
+}
+</style>
+
+<link rel="stylesheet" href="css/book-call-modal.css">
+<!-- APPROVED CALINEX FAVICON -->
+<link rel="icon" type="image/svg+xml" href="images/calinex-c-dark.svg">
+<link rel="shortcut icon" type="image/x-icon" href="images/calinex-c-dark.svg">
+<link rel="apple-touch-icon" href="images/calinex-c-dark.svg">
+</head>
+<body class="admin-body login-page">
+  <div class="login-box">
+    <div class="login-brand">
+      <img src="images/calinex-logo.svg" alt="CALINEX" style="height: 32px; filter: brightness(0) invert(1);" />
+      <h1 class="login-title">Control Center</h1>
+      <p class="login-subtitle">Sign in to manage leads, APIs, and website settings</p>
+    </div>
+
+    <div id="loginAlert" class="login-alert"></div>
+
+    <form id="adminLoginForm">
+      <div class="form-group">
+        <label class="form-label" for="adminEmail">Admin Email</label>
+        <input type="email" id="adminEmail" class="form-input-admin" value="hello@calinex.us" required autocomplete="email"/>
+      </div>
+
+      <div class="form-group">
+        <label class="form-label" for="adminPassword">Password</label>
+        <input type="password" id="adminPassword" class="form-input-admin" placeholder="••••••••••••" required autocomplete="current-password"/>
+      </div>
+
+      <button type="submit" class="admin-btn admin-btn-primary" style="width: 100%; justify-content: center; padding: 14px; margin-top: 8px;" id="loginSubmitBtn">
+        Sign In to Dashboard
+      </button>
+    </form>
+
+    <div class="credentials-hint">
+      <strong style="color: #d4ff32;">Authorized Admin Access:</strong><br/>
+      User: <code>hello@calinex.us</code><br/>
+      Default Password: <code>Calinexusa123</code>
+    </div>
+  </div>
+
+  <script>
+    const token = localStorage.getItem('calinex_admin_token');
+    if (token) {
+      // Check if existing token is valid
+      fetch('/api/admin/stats', {
+        headers: { 'Authorization': 'Bearer ' + token }
+      }).then(res => {
+        if (res.ok) window.location.href = '/admin.html';
+      });
+    }
+
+    const form = document.getElementById('adminLoginForm');
+    const alertBox = document.getElementById('loginAlert');
+    const submitBtn = document.getElementById('loginSubmitBtn');
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const email = document.getElementById('adminEmail').value.trim();
+      const password = document.getElementById('adminPassword').value;
+
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Verifying...';
+      alertBox.className = 'login-alert';
+      alertBox.style.display = 'none';
+
+      try {
+        const res = await fetch('/api/admin/login', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ email, password })
+        });
+
+        const data = await res.json();
+
+        if (res.ok && data.success) {
+          localStorage.setItem('calinex_admin_token', data.token);
+          localStorage.setItem('calinex_admin_email', data.email);
+          window.location.href = '/admin.html';
+        } else {
+          alertBox.textContent = data.message || 'Invalid credentials. Please check your password.';
+          alertBox.className = 'login-alert error';
+          alertBox.style.display = 'block';
+        }
+      } catch (err) {
+        alertBox.textContent = 'Server connection error. Please try again.';
+        alertBox.className = 'login-alert error';
+        alertBox.style.display = 'block';
+      } finally {
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Sign In to Dashboard';
+      }
+    });
+  </script>
+<!-- ========================================================================
+       Global Floating WhatsApp Widget
+       ======================================================================== -->
+  <a href="https://wa.me/8801629018678?text=Hi%20MD%20Sharafat%20Ullah%2C%20I%20have%20a%20project%20inquiry%20for%20CALINEX" class="ws-floating-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Chat with Md. Sharafat Ullah on WhatsApp">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+      <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2Z" fill="#25D366"/>
+      <path d="M17.52 14.33C17.22 14.18 15.75 13.45 15.47 13.35C15.2 13.25 15 13.2 14.81 13.5C14.61 13.8 14.04 14.47 13.87 14.67C13.69 14.87 13.52 14.89 13.22 14.74C12.92 14.59 11.96 14.28 10.82 13.26C9.93 12.47 9.33 11.49 9.16 11.19C8.98 10.89 9.14 10.73 9.29 10.58C9.42 10.45 9.58 10.24 9.73 10.07C9.88 9.9 9.93 9.77 10.03 9.57C10.13 9.37 10.08 9.2 10 9.05C9.93 8.9 9.35 7.48 9.11 6.9C8.88 6.34 8.64 6.42 8.46 6.41C8.29 6.4 8.1 6.4 7.9 6.4C7.7 6.4 7.38 6.47 7.11 6.77C6.83 7.07 6.06 7.79 6.06 9.27C6.06 10.74 7.13 12.17 7.28 12.37C7.43 12.57 9.38 15.58 12.38 16.87C13.09 17.18 13.66 17.37 14.09 17.51C14.81 17.74 15.46 17.7 15.98 17.63C16.56 17.54 17.77 16.89 18.02 16.19C18.27 15.49 18.27 14.89 18.19 14.77C18.12 14.64 17.82 14.48 17.52 14.33Z" fill="white"/>
+    </svg>
+    <span class="ws-whatsapp-label">WhatsApp</span>
+  </a>
+<script src="js/book-call-modal.js"></script>
+</body>
+</html>

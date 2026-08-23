@@ -1,0 +1,137 @@
+/* ==========================================================================
+   Subscription Page Exact Dark Headings & High Contrast Styles
+   ========================================================================== */
+
+/* Dark Section Heading Wrappers */
+.section_heaing-wrap.is_white {
+  color: #ffffff !important;
+}
+
+.section_heaing-wrap.is_white .section-title,
+.section_heaing-wrap.is_white h1,
+.section_heaing-wrap.is_white h2,
+.section_heaing-wrap.is_white h3 {
+  color: #ffffff !important;
+}
+
+/* Gray sub-accent text inside white headings */
+.section_heaing-wrap.is_white .section-title.highlight-black,
+.section_heaing-wrap.is_white .highlight-black,
+.section_heaing-wrap.is_white .is-gray,
+.section_heaing-wrap.is_white .heading-gray {
+  color: rgba(255, 255, 255, 0.55) !important;
+}
+
+/* Meeting Section (We deliver on time, in days and weeks) */
+.meeting_sec {
+  background: #000000 !important;
+  color: #ffffff !important;
+  padding: 100px 0 !important;
+}
+
+.meeting_sec .section_heaing-wrap.is_white .section-title {
+  color: #ffffff !important;
+  font-size: 48px !important;
+  font-weight: 800 !important;
+  line-height: 1.15 !important;
+  letter-spacing: -0.02em !important;
+}
+
+.meeting_sec .section_heaing-wrap.is_white .highlight-black {
+  color: rgba(255, 255, 255, 0.55) !important;
+}
+
+.meeting_content {
+  margin-top: 48px !important;
+}
+
+.meeting_details-wrap {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 16px !important;
+}
+
+.meeting_card {
+  background: #111114 !important;
+  border: 1px solid #222228 !important;
+  border-radius: 12px !important;
+  padding: 24px 28px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  transition: all 0.25s ease !important;
+}
+
+.meeting_card:hover {
+  border-color: #3b3b48 !important;
+  background: #16161c !important;
+  transform: translateX(4px) !important;
+}
+
+.meet_title-wrap {
+  display: flex !important;
+  align-items: center !important;
+  gap: 20px !important;
+}
+
+.meeting_number {
+  font-size: 14px !important;
+  font-weight: 700 !important;
+  color: #8e8e93 !important;
+}
+
+.meeting_title {
+  font-size: 20px !important;
+  font-weight: 700 !important;
+  color: #ffffff !important;
+  margin: 0 !important;
+}
+
+/* One Subscription Section */
+.section_services,
+.pricing_service_sec,
+.subscription_services_sec {
+  background: #000000 !important;
+  color: #ffffff !important;
+  padding: 90px 0 !important;
+}
+
+.section-title.pricing {
+  color: #ffffff !important;
+  font-size: 48px !important;
+  font-weight: 800 !important;
+  line-height: 1.15 !important;
+}
+
+.section-title.pricing .is-gray {
+  color: rgba(255, 255, 255, 0.55) !important;
+}
+
+/* Behind Every Number Section */
+.section-title.price {
+  color: #ffffff !important;
+}
+
+.section-title.price .heading-gray {
+  color: rgba(255, 255, 255, 0.55) !important;
+}
+
+/* Benefits Section */
+.benefits_sec,
+.section-membership {
+  background: #000000 !important;
+  color: #ffffff !important;
+}
+
+.section-title.max-width-sm {
+  color: #ffffff !important;
+}
+
+.benefits-main-title {
+  color: #ffffff !important;
+}
+
+/* Pricing Heading in Hero / Main packages */
+.pricing_heading.pricing {
+  color: #ffffff !important;
+}

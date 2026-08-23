@@ -1,0 +1,10 @@
+{
+  "name": "calinex-agency",
+  "version": "1.0.0",
+  "description": "CALINEX Digital Agency Website",
+  "main": "server.js",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js"
+  }
+}

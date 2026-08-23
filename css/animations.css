@@ -1,0 +1,100 @@
+/* ==========================================================================
+   Advanced Animations & Scroll Engine
+   ========================================================================== */
+
+.cursor_wrap, .cursor_circle {
+  display: none !important;
+}
+
+/* Scroll Reveal Animations */
+.reveal-fade-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), 
+              transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.reveal-fade-up.is-revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-stagger-child {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1), 
+              transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.is-revealed .reveal-stagger-child:nth-child(1) { transition-delay: 0.05s; opacity: 1; transform: translateY(0); }
+.is-revealed .reveal-stagger-child:nth-child(2) { transition-delay: 0.15s; opacity: 1; transform: translateY(0); }
+.is-revealed .reveal-stagger-child:nth-child(3) { transition-delay: 0.25s; opacity: 1; transform: translateY(0); }
+.is-revealed .reveal-stagger-child:nth-child(4) { transition-delay: 0.35s; opacity: 1; transform: translateY(0); }
+.is-revealed .reveal-stagger-child:nth-child(5) { transition-delay: 0.45s; opacity: 1; transform: translateY(0); }
+.is-revealed .reveal-stagger-child:nth-child(6) { transition-delay: 0.55s; opacity: 1; transform: translateY(0); }
+
+/* Sticky Layered Stacking Animation on Scroll */
+.service_card_new {
+  position: sticky;
+  top: 100px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  will-change: transform;
+}
+
+.service_card_new:nth-child(1) { top: 100px; z-index: 1; }
+.service_card_new:nth-child(2) { top: 120px; z-index: 2; }
+.service_card_new:nth-child(3) { top: 140px; z-index: 3; }
+.service_card_new:nth-child(4) { top: 160px; z-index: 4; }
+.service_card_new:nth-child(5) { top: 180px; z-index: 5; }
+
+/* Floating Labels Styling */
+.form-field {
+  position: relative;
+}
+
+.form-label.focus-in {
+  color: var(--color-primary) !important;
+  transform: translateY(-2px);
+  transition: all var(--transition-fast);
+}
+
+/* Button Magnetic Hover Feel */
+.button-arrow, .button-secoundary, .button-transparent {
+  transition: transform 0.25s cubic-bezier(0.25, 1, 0.5, 1), 
+              background-color 0.25s ease, 
+              box-shadow 0.25s ease,
+              border-color 0.25s ease;
+}
+
+.button-arrow:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 10px 24px rgba(42, 26, 212, 0.3);
+}
+
+.button-transparent:hover {
+  transform: translateY(-2px);
+  background: rgba(0, 0, 0, 0.05);
+}
+
+/* Card Hover Scale Micro-interactions */
+.cs-card-lg, .cs-card-md, .ind-card, .data_card-2, .award_card {
+  transition: transform 0.35s cubic-bezier(0.25, 1, 0.5, 1), 
+              box-shadow 0.35s cubic-bezier(0.25, 1, 0.5, 1),
+              border-color 0.35s ease;
+}
+
+.cs-card-lg:hover, .cs-card-md:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+.ind-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+}
+
+.data_card-2:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.06);
+}

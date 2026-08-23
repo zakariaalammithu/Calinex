@@ -1,0 +1,569 @@
+/* ==========================================================================
+   Awards & Achievements Section
+   ========================================================================== */
+.awwward_sec {
+  padding: 120px 0;
+  background-color: #0b0b0e;
+  color: #ffffff;
+}
+
+.award_heading_wrapper {
+  margin-bottom: 64px;
+}
+
+.award_heading {
+  font-size: clamp(2.5rem, 6.5vw, 5.5rem);
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: -0.03em;
+  line-height: 0.95;
+}
+
+.award_heading.is_1 {
+  color: #ffffff;
+}
+
+.award_heading.is_2 {
+  color: #4a4a55;
+}
+
+.award_cards-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.award_card {
+  background: #14141a;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-lg);
+  padding: 36px 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 280px;
+  transition: all var(--transition-normal);
+  position: relative;
+  overflow: hidden;
+}
+
+.award_card:hover {
+  background: #1c1c24;
+  border-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-4px);
+}
+
+.award_to_title-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.award_number {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+.award_icon-wrap {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+  transition: all var(--transition-fast);
+}
+
+.award_card:hover .award_icon-wrap {
+  background: var(--color-primary);
+  transform: translate(2px, -2px);
+}
+
+.award_title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.25;
+  color: #ffffff;
+}
+
+/* ==========================================================================
+   Industries We Serve Section (Exact Wavespace Parity)
+   ========================================================================== */
+.section-industries {
+  padding: 100px 0 120px;
+  background-color: var(--bg-light);
+  position: relative;
+}
+
+.section-main-wrapper.ind {
+  display: flex;
+  flex-direction: column;
+  gap: 55px;
+}
+
+.section-heading-wrapper.ind {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.title-wrapper.ind {
+  max-width: 636px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.right-cta-wrap.ind {
+  max-width: 587px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+._18-px.med {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: #4a4a4e;
+  font-weight: 500;
+}
+
+.ind-main-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.top-card-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.ind-grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.ind-card {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 40px;
+  background: #14141a;
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.06);
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease;
+  cursor: pointer;
+}
+
+.ind-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.4) 40%, rgba(0, 0, 0, 0.85) 100%);
+  z-index: 2;
+  transition: background 0.3s ease;
+}
+
+.ind-card:hover::after {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 40%, rgba(0, 0, 0, 0.92) 100%);
+}
+
+.ind-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+  transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.ind-card:hover .ind-image {
+  transform: scale(1.035);
+}
+
+.ind-card-content {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 680px;
+}
+
+.text-24-px.ind {
+  font-family: var(--font-main);
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+._17-px.is-white.ind {
+  font-family: var(--font-body);
+  font-size: 1.0625rem;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.85);
+  font-weight: 400;
+}
+
+@media (max-width: 991px) {
+  .section-heading-wrapper.ind {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+  }
+  .ind-grid-2 {
+    grid-template-columns: 1fr;
+  }
+  .ind-card {
+    height: 420px;
+    padding: 32px 24px;
+  }
+}
+
+/* ==========================================================================
+   The Honest Trade-off (Comparison Section)
+   ========================================================================== */
+.section-tradition {
+  padding: 120px 0;
+  background-color: #0b0b0e;
+  color: #ffffff;
+}
+
+.trad-main-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  margin-top: 56px;
+}
+
+.trad-content-wrap {
+  background: #14141a;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-xl);
+  padding: 48px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.trad-content-wrap:first-child {
+  border-color: rgba(42, 26, 212, 0.4);
+  background: linear-gradient(180deg, rgba(42, 26, 212, 0.08) 0%, #14141a 100%);
+}
+
+.t-head .text-34-px {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #ffffff;
+  padding-bottom: 24px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.t-cell {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.check-new {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.t-content-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+._20px.is_whtie {
+  font-size: 1.1875rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+._18-px.op-80 {
+  font-size: 0.9375rem;
+  line-height: 1.55;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* ==========================================================================
+   Testimonials & Client Reviews Carousel
+   ========================================================================== */
+.testimonial_sec {
+  padding: 120px 0;
+  background-color: var(--bg-light);
+  overflow: hidden;
+}
+
+.testimonial_slider {
+  margin-top: 48px;
+  position: relative;
+}
+
+/* Testimonials Slider Controls */
+.tes_slider-mask {
+  display: flex;
+  gap: 24px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 20px;
+  scrollbar-width: none;
+  cursor: grab;
+}
+
+.tes_slider-mask:active {
+  cursor: grabbing;
+}
+
+.tes_slider-mask::-webkit-scrollbar {
+  display: none;
+}
+
+.slider-controls-wrap {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.tes_left-icon, .tes_right-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: all var(--transition-fast);
+  color: var(--text-black);
+}
+
+.tes_left-icon:hover, .tes_right-icon:hover {
+  background: var(--color-primary);
+  color: #ffffff;
+  border-color: var(--color-primary);
+  transform: scale(1.08);
+}
+
+.tes_slide {
+  flex: 0 0 380px;
+  scroll-snap-align: start;
+}
+
+.tes_intro_review-card {
+  background: #f6f6f9;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: var(--radius-xl);
+  padding: 40px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.tes_intro_review-mid ._4-9_text {
+  font-size: 3.5rem;
+  font-weight: 900;
+  line-height: 1;
+  color: var(--text-black);
+}
+
+.star_wrap {
+  display: flex;
+  gap: 4px;
+  margin: 12px 0;
+  color: #ff3823;
+}
+
+.review_count {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--text-gray);
+}
+
+.site_wrap {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.brand_site {
+  height: 24px;
+  width: auto;
+  opacity: 0.8;
+}
+
+.testimonial_card {
+  background: #f6f6f9;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: var(--radius-xl);
+  padding: 40px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 28px;
+  transition: all var(--transition-normal);
+}
+
+.testimonial_card:hover {
+  background: #ffffff;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.06);
+  transform: translateY(-4px);
+}
+
+.tes_brand-name {
+  font-size: 1.125rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-primary);
+}
+
+.tes_para {
+  font-size: 1.0625rem;
+  line-height: 1.6;
+  color: #333338;
+}
+
+.tes_span {
+  font-weight: 700;
+  color: #000000;
+}
+
+.tes_profile-wrap {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.tes_img-wrap {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.tes_img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.tes_name.h4 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-black);
+}
+
+.tes_role {
+  font-size: 0.8125rem;
+  color: var(--text-gray);
+}
+
+/* ==========================================================================
+   Team Gallery Marquee
+   ========================================================================== */
+.team_sec {
+  padding: 120px 0;
+  background-color: var(--bg-light);
+  overflow: hidden;
+}
+
+.section_heaing-wrap {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 32px;
+  margin-bottom: 56px;
+}
+
+.team_marquee-wrap {
+  display: flex;
+  width: max-content;
+  gap: 24px;
+  animation: marquee-left 45s linear infinite;
+}
+
+.team_marquee-wrap:hover {
+  animation-play-state: paused;
+}
+
+.team_marquee-child {
+  display: flex;
+  gap: 24px;
+}
+
+.team_marquee-card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.team_img-wrap {
+  height: 320px;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background: #e9e9f0;
+}
+
+.team_image {
+  height: 100%;
+  width: auto;
+  object-fit: cover;
+  transition: transform var(--transition-slow);
+}
+
+.team_marquee-card:hover .team_image {
+  transform: scale(1.05);
+}
+
+.team_text {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: #77777c;
+}
+
+
+/* Floating WhatsApp Button */
+.whats-app-links {
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background-color: #25d366;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  box-shadow: 0 8px 24px rgba(37, 211, 102, 0.35);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.whats-app-links:hover {
+  transform: scale(1.08);
+  box-shadow: 0 12px 30px rgba(37, 211, 102, 0.5);
+}

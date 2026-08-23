@@ -1,0 +1,15 @@
+{
+  "siteName": "CALINEX",
+  "notificationEmail": "admin@calinex.us",
+  "resendApiKey": "re_test_123456789",
+  "resendFromEmail": "onboarding@resend.dev",
+  "openaiApiKey": "sk-test-openai123",
+  "openaiModel": "gpt-4o",
+  "stripePublishableKey": "pk_test_stripe123",
+  "stripeSecretKey": "",
+  "stripeWebhookSecret": "",
+  "googleAnalyticsId": "",
+  "calcomLink": "https://cal.com/wavespace/project-discussion",
+  "whatsappNumber": "+16282657462",
+  "updatedAt": "2026-08-14T19:01:58.585Z"
+}

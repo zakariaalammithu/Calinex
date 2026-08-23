@@ -1,0 +1,709 @@
+/* ==========================================================================
+   Case Studies Page Exact Hero & Filter Parity (Wavespace Reference)
+   ========================================================================== */
+
+.case-study-hero {
+  background: #ffffff !important;
+  color: #111111 !important;
+  padding: 125px 0 65px !important;
+}
+
+.case-study-hero .section-main-wrapper.cs {
+  display: grid;
+  grid-template-columns: 1.15fr 0.95fr;
+  gap: 48px;
+  align-items: center;
+  max-width: 1340px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.case-left-content {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.case-left-content .inner-container.flex-12 {
+  display: flex !important;
+  align-items: center !important;
+  gap: 12px !important;
+  flex-wrap: wrap !important;
+  margin-bottom: 4px !important;
+}
+
+.case-left-content .clutch-button {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  background: #f4f4f6 !important;
+  border: 1px solid #e2e2e8 !important;
+  border-radius: 999px !important;
+  padding: 7px 16px !important;
+  font-size: 13px !important;
+  font-weight: 600 !important;
+  color: #111114 !important;
+  text-decoration: none !important;
+  transition: all 0.2s ease !important;
+}
+
+.case-left-content .clutch-button:hover {
+  background: #e8e8ed !important;
+  border-color: #c7c7cc !important;
+  color: #000000 !important;
+}
+
+.case-left-content .clutch-icon {
+  width: 16px !important;
+  height: 16px !important;
+  object-fit: contain !important;
+  flex-shrink: 0 !important;
+}
+
+.case-left-content .section-title {
+  font-size: 54px;
+  font-weight: 800;
+  line-height: 1.12;
+  letter-spacing: -0.03em;
+  color: #111111;
+  margin: 0;
+}
+
+.case-left-content .section-title .is-gray {
+  color: #666666;
+  font-weight: 700;
+}
+
+.case-left-content .body_text {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555555;
+  margin-top: 14px;
+  max-width: 520px;
+}
+
+.case-logo-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+  padding-top: 10px;
+}
+
+.case-logo-wrapper .cs-logo-wrap {
+  display: inline-flex;
+  align-items: center;
+  opacity: 0.85;
+  transition: opacity 0.2s ease;
+}
+
+.case-logo-wrapper .cs-logo-wrap:hover {
+  opacity: 1;
+}
+
+.case-logo-wrapper .cs-logo {
+  height: 22px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* Hero Promotional Video Showcase Card */
+.case-video-wrap {
+  position: relative;
+  width: 100%;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
+  background: #111116;
+}
+
+#ws-hero-video {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 16 / 10;
+  display: flex;
+}
+
+.wh-card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  overflow: hidden;
+  cursor: pointer;
+  background: #000;
+}
+
+.wh-card video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.wh-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    160deg,
+    rgba(0,0,0,0.08) 0%,
+    rgba(0,0,0,0) 40%,
+    rgba(0,0,0,0.35) 100%
+  );
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* Sound button with frosted glass */
+.wh-sound-btn {
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+  z-index: 5;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid rgba(255,255,255,0.3);
+  background: rgba(255,255,255,0.15);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  cursor: pointer;
+  transition: opacity 250ms ease, background 180ms ease, transform 150ms ease;
+}
+
+.wh-card:hover .wh-sound-btn {
+  opacity: 1;
+  pointer-events: auto;
+  transform: scale(1.05);
+}
+
+.wh-sound-btn:hover {
+  background: rgba(255,255,255,0.25);
+}
+
+/* Filter Tabs Bar */
+.case-study-tab {
+  background: #ffffff !important;
+  padding: 20px 0 50px !important;
+}
+
+.testi-filter-wrapper {
+  overflow-x: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #8e8e93 #e5e5ea;
+  padding-bottom: 12px;
+}
+
+.testi-filter-wrapper::-webkit-scrollbar {
+  height: 6px;
+}
+
+.testi-filter-wrapper::-webkit-scrollbar-track {
+  background: #e5e5ea;
+  border-radius: 4px;
+}
+
+.testi-filter-wrapper::-webkit-scrollbar-thumb {
+  background: #8e8e93;
+  border-radius: 4px;
+}
+
+.testi-filter {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: nowrap;
+  width: max-content;
+  min-width: 100%;
+}
+
+.cs-tab-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #f4f4f6;
+  border: 1px solid #e5e5ea;
+  border-radius: 999px;
+  padding: 9px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #555555;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.2s ease;
+  user-select: none;
+}
+
+.cs-tab-link:hover {
+  background: #e9e9ed;
+  color: #111111;
+  border-color: #d1d1d6;
+}
+
+.cs-tab-link.is-active {
+  background: #111111 !important;
+  color: #ffffff !important;
+  border-color: #111111 !important;
+}
+
+.cs-tab-link .w-form-label {
+  color: inherit !important;
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0;
+  cursor: pointer;
+}
+
+.cs-tab-link .no {
+  color: inherit !important;
+  font-size: 11px;
+  font-weight: 700;
+  vertical-align: super;
+  line-height: 1;
+}
+
+/* 2-Column Case Study Cards Layout */
+.cs-items-list {
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr) !important;
+  gap: 32px !important;
+  margin-top: 32px;
+}
+
+@media (max-width: 991px) {
+  .case-study-hero .section-main-wrapper.cs {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+  .case-left-content .section-title {
+    font-size: 42px;
+  }
+  .cs-items-list {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .case-left-content .section-title {
+    font-size: 34px;
+  }
+}
+
+/* ==========================================================================
+   Experiences / Services Included in Subscription Section Parity
+   ========================================================================== */
+.section.experiences {
+  background: #ffffff !important;
+  color: #111114 !important;
+  padding: 100px 0 !important;
+  position: relative !important;
+}
+
+.experiences-wrap._01 {
+  max-width: 1340px !important;
+  margin: 0 auto !important;
+  padding: 0 24px !important;
+}
+
+.section-top-wrap-02 {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: flex-end !important;
+  margin-bottom: 48px !important;
+  gap: 24px !important;
+  flex-wrap: wrap !important;
+}
+
+.section-title.max-width_915.sm {
+  font-size: 44px !important;
+  font-weight: 800 !important;
+  line-height: 1.15 !important;
+  color: #111114 !important;
+  letter-spacing: -0.02em !important;
+  max-width: 720px !important;
+  margin: 0 !important;
+}
+
+.section-title.max-width_915.sm .is-gray {
+  color: #7e7e81 !important;
+}
+
+.experiences-grid-wrap {
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr) !important;
+  gap: 20px 24px !important;
+  width: 100% !important;
+}
+
+.experiences-wrapper._01,
+.experiences-wrapper._02 {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 16px !important;
+  width: 100% !important;
+}
+
+.experiences-single-wrap {
+  background: #f8f8fa !important;
+  border: 1px solid #eaeaef !important;
+  border-radius: 12px !important;
+  padding: 22px 28px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  cursor: pointer !important;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  position: relative !important;
+  overflow: hidden !important;
+  box-sizing: border-box !important;
+}
+
+.experiences-single-wrap:hover {
+  background: #111114 !important;
+  color: #ffffff !important;
+  border-color: #111114 !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08) !important;
+}
+
+.experiences-title-wrap {
+  display: flex !important;
+  align-items: center !important;
+  gap: 14px !important;
+}
+
+.blue-arrow {
+  width: 16px !important;
+  height: 16px !important;
+  object-fit: contain !important;
+  transition: transform 0.25s ease !important;
+}
+
+.experiences-single-wrap:hover .blue-arrow {
+  transform: translateX(4px) !important;
+}
+
+.experiences-title {
+  font-size: 18px !important;
+  font-weight: 700 !important;
+  color: #111114 !important;
+  letter-spacing: -0.01em !important;
+  transition: color 0.25s ease !important;
+}
+
+.experiences-single-wrap:hover .experiences-title {
+  color: #ffffff !important;
+}
+
+.btn-arrow-wrapper {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.btn-arrow-icon {
+  width: 14px !important;
+  height: 14px !important;
+  filter: brightness(0.2) !important;
+  transition: filter 0.25s ease, transform 0.25s ease !important;
+}
+
+.experiences-single-wrap:hover .btn-arrow-icon {
+  filter: brightness(1) invert(1) !important;
+  transform: translate(2px, -2px) !important;
+}
+
+.experiences-single-wrap > img:not(.blue-arrow):not(.btn-arrow-icon) {
+  display: none !important;
+}
+
+@media (max-width: 991px) {
+  .experiences-grid-wrap {
+    grid-template-columns: 1fr !important;
+  }
+  .section-title.max-width_915.sm {
+    font-size: 34px !important;
+  }
+}
+
+/* ==========================================================================
+   Floating Mouse-Following Service Preview Image on Hover
+   ========================================================================== */
+.exp-hover-preview-floating {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  width: 320px !important;
+  height: 220px !important;
+  pointer-events: none !important;
+  z-index: 99999 !important;
+  border-radius: 14px !important;
+  overflow: hidden !important;
+  box-shadow: 0 24px 50px rgba(0, 0, 0, 0.28), 0 4px 12px rgba(0, 0, 0, 0.12) !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  background: #111116 !important;
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0.9);
+  transition: opacity 0.22s cubic-bezier(0.16, 1, 0.3, 1), transform 0.22s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  will-change: transform, left, top, opacity !important;
+}
+
+.exp-hover-preview-img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  display: block !important;
+}
+
+/* ==========================================================================
+   Global Team Reviews Infinite Marquee Section Parity
+   ========================================================================== */
+.section-work.is-home {
+  background: #000000 !important;
+  color: #ffffff !important;
+  padding: 100px 0 110px !important;
+  overflow: hidden !important;
+  position: relative !important;
+}
+
+.section-work.is-home .container.cs {
+  max-width: 1340px !important;
+  margin: 0 auto !important;
+  padding: 0 24px !important;
+}
+
+.section-work.is-home .left-header {
+  margin-bottom: 50px !important;
+}
+
+.section-work.is-home .title_md.is-white {
+  font-size: 46px !important;
+  font-weight: 800 !important;
+  color: #ffffff !important;
+  line-height: 1.15 !important;
+  letter-spacing: -0.02em !important;
+  margin: 0 !important;
+}
+
+.section-work.is-home .title_md.is-white .is-gray {
+  color: rgba(255, 255, 255, 0.55) !important;
+  font-weight: 700 !important;
+}
+
+.terstimonials-marquee-wrapper {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 24px !important;
+  width: 100% !important;
+  overflow: hidden !important;
+  padding: 10px 0 30px !important;
+  position: relative !important;
+  mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent) !important;
+  -webkit-mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent) !important;
+}
+
+.testimonials-marquee {
+  width: 100% !important;
+  overflow: hidden !important;
+}
+
+.mrquee-left,
+.mrquee-right {
+  display: flex !important;
+  width: max-content !important;
+  gap: 24px !important;
+  will-change: transform !important;
+}
+
+.mrquee-left {
+  animation: scrollMarqueeLeft 50s linear infinite !important;
+}
+
+.mrquee-right {
+  animation: scrollMarqueeRight 50s linear infinite !important;
+}
+
+.terstimonials-marquee-wrapper:hover .mrquee-left,
+.terstimonials-marquee-wrapper:hover .mrquee-right {
+  animation-play-state: paused !important;
+}
+
+@keyframes scrollMarqueeLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes scrollMarqueeRight {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.client-testi-card-wrap {
+  display: flex !important;
+  gap: 24px !important;
+  flex-shrink: 0 !important;
+}
+
+.testimonials-card {
+  background: #111115 !important;
+  border: 1px solid #23232a !important;
+  border-radius: 14px !important;
+  padding: 30px 28px 26px !important;
+  width: 440px !important;
+  min-width: 440px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+  gap: 24px !important;
+  box-sizing: border-box !important;
+  flex-shrink: 0 !important;
+  transition: transform 0.25s ease, background 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease !important;
+}
+
+.testimonials-card:hover {
+  background: #17171e !important;
+  border-color: #3b3b48 !important;
+  transform: translateY(-4px) !important;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.4) !important;
+}
+
+.inner_container.testi {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 16px !important;
+}
+
+.rating-wrapper {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  width: 100% !important;
+}
+
+.rating-wrapper .star {
+  height: 18px !important;
+  width: auto !important;
+}
+
+.rating-wrapper .platform {
+  height: 20px !important;
+  width: auto !important;
+  object-fit: contain !important;
+}
+
+.testi-content-wrap {
+  margin-top: 4px !important;
+}
+
+._18-px.testi {
+  font-size: 15px !important;
+  line-height: 1.6 !important;
+  color: #e4e4e7 !important;
+  font-weight: 400 !important;
+}
+
+.author-flex {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  border-top: 1px solid #1f1f26 !important;
+  padding-top: 18px !important;
+  margin-top: auto !important;
+}
+
+.testi-author-wrap {
+  display: flex !important;
+  align-items: center !important;
+  gap: 12px !important;
+}
+
+.testi-author {
+  width: 44px !important;
+  height: 44px !important;
+  border-radius: 50% !important;
+  object-fit: cover !important;
+  border: 1.5px solid rgba(255, 255, 255, 0.15) !important;
+}
+
+.flex3 {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 2px !important;
+}
+
+.flex3 ._18-px.testi {
+  font-size: 15px !important;
+  font-weight: 700 !important;
+  color: #ffffff !important;
+  margin: 0 !important;
+}
+
+.flex3 ._15-px {
+  font-size: 13px !important;
+  color: #8e8e93 !important;
+  margin: 0 !important;
+}
+
+.cun-tag {
+  height: 20px !important;
+  width: auto !important;
+  object-fit: contain !important;
+}
+
+@media (max-width: 767px) {
+  .testimonials-card {
+    width: 320px !important;
+    min-width: 320px !important;
+    padding: 22px 20px !important;
+  }
+  .section-work.is-home .title_md.is-white {
+    font-size: 32px !important;
+  }
+}
+
+/* ==========================================================================
+   Continuous Infinite Marquee for Global Team Reviews (Row 1 & Row 2)
+   ========================================================================== */
+.client-testi-card-wrap {
+  display: flex !important;
+  gap: 24px !important;
+  width: max-content !important;
+  animation: marqueeScrollLeft 90s linear infinite !important;
+  will-change: transform !important;
+}
+
+.client-testi-card-wrap.right {
+  display: flex !important;
+  gap: 24px !important;
+  width: max-content !important;
+  animation: marqueeScrollRight 90s linear infinite !important;
+  will-change: transform !important;
+}
+
+.terstimonials-marquee-wrapper:hover .client-testi-card-wrap,
+.terstimonials-marquee-wrapper:hover .client-testi-card-wrap.right {
+  animation-play-state: paused !important;
+}
+
+@keyframes marqueeScrollLeft {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes marqueeScrollRight {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
+}

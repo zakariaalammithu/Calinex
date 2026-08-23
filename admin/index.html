@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard &amp; CMS | CALINEX</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/admin/css/admin.css">
+  
+
+<!-- APPROVED ALINEX LOGO STYLES -->
+<style id="alinex-logo-styles">
+.nav_logo-wrap,
+.project_logo.nav_logo-wrap,
+.project_content .nav_logo-wrap {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  text-decoration: none !important;
+  cursor: pointer !important;
+  vertical-align: middle !important;
+  width: auto !important;
+  max-width: fit-content !important;
+  height: auto !important;
+}
+
+.nav_logo-icon,
+.project_logo .nav_logo-icon,
+.project_content .nav_logo-icon {
+  width: 36px !important;
+  height: 36px !important;
+  max-width: 36px !important;
+  max-height: 36px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  flex-shrink: 0 !important;
+  transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) !important;
+}
+
+.nav_logo-wrap:hover .nav_logo-icon {
+  transform: rotate(360deg) scale(1.1) !important;
+}
+
+.nav_logo-icon img,
+.nav_logo-icon svg,
+.project_logo .nav_logo-icon img,
+.project_content .nav_logo-icon img {
+  width: 36px !important;
+  height: 36px !important;
+  max-width: 36px !important;
+  max-height: 36px !important;
+  display: block !important;
+  object-fit: contain !important;
+}
+
+.logo_text,
+.project_logo .logo_text,
+.project_content .logo_text {
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+  font-weight: 900 !important;
+  font-size: 1.65rem !important;
+  letter-spacing: -0.035em !important;
+  color: #111114 !important;
+  text-transform: uppercase !important;
+  line-height: 1 !important;
+  display: inline-block !important;
+  vertical-align: middle !important;
+}
+
+.footer-logo-wrap {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+  text-decoration: none !important;
+  cursor: pointer !important;
+  vertical-align: middle !important;
+  margin-bottom: 24px !important;
+  width: auto !important;
+  max-width: fit-content !important;
+}
+
+.footer_logo_icon_box {
+  width: 42px !important;
+  height: 42px !important;
+  max-width: 42px !important;
+  max-height: 42px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  flex-shrink: 0 !important;
+  transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) !important;
+}
+
+.footer-logo-wrap:hover .footer_logo_icon_box {
+  transform: rotate(360deg) scale(1.1) !important;
+}
+
+.footer_logo_icon_box img,
+.footer_logo_icon_box svg {
+  width: 42px !important;
+  height: 42px !important;
+  max-width: 42px !important;
+  max-height: 42px !important;
+  display: block !important;
+  object-fit: contain !important;
+}
+
+.footer_logo_wordmark,
+.footer_logo_text {
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+  font-weight: 900 !important;
+  font-size: 1.85rem !important;
+  letter-spacing: -0.035em !important;
+  color: #ffffff !important;
+  text-transform: uppercase !important;
+  line-height: 1 !important;
+  display: inline-block !important;
+  vertical-align: middle !important;
+}
+
+@media (max-width: 767px) {
+  .nav_logo-icon,
+  .project_logo .nav_logo-icon,
+  .project_content .nav_logo-icon {
+    width: 30px !important;
+    height: 30px !important;
+    max-width: 30px !important;
+    max-height: 30px !important;
+  }
+  .nav_logo-icon img,
+  .nav_logo-icon svg,
+  .project_logo .nav_logo-icon img,
+  .project_content .nav_logo-icon img {
+    width: 30px !important;
+    height: 30px !important;
+    max-width: 30px !important;
+    max-height: 30px !important;
+  }
+  .logo_text {
+    font-size: 1.35rem !important;
+  }
+  .footer_logo_icon_box {
+    width: 34px !important;
+    height: 34px !important;
+    max-width: 34px !important;
+    max-height: 34px !important;
+  }
+  .footer_logo_icon_box img,
+  .footer_logo_icon_box svg {
+    width: 34px !important;
+    height: 34px !important;
+    max-width: 34px !important;
+    max-height: 34px !important;
+  }
+  .footer_logo_wordmark,
+  .footer_logo_text {
+    font-size: 1.5rem !important;
+  }
+}
+</style>
+
+<link rel="stylesheet" href="../css/book-call-modal.css">
+<!-- APPROVED CALINEX FAVICON -->
+<link rel="icon" type="image/svg+xml" href="../images/calinex-c-dark.svg">
+<link rel="shortcut icon" type="image/x-icon" href="../images/calinex-c-dark.svg">
+<link rel="apple-touch-icon" href="../images/calinex-c-dark.svg">
+</head>
+<body>
+  <div class="admin-layout">
+    <!-- ====================================================================
+         Sidebar Navigation
+         ==================================================================== -->
+    <aside class="admin-sidebar" id="adminSidebar">
+      <div class="sidebar-header">
+        <a href="#dashboard" class="brand-logo">
+          <span>CALINEX</span>
+          <span class="brand-badge">PRO</span>
+        </a>
+      </div>
+
+      <div class="sidebar-nav">
+        <!-- 1. Overview & Centralized APIs -->
+        <a href="#dashboard" class="nav-item active" data-view="dashboard">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+          <span>Dashboard</span>
+        </a>
+        <a href="#integrations" class="nav-item" data-view="integrations">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
+          <span>API &amp; Integrations</span>
+        </a>
+
+        <!-- 2. Communications & Schedule -->
+        <div class="nav-section-title">Client Leads &amp; Meetings</div>
+        <a href="#email" class="nav-item" data-view="email" id="navContactBtn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+          <span>Contact</span>
+          <span class="nav-badge" id="sidebarMsgBadge">0</span>
+        </a>
+        <a href="#calendar" class="nav-item" data-view="calendar" id="navMeetingBtn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+          <span>Meeting Book</span>
+          <span class="nav-badge" id="sidebarMeetingBadge" style="display: inline-flex; background: rgba(59, 130, 246, 0.15); color: #3b82f6;">0</span>
+        </a>
+        <a href="#contacts" class="nav-item" data-view="contacts">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+          <span>Contacts &amp; CRM</span>
+        </a>
+
+        <!-- 3. Operations & Business -->
+        <div class="nav-section-title">Operations</div>
+        <a href="#payments" class="nav-item" data-view="payments">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect><line x1="1" y1="10" x2="23" y2="10"></line></svg>
+          <span>Payments &amp; Stripe</span>
+        </a>
+        <a href="#cms" class="nav-item" data-view="cms">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
+          <span>CMS Content</span>
+        </a>
+        <a href="#automations" class="nav-item" data-view="automations">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+          <span>Automations</span>
+        </a>
+        <a href="#settings" class="nav-item" data-view="settings">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+          <span>System &amp; Security</span>
+        </a>
+      </div>
+
+      <!-- Sidebar User Footer -->
+      <div class="sidebar-footer">
+        <img src="/images/md-sharafat-ullah.jpg" alt="Md. Sharafat Ullah" class="sidebar-user-avatar" id="sidebarUserAvatar">
+        <div class="sidebar-user-info">
+          <div class="sidebar-user-name" id="sidebarUserName">Md. Sharafat Ullah</div>
+          <div class="sidebar-user-role" id="sidebarUserRole">Founder &amp; CEO</div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- ====================================================================
+         Main Container Area
+         ==================================================================== -->
+    <main class="admin-main">
+      <!-- Top Navigation Bar -->
+      <header class="admin-topbar">
+        <div class="topbar-left">
+          <button type="button" class="sidebar-toggle-btn" id="sidebarToggleBtn" aria-label="Toggle Sidebar">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+          </button>
+          <div class="global-search-box">
+            <svg class="search-icon-left" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+            <input type="text" id="globalSearchInput" class="global-search-input" placeholder="Search pages, leads, services...">
+            <span class="search-kbd">Ctrl K</span>
+          </div>
+        </div>
+
+        <div class="topbar-right">
+          <a href="/" target="_blank" class="live-site-btn">
+            <span>View Live Site</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+          </a>
+
+          <!-- Notifications Button & Dropdown -->
+          <div style="position: relative;">
+            <button type="button" class="topbar-btn" id="notifBtn" aria-label="Notifications">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg>
+              <span class="notif-badge" id="topNotifBadge"></span>
+            </button>
+            <div class="dropdown-menu" id="notifDropdown" style="width: 320px;">
+              <div style="padding: 10px 12px; font-weight: 700; font-size: 13px; border-bottom: 1px solid var(--border-subtle); display: flex; justify-content: space-between; align-items: center;">
+                <span>Notifications</span>
+                <a href="#" id="markAllReadBtn" style="font-size: 11px; color: var(--accent-primary); text-decoration: none;">Mark all read</a>
+              </div>
+              <div id="notifList" style="max-height: 280px; overflow-y: auto;">
+                <div style="padding: 16px; text-align: center; color: var(--text-muted); font-size: 12.5px;">Loading notifications...</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- User Profile Button & Dropdown -->
+          <div style="position: relative;">
+            <button type="button" class="profile-dropdown-btn" id="profileDropdownBtn">
+              <img src="/images/md-sharafat-ullah.jpg" alt="User" id="topbarAvatar">
+              <span id="topbarName">Md. Sharafat Ullah</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="dropdown-menu" id="profileDropdown">
+              <div style="padding: 8px 12px; border-bottom: 1px solid var(--border-subtle);">
+                <div style="font-size: 13px; font-weight: 700; color: var(--text-primary);" id="dropdownUserName">Md. Sharafat Ullah</div>
+                <div style="font-size: 11px; color: var(--text-muted);" id="dropdownUserEmail">hello@calinex.us</div>
+              </div>
+              <a href="#settings-general" class="dropdown-item">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+                <span>Settings</span>
+              </a>
+              <a href="#settings-activity" class="dropdown-item">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                <span>Activity Logs</span>
+              </a>
+              <div class="dropdown-divider"></div>
+              <a href="#" class="dropdown-item danger" id="logoutBtn">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" y1="12" x2="9" y2="12"></line></svg>
+                <span>Log Out</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- Dynamic View Container -->
+      <div class="admin-container" id="viewContainer">
+        <!-- Content will be dynamically rendered by admin.js based on hash -->
+      </div>
+    </main>
+  </div>
+
+  <!-- Universal Modal Dialog Container -->
+  <div id="universalModal" class="admin-modal-backdrop">
+    <div class="admin-modal" id="modalDialogBox">
+      <div class="modal-header">
+        <h3 class="modal-title" id="universalModalTitle">Item Details</h3>
+        <button type="button" class="modal-close-btn" id="closeUniversalModal">&times;</button>
+      </div>
+      <div class="modal-body" id="universalModalBody">
+        <!-- Modal Form Injected Dynamically -->
+      </div>
+      <div class="modal-footer" id="universalModalFooter">
+        <button type="button" class="btn-secondary" id="cancelUniversalModal">Cancel</button>
+        <button type="button" class="btn-primary" id="saveUniversalModal">Save Changes</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Global Quick Search Dialog -->
+  <div id="searchModal" class="admin-modal-backdrop">
+    <div class="admin-modal" style="max-width: 540px;">
+      <div style="padding: 16px 20px; border-bottom: 1px solid var(--border-subtle); display: flex; align-items: center; gap: 12px;">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--text-muted);"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        <input type="text" id="quickSearchInput" style="flex: 1; background: none; border: none; color: var(--text-primary); font-size: 15px; outline: none;" placeholder="Type to search sections, actions, pages...">
+        <span class="search-kbd">ESC</span>
+      </div>
+      <div id="searchResultsList" style="max-height: 320px; overflow-y: auto; padding: 8px;"></div>
+    </div>
+  </div>
+
+  <script src="/admin/js/admin.js"></script>
+<script src="../js/book-call-modal.js"></script>
+</body>
+</html>

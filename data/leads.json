@@ -1,0 +1,18 @@
+[
+  {
+    "id": "lead_1786734118393_3ozbo",
+    "email": "client.test@example.com",
+    "name": "Sarah Connor",
+    "budget": "$20,000 - $50,000",
+    "source": "Clutch.co",
+    "goals": "We are building an AI SaaS tool for healthcare providers and need full UI/UX design and MVP development.",
+    "services": [
+      "UI/UX Design",
+      "SaaS Design",
+      "MVP Development"
+    ],
+    "status": "New",
+    "ip": "127.0.0.1",
+    "createdAt": "2026-08-14T19:01:58.395Z"
+  }
+]

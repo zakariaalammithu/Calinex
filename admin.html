@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin Dashboard — CALINEX</title>
+  <link rel="stylesheet" href="css/variables.css"/>
+  <link rel="stylesheet" href="css/base.css"/>
+  <link rel="stylesheet" href="css/admin.css"/>
+
+<!-- APPROVED ALINEX LOGO STYLES -->
+<style id="alinex-logo-styles">
+.nav_logo-wrap,
+.project_logo.nav_logo-wrap,
+.project_content .nav_logo-wrap {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  text-decoration: none !important;
+  cursor: pointer !important;
+  vertical-align: middle !important;
+  width: auto !important;
+  max-width: fit-content !important;
+  height: auto !important;
+}
+
+.nav_logo-icon,
+.project_logo .nav_logo-icon,
+.project_content .nav_logo-icon {
+  width: 36px !important;
+  height: 36px !important;
+  max-width: 36px !important;
+  max-height: 36px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  flex-shrink: 0 !important;
+  transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) !important;
+}
+
+.nav_logo-wrap:hover .nav_logo-icon {
+  transform: rotate(360deg) scale(1.1) !important;
+}
+
+.nav_logo-icon img,
+.nav_logo-icon svg,
+.project_logo .nav_logo-icon img,
+.project_content .nav_logo-icon img {
+  width: 36px !important;
+  height: 36px !important;
+  max-width: 36px !important;
+  max-height: 36px !important;
+  display: block !important;
+  object-fit: contain !important;
+}
+
+.logo_text,
+.project_logo .logo_text,
+.project_content .logo_text {
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+  font-weight: 900 !important;
+  font-size: 1.65rem !important;
+  letter-spacing: -0.035em !important;
+  color: #111114 !important;
+  text-transform: uppercase !important;
+  line-height: 1 !important;
+  display: inline-block !important;
+  vertical-align: middle !important;
+}
+
+.footer-logo-wrap {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+  text-decoration: none !important;
+  cursor: pointer !important;
+  vertical-align: middle !important;
+  margin-bottom: 24px !important;
+  width: auto !important;
+  max-width: fit-content !important;
+}
+
+.footer_logo_icon_box {
+  width: 42px !important;
+  height: 42px !important;
+  max-width: 42px !important;
+  max-height: 42px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  flex-shrink: 0 !important;
+  transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) !important;
+}
+
+.footer-logo-wrap:hover .footer_logo_icon_box {
+  transform: rotate(360deg) scale(1.1) !important;
+}
+
+.footer_logo_icon_box img,
+.footer_logo_icon_box svg {
+  width: 42px !important;
+  height: 42px !important;
+  max-width: 42px !important;
+  max-height: 42px !important;
+  display: block !important;
+  object-fit: contain !important;
+}
+
+.footer_logo_wordmark,
+.footer_logo_text {
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+  font-weight: 900 !important;
+  font-size: 1.85rem !important;
+  letter-spacing: -0.035em !important;
+  color: #ffffff !important;
+  text-transform: uppercase !important;
+  line-height: 1 !important;
+  display: inline-block !important;
+  vertical-align: middle !important;
+}
+
+@media (max-width: 767px) {
+  .nav_logo-icon,
+  .project_logo .nav_logo-icon,
+  .project_content .nav_logo-icon {
+    width: 30px !important;
+    height: 30px !important;
+    max-width: 30px !important;
+    max-height: 30px !important;
+  }
+  .nav_logo-icon img,
+  .nav_logo-icon svg,
+  .project_logo .nav_logo-icon img,
+  .project_content .nav_logo-icon img {
+    width: 30px !important;
+    height: 30px !important;
+    max-width: 30px !important;
+    max-height: 30px !important;
+  }
+  .logo_text {
+    font-size: 1.35rem !important;
+  }
+  .footer_logo_icon_box {
+    width: 34px !important;
+    height: 34px !important;
+    max-width: 34px !important;
+    max-height: 34px !important;
+  }
+  .footer_logo_icon_box img,
+  .footer_logo_icon_box svg {
+    width: 34px !important;
+    height: 34px !important;
+    max-width: 34px !important;
+    max-height: 34px !important;
+  }
+  .footer_logo_wordmark,
+  .footer_logo_text {
+    font-size: 1.5rem !important;
+  }
+}
+</style>
+
+<link rel="stylesheet" href="css/book-call-modal.css">
+<!-- APPROVED CALINEX FAVICON -->
+<link rel="icon" type="image/svg+xml" href="images/calinex-c-dark.svg">
+<link rel="shortcut icon" type="image/x-icon" href="images/calinex-c-dark.svg">
+<link rel="apple-touch-icon" href="images/calinex-c-dark.svg">
+</head>
+<body class="admin-body">
+
+  <!-- Top Navbar -->
+  <header class="admin-navbar">
+    <div style="display: flex; align-items: center; gap: 16px;">
+      <a href="/" class="admin-brand">
+        <img src="images/calinex-logo.svg" alt="CALINEX" style="height: 26px; filter: brightness(0) invert(1);" />
+      </a>
+      <span class="admin-badge">Admin Panel</span>
+    </div>
+
+    <div class="admin-nav-actions">
+      <div class="admin-user-info">
+        <span>Logged in as:</span>
+        <span class="admin-user-email" id="currentAdminEmail">hello@calinex.us</span>
+      </div>
+      <button class="admin-btn admin-btn-secondary" id="openPasswordModalBtn">
+        🔐 Change Password
+      </button>
+      <a href="/" class="admin-btn admin-btn-secondary" target="_blank">
+        ↗ View Live Site
+      </a>
+      <button class="admin-btn admin-btn-danger" id="adminLogoutBtn">
+        Sign Out
+      </button>
+    </div>
+  </header>
+
+  <!-- Main Content Container -->
+  <main class="admin-container">
+    
+    <!-- Tab Navigation -->
+    <div class="admin-tabs">
+      <div class="admin-tab active" data-tab="overview">
+        📊 Overview
+      </div>
+      <div class="admin-tab" data-tab="leads">
+        📥 Project Leads (<span id="leadsTabCount">0</span>)
+      </div>
+      <div class="admin-tab" data-tab="api-keys">
+        🔑 API Keys &amp; Integrations
+      </div>
+      <div class="admin-tab" data-tab="security">
+        🔐 Security &amp; 2FA Password
+      </div>
+    </div>
+
+    <!-- ========================================================
+         TAB 1: OVERVIEW
+         ======================================================== -->
+    <div class="admin-tab-content" id="tab-overview">
+      <!-- Stats Cards Grid -->
+      <div class="stats-grid">
+        <div class="stat-card lime">
+          <div class="stat-label">Total Leads Received</div>
+          <div class="stat-value" id="statTotalLeads">0</div>
+          <div class="stat-desc">All-time form submissions &amp; calls</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">New Inquiries</div>
+          <div class="stat-value" id="statNewLeads">0</div>
+          <div class="stat-desc">Awaiting your response</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">Today's Leads</div>
+          <div class="stat-value" id="statTodayLeads">0</div>
+          <div class="stat-desc">Received in the last 24h</div>
+        </div>
+        <div class="stat-card warning">
+          <div class="stat-label">Configured APIs</div>
+          <div class="stat-value" id="statApis">0</div>
+          <div class="stat-desc">Resend, OpenAI, Stripe active</div>
+        </div>
+      </div>
+
+      <!-- Quick Recent Leads Preview -->
+      <div class="admin-card">
+        <div class="admin-card-header">
+          <div>
+            <h2 class="admin-card-title">Recent Project Inquiries</h2>
+            <p class="admin-card-desc">Latest submissions from "Book a call" and contact forms</p>
+          </div>
+          <button class="admin-btn admin-btn-secondary" onclick="switchTab('leads')">
+            View All Leads &rarr;
+          </button>
+        </div>
+
+        <div class="table-responsive">
+          <table class="admin-table">
+            <thead>
+              <tr>
+                <th>Date</th>
+                <th>Client Name</th>
+                <th>Email</th>
+                <th>Budget</th>
+                <th>Services</th>
+                <th>Status</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody id="recentLeadsTableBody">
+              <tr>
+                <td colspan="7" style="text-align: center; color: var(--admin-text-muted); padding: 30px;">
+                  Loading recent inquiries...
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- ========================================================
+         TAB 2: LEADS INBOX
+         ======================================================== -->
+    <div class="admin-tab-content" id="tab-leads" style="display: none;">
+      <div class="admin-card">
+        <div class="admin-card-header">
+          <div>
+            <h2 class="admin-card-title">Project Discovery Inquiries</h2>
+            <p class="admin-card-desc">All leads sent from the website with real-time notifications to hello@calinex.us</p>
+          </div>
+
+          <div style="display: flex; gap: 12px; align-items: center; flex-wrap: wrap;">
+            <div class="admin-search-wrap">
+              <input type="text" id="leadsSearchInput" class="form-input-admin" placeholder="Search by name, email, budget..."/>
+            </div>
+            <select id="leadsStatusFilter" class="form-select-admin" style="width: auto;">
+              <option value="">All Statuses</option>
+              <option value="New">New</option>
+              <option value="Contacted">Contacted</option>
+              <option value="In Progress">In Progress</option>
+              <option value="Closed">Closed</option>
+            </select>
+            <button class="admin-btn admin-btn-lime" id="exportLeadsCsvBtn">
+              📥 Export CSV
+            </button>
+          </div>
+        </div>
+
+        <div class="table-responsive">
+          <table class="admin-table">
+            <thead>
+              <tr>
+                <th>Date / Time</th>
+                <th>Client Name</th>
+                <th>Email</th>
+                <th>Budget</th>
+                <th>Source</th>
+                <th>Services</th>
+                <th>Status</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody id="allLeadsTableBody">
+              <!-- Loaded via JavaScript -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- ========================================================
+         TAB 3: API KEYS & INTEGRATIONS
+         ======================================================== -->
+    <div class="admin-tab-content" id="tab-api-keys" style="display: none;">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(450px, 1fr)); gap: 24px;">
+        
+        <!-- Resend Email API -->
+        <div class="admin-card">
+          <div class="admin-card-header">
+            <div>
+              <h2 class="admin-card-title">📧 Resend Email API</h2>
+              <p class="admin-card-desc">Automated email dispatch for all form submissions &amp; 2FA codes</p>
+            </div>
+          </div>
+
+          <form id="resendSettingsForm">
+            <div class="form-group">
+              <label class="form-label" for="resendApiKey">Resend API Key</label>
+              <input type="password" id="resendApiKey" class="form-input-admin" placeholder="re_123456789_abcdef..."/>
+              <div class="form-hint">Obtain from your dashboard at <a href="https://resend.com" target="_blank" style="color: #818cf8;">resend.com</a>.</div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="resendFromEmail">From Email Address</label>
+              <input type="text" id="resendFromEmail" class="form-input-admin" placeholder="onboarding@resend.dev or notifications@yourdomain.com"/>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="notificationEmail">Target Notification Email</label>
+              <input type="email" id="notificationEmail" class="form-input-admin" value="hello@calinex.us" required/>
+              <div class="form-hint">All client booking requests and password verification codes will be sent here.</div>
+            </div>
+
+            <div style="display: flex; gap: 12px; margin-top: 24px;">
+              <button type="submit" class="admin-btn admin-btn-primary">
+                Save Email Settings
+              </button>
+              <button type="button" class="admin-btn admin-btn-secondary" id="testEmailBtn">
+                🧪 Send Test Email
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <!-- OpenAI API -->
+        <div class="admin-card">
+          <div class="admin-card-header">
+            <div>
+              <h2 class="admin-card-title">🤖 OpenAI API</h2>
+              <p class="admin-card-desc">AI Agents, copywriting &amp; automated project estimations</p>
+            </div>
+          </div>
+
+          <form id="openaiSettingsForm">
+            <div class="form-group">
+              <label class="form-label" for="openaiApiKey">OpenAI API Key</label>
+              <input type="password" id="openaiApiKey" class="form-input-admin" placeholder="sk-proj-abcdef123456..."/>
+              <div class="form-hint">From <a href="https://platform.openai.com/api-keys" target="_blank" style="color: #818cf8;">platform.openai.com</a>.</div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="openaiModel">Default Model</label>
+              <select id="openaiModel" class="form-select-admin">
+                <option value="gpt-4o">gpt-4o (Recommended - Flagship High Intelligence)</option>
+                <option value="gpt-4o-mini">gpt-4o-mini (Fast &amp; Cost-Efficient)</option>
+                <option value="gpt-3.5-turbo">gpt-3.5-turbo</option>
+              </select>
+            </div>
+
+            <button type="submit" class="admin-btn admin-btn-primary" style="margin-top: 24px;">
+              Save OpenAI Config
+            </button>
+          </form>
+        </div>
+
+        <!-- Stripe Payment API -->
+        <div class="admin-card">
+          <div class="admin-card-header">
+            <div>
+              <h2 class="admin-card-title">💳 Stripe Payment API</h2>
+              <p class="admin-card-desc">Accept client subscription retainers, deposits &amp; design sprints</p>
+            </div>
+          </div>
+
+          <form id="stripeSettingsForm">
+            <div class="form-group">
+              <label class="form-label" for="stripePublishableKey">Stripe Publishable Key</label>
+              <input type="text" id="stripePublishableKey" class="form-input-admin" placeholder="pk_live_... or pk_test_..."/>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="stripeSecretKey">Stripe Secret Key</label>
+              <input type="password" id="stripeSecretKey" class="form-input-admin" placeholder="sk_live_... or sk_test_..."/>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="stripeWebhookSecret">Webhook Signing Secret</label>
+              <input type="password" id="stripeWebhookSecret" class="form-input-admin" placeholder="whsec_..."/>
+            </div>
+
+            <button type="submit" class="admin-btn admin-btn-primary" style="margin-top: 24px;">
+              Save Stripe API Keys
+            </button>
+          </form>
+        </div>
+
+        <!-- Site Integrations -->
+        <div class="admin-card">
+          <div class="admin-card-header">
+            <div>
+              <h2 class="admin-card-title">🌐 External Integrations</h2>
+              <p class="admin-card-desc">Google Analytics, Cal.com scheduling &amp; WhatsApp</p>
+            </div>
+          </div>
+
+          <form id="siteIntegrationsForm">
+            <div class="form-group">
+              <label class="form-label" for="googleAnalyticsId">Google Analytics Measurement ID</label>
+              <input type="text" id="googleAnalyticsId" class="form-input-admin" placeholder="G-XXXXXXXXXX"/>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="calcomLink">Cal.com / Calendly Link</label>
+              <input type="text" id="calcomLink" class="form-input-admin" placeholder="https://cal.com/wavespace/project-discussion"/>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="whatsappNumber">WhatsApp Business Number</label>
+              <input type="text" id="whatsappNumber" class="form-input-admin" placeholder="+8801629018678"/>
+            </div>
+
+            <button type="submit" class="admin-btn admin-btn-primary" style="margin-top: 24px;">
+              Save Site Integrations
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ========================================================
+         TAB 4: SECURITY & 2FA PASSWORD
+         ======================================================== -->
+    <div class="admin-tab-content" id="tab-security" style="display: none;">
+      <div class="admin-card" style="max-width: 600px;">
+        <div class="admin-card-header">
+          <div>
+            <h2 class="admin-card-title">🔐 Secure 2FA Password Reset</h2>
+            <p class="admin-card-desc">To change your password, a 6-digit verification code will be sent to <strong>hello@calinex.us</strong></p>
+          </div>
+        </div>
+
+        <!-- Step 1: Request Code -->
+        <div id="stepRequestCode" style="margin-bottom: 24px;">
+          <p style="color: var(--admin-text-muted); font-size: 0.9375rem; margin-bottom: 16px; line-height: 1.6;">
+            Click below to generate and dispatch a one-time verification security code directly to your registered email address.
+          </p>
+          <button type="button" class="admin-btn admin-btn-lime" id="sendVerificationCodeBtn">
+            📩 Send 6-Digit Code to hello@calinex.us
+          </button>
+        </div>
+
+        <!-- Step 2: Verification Form -->
+        <form id="verifyPasswordForm" style="display: none;">
+          <div class="form-group">
+            <label class="form-label" for="securityCode">6-Digit Verification Code</label>
+            <input type="text" id="securityCode" class="form-input-admin" placeholder="123456" maxlength="6" style="font-size: 1.25rem; letter-spacing: 4px; text-align: center; max-width: 200px;" required/>
+            <div class="form-hint" id="codeSentHint">Code valid for 10 minutes.</div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="newPassword">New Password</label>
+            <input type="password" id="newPassword" class="form-input-admin" placeholder="Minimum 6 characters" required/>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="confirmPassword">Confirm New Password</label>
+            <input type="password" id="confirmPassword" class="form-input-admin" placeholder="Repeat new password" required/>
+          </div>
+
+          <div style="display: flex; gap: 12px; margin-top: 24px;">
+            <button type="submit" class="admin-btn admin-btn-primary" id="confirmPasswordChangeBtn">
+              Update Password
+            </button>
+            <button type="button" class="admin-btn admin-btn-secondary" id="cancelPasswordResetBtn">
+              Cancel
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Lead Detail Modal -->
+  <div class="admin-modal-backdrop" id="leadDetailModal">
+    <div class="admin-modal-box">
+      <button class="admin-modal-close" id="closeLeadModalBtn">✕</button>
+      <h3 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 20px; color: #fff;">Inquiry Details</h3>
+      <div id="leadModalContent" style="display: flex; flex-direction: column; gap: 14px; font-size: 0.9375rem; color: #e4e4e7;">
+        <!-- Injected via JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="admin-toast" id="adminToast">Notification</div>
+
+  <!-- Scripts -->
+  <script src="js/admin.js"></script>
+<!-- ========================================================================
+       Global Floating WhatsApp Widget
+       ======================================================================== -->
+  <a href="https://wa.me/8801629018678?text=Hi%20MD%20Sharafat%20Ullah%2C%20I%20have%20a%20project%20inquiry%20for%20CALINEX" class="ws-floating-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Chat with Md. Sharafat Ullah on WhatsApp">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+      <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2Z" fill="#25D366"/>
+      <path d="M17.52 14.33C17.22 14.18 15.75 13.45 15.47 13.35C15.2 13.25 15 13.2 14.81 13.5C14.61 13.8 14.04 14.47 13.87 14.67C13.69 14.87 13.52 14.89 13.22 14.74C12.92 14.59 11.96 14.28 10.82 13.26C9.93 12.47 9.33 11.49 9.16 11.19C8.98 10.89 9.14 10.73 9.29 10.58C9.42 10.45 9.58 10.24 9.73 10.07C9.88 9.9 9.93 9.77 10.03 9.57C10.13 9.37 10.08 9.2 10 9.05C9.93 8.9 9.35 7.48 9.11 6.9C8.88 6.34 8.64 6.42 8.46 6.41C8.29 6.4 8.1 6.4 7.9 6.4C7.7 6.4 7.38 6.47 7.11 6.77C6.83 7.07 6.06 7.79 6.06 9.27C6.06 10.74 7.13 12.17 7.28 12.37C7.43 12.57 9.38 15.58 12.38 16.87C13.09 17.18 13.66 17.37 14.09 17.51C14.81 17.74 15.46 17.7 15.98 17.63C16.56 17.54 17.77 16.89 18.02 16.19C18.27 15.49 18.27 14.89 18.19 14.77C18.12 14.64 17.82 14.48 17.52 14.33Z" fill="white"/>
+    </svg>
+    <span class="ws-whatsapp-label">WhatsApp</span>
+  </a>
+<script src="js/book-call-modal.js"></script>
+</body>
+</html>

@@ -1,0 +1,308 @@
+/* Book a Call Modal Popup Styling - 100% Wavespace Exact */
+.ws-book-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+  background: rgba(15, 23, 42, 0.65);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.ws-book-modal-backdrop.is-open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.ws-book-modal-card {
+  background: #ffffff;
+  width: 100%;
+  max-width: 620px;
+  border-radius: 16px;
+  padding: 32px 36px;
+  position: relative;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  transform: scale(0.95) translateY(10px);
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.ws-book-modal-backdrop.is-open .ws-book-modal-card {
+  transform: scale(1) translateY(0);
+}
+
+.ws-modal-close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  font-weight: 500;
+  color: #64748b;
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s, color 0.2s;
+}
+
+.ws-modal-close-btn:hover {
+  background: #f1f5f9;
+  color: #0f172a;
+}
+
+.ws-modal-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.ws-modal-avatars {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.ws-modal-avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ffffff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.ws-modal-avatar:nth-child(2) {
+  margin-left: -12px;
+}
+
+.ws-modal-title-wrap {
+  flex: 1;
+}
+
+.ws-modal-title {
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+  color: #0f172a;
+  margin: 0 0 2px 0;
+  line-height: 1.25;
+}
+
+.ws-modal-subtitle {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 13px;
+  color: #64748b;
+  margin: 0;
+}
+
+.ws-modal-toast {
+  display: none;
+  padding: 12px 16px;
+  border-radius: 8px;
+  font-size: 13px;
+  margin-bottom: 16px;
+  line-height: 1.4;
+}
+
+.ws-modal-toast.success {
+  background: #f0fdf4;
+  color: #166534;
+  border: 1px solid #bbf7d0;
+}
+
+.ws-modal-toast.error {
+  background: #fef2f2;
+  color: #991b1b;
+  border: 1px solid #fecaca;
+}
+
+.ws-modal-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.ws-modal-grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+@media (max-width: 580px) {
+  .ws-modal-grid-2 {
+    grid-template-columns: 1fr;
+  }
+  .ws-book-modal-card {
+    padding: 24px 20px;
+  }
+}
+
+.ws-modal-field {
+  width: 100%;
+}
+
+.ws-modal-input,
+.ws-modal-select,
+.ws-modal-textarea {
+  width: 100%;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 14px;
+  color: #0f172a;
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  padding: 12px 16px;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.ws-modal-input::placeholder,
+.ws-modal-textarea::placeholder {
+  color: #94a3b8;
+}
+
+.ws-modal-input:focus,
+.ws-modal-select:focus,
+.ws-modal-textarea:focus {
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.12);
+}
+
+.ws-modal-select {
+  appearance: none;
+  -webkit-appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%252364748b' stroke-width='2'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M19 9l-7 7-7-7'%3E%3C/path%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+  background-size: 16px 16px;
+  padding-right: 38px;
+
+}
+
+.ws-modal-textarea {
+  height: 96px;
+  resize: vertical;
+}
+
+.ws-modal-chips-wrap {
+  margin-top: 4px;
+}
+
+.ws-modal-chips-label {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 10px;
+}
+
+.ws-modal-chips-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.ws-modal-chip {
+  position: relative;
+  cursor: pointer;
+}
+
+.ws-modal-chip input {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.ws-modal-chip span {
+  display: inline-block;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 13px;
+  color: #475569;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  padding: 7px 14px;
+  transition: all 0.2s ease;
+  user-select: none;
+}
+
+.ws-modal-chip input:checked + span {
+  background: #ffffff;
+  border-color: #0f172a;
+  color: #0f172a;
+  font-weight: 600;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.ws-modal-chip:hover span {
+  border-color: #cbd5e1;
+  color: #0f172a;
+}
+
+.ws-modal-bottom-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+  gap: 16px;
+}
+
+.ws-modal-submit-btn {
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: #ffffff;
+  background: #4f46e5;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 28px;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+}
+
+.ws-modal-submit-btn:hover {
+  background: #4338ca;
+}
+
+.ws-modal-submit-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.ws-modal-prefer-email {
+  text-align: right;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.ws-modal-prefer-email span {
+  display: block;
+  font-size: 11px;
+  color: #94a3b8;
+}
+
+.ws-modal-prefer-email a {
+  font-size: 13px;
+  font-weight: 600;
+  color: #0f172a;
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+
+.ws-modal-prefer-email a:hover {
+  color: #4f46e5;
+}
