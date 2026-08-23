@@ -108,18 +108,32 @@ const server = http.createServer((req, res) => {
     reqPath = '/index.html';
   }
 
-  let filePath = path.join(PUBLIC_DIR, reqPath);
-
-  // If no extension and file doesn't exist, check for .html
-  if (!path.extname(filePath)) {
-    if (fs.existsSync(filePath + '.html')) {
-      filePath = filePath + '.html';
-    }
-  }
-
+  let filePath = resolveStaticPath(reqPath);
   const ext = path.extname(filePath).toLowerCase();
   serveStaticFile(res, filePath, ext);
 });
+
+function resolveStaticPath(reqPath) {
+  let candidates = [
+    path.join(PUBLIC_DIR, reqPath),
+    path.join(__dirname, reqPath)
+  ];
+
+  if (!path.extname(reqPath)) {
+    candidates.unshift(path.join(PUBLIC_DIR, reqPath + '.html'));
+    candidates.unshift(path.join(__dirname, reqPath + '.html'));
+  }
+
+  for (const candidate of candidates) {
+    try {
+      if (fs.existsSync(candidate) && fs.statSync(candidate).isFile()) {
+        return candidate;
+      }
+    } catch(e) {}
+  }
+
+  return path.join(PUBLIC_DIR, reqPath);
+}
 
 function serveStaticFile(res, filePath, ext) {
   fs.stat(filePath, (err, stats) => {
