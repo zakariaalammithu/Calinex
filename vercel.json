@@ -1,22 +1,5 @@
 {
-  "version": 2,
   "cleanUrls": true,
-  "builds": [
-    {
-      "src": "server.js",
-      "use": "@vercel/node",
-      "config": {
-        "includeFiles": [
-          "images/**",
-          "css/**",
-          "js/**",
-          "admin/**",
-          "services/**",
-          "industries/**"
-        ]
-      }
-    }
-  ],
   "routes": [
     {
       "src": "/api/(.*)",
@@ -31,31 +14,7 @@
       "dest": "/server.js"
     },
     {
-      "src": "/images/(.*)",
-      "dest": "/server.js"
-    },
-    {
-      "src": "/css/(.*)",
-      "dest": "/server.js"
-    },
-    {
-      "src": "/js/(.*)",
-      "dest": "/server.js"
-    },
-    {
-      "src": "/assets/(.*)",
-      "dest": "/server.js"
-    },
-    {
-      "src": "/uploads/(.*)",
-      "dest": "/server.js"
-    },
-    {
       "handle": "filesystem"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/server.js"
     }
   ]
 }
