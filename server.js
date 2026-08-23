@@ -118,7 +118,7 @@ async function handleRequest(req, res) {
 
 const server = http.createServer((req, res) => handleRequest(req, res));
 
-if (!process.env.VERCEL) {
+if (require.main === module && !process.env.VERCEL) {
   const ALT_PORT = 3001;
 
   server.listen(PORT, '0.0.0.0', () => {
