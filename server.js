@@ -6,7 +6,7 @@ const { handlePublicApi } = require('./lib/api-public');
 const { validateSession, parseCookies } = require('./lib/auth');
 
 const PORT = process.env.PORT || 3000;
-const PUBLIC_DIR = __dirname;
+const PUBLIC_DIR = process.env.VERCEL ? process.cwd() : __dirname;
 
 const MIME_TYPES = {
   '.html': 'text/html; charset=utf-8',
