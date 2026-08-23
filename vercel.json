@@ -12,12 +12,19 @@
       "dest": "/server.js"
     },
     {
+      "src": "/admin",
+      "dest": "/server.js"
+    },
+    {
       "src": "/admin/(.*)",
       "dest": "/server.js"
     },
     {
+      "handle": "filesystem"
+    },
+    {
       "src": "/(.*)",
-      "dest": "/server.js"
+      "dest": "/$1.html"
     }
   ]
 }
