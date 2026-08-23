@@ -1,40 +1,17 @@
 {
-  "version": 2,
   "cleanUrls": true,
-  "builds": [
+  "rewrites": [
     {
-      "src": "server.js",
-      "use": "@vercel/node",
-      "config": {
-        "includeFiles": [
-          "**/*.html",
-          "css/**",
-          "images/**",
-          "js/**",
-          "admin/**",
-          "services/**",
-          "industries/**",
-          "data/**"
-        ]
-      }
-    }
-  ],
-  "routes": [
-    {
-      "src": "/api/(.*)",
-      "dest": "/server.js"
+      "source": "/api/(.*)",
+      "destination": "/server.js"
     },
     {
-      "src": "/admin",
-      "dest": "/server.js"
+      "source": "/admin",
+      "destination": "/server.js"
     },
     {
-      "src": "/admin/(.*)",
-      "dest": "/server.js"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/server.js"
+      "source": "/admin/(.*)",
+      "destination": "/server.js"
     }
   ]
 }
