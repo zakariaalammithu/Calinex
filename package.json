@@ -6,5 +6,8 @@
   "scripts": {
     "dev": "node server.js",
     "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=22.0.0"
   }
 }
