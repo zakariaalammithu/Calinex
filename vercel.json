@@ -11,15 +11,27 @@
       "use": "@vercel/static"
     },
     {
-      "src": "images/**",
+      "src": "images/**/*",
       "use": "@vercel/static"
     },
     {
-      "src": "css/**",
+      "src": "images/*",
       "use": "@vercel/static"
     },
     {
-      "src": "js/**",
+      "src": "css/**/*",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "css/*",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "js/**/*",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "js/*",
       "use": "@vercel/static"
     }
   ],
@@ -35,6 +47,14 @@
     {
       "src": "/admin",
       "dest": "/api/index.js"
+    },
+    {
+      "src": "/about",
+      "dest": "/about.html"
+    },
+    {
+      "src": "/services",
+      "dest": "/services.html"
     },
     {
       "handle": "filesystem"
