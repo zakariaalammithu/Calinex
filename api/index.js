@@ -1,5 +1,3 @@
-const path = require('path');
-const fs = require('fs');
 const crypto = require('crypto');
 
 const SALT = 'calinex_salt_secure_2026';
@@ -26,7 +24,7 @@ function parseServerlessBody(req) {
     if (req.readableEnded || req.complete) {
       finish();
     } else {
-      setTimeout(finish, 150);
+      setTimeout(finish, 100);
     }
   });
 }
@@ -94,18 +92,6 @@ module.exports = async (req, res) => {
     }
   }
 
-  // 3. LAZY-LOADED SERVER HANDLER FALLBACK FOR ADMIN DASHBOARD API
-  try {
-    const serverHandler = require('../server.js');
-    return await serverHandler(req, res);
-  } catch (err) {
-    console.error('[VERCEL HANDLER ERROR]', err);
-    if (!res.headersSent) {
-      res.writeHead(200, { 'Content-Type': 'application/json' });
-      res.end(JSON.stringify({
-        success: true,
-        message: 'Request processed via Vercel serverless layer'
-      }));
-    }
-  }
+  res.writeHead(200, { 'Content-Type': 'application/json' });
+  res.end(JSON.stringify({ success: true, status: 'CALINEX API Serverless Endpoint Active' }));
 };
