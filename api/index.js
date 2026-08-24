@@ -5,6 +5,25 @@ const crypto = require('crypto');
 const SALT = 'calinex_salt_secure_2026';
 const DEFAULT_HASH = crypto.scryptSync('Calinexusa123', SALT, 64).toString('hex');
 
+function getOriginalPath(req) {
+  let p = req.url || '/';
+  if (req.headers['x-invoke-path']) {
+    p = req.headers['x-invoke-path'];
+  } else if (req.headers['x-matched-path']) {
+    p = req.headers['x-matched-path'];
+  } else if (req.headers['x-rewrite-url']) {
+    p = req.headers['x-rewrite-url'];
+  } else if (req.headers['x-forwarded-uri']) {
+    p = req.headers['x-forwarded-uri'];
+  }
+  try {
+    const u = new URL(p, `http://${req.headers.host || 'localhost'}`);
+    return u.pathname;
+  } catch(e) {
+    return p.split('?')[0];
+  }
+}
+
 function parseServerlessBody(req) {
   return new Promise((resolve) => {
     if (req.body && typeof req.body === 'object') return resolve(req.body);
@@ -12,20 +31,27 @@ function parseServerlessBody(req) {
       try { return resolve(JSON.parse(req.body)); } catch(e) { return resolve({}); }
     }
     let data = '';
+    let done = false;
+    const finish = () => {
+      if (done) return;
+      done = true;
+      try { resolve(JSON.parse(data || '{}')); } catch(e) { resolve({}); }
+    };
+
     req.on('data', chunk => { data += chunk; });
-    req.on('end', () => {
-      try { resolve(JSON.parse(data || '{}')); } catch(e) { resolve({}); }
-    });
-    req.on('error', () => resolve({}));
+    req.on('end', finish);
+    req.on('error', finish);
+
     if (req.readableEnded || req.complete) {
-      try { resolve(JSON.parse(data || '{}')); } catch(e) { resolve({}); }
+      finish();
+    } else {
+      setTimeout(finish, 150);
     }
   });
 }
 
 module.exports = async (req, res) => {
-  const url = new URL(req.url, `http://${req.headers.host || 'localhost'}`);
-  const pathname = url.pathname;
+  const pathname = getOriginalPath(req);
 
   // 1. ADMIN AUTH LOGIN API (/api/admin/auth/login or /api/admin/login)
   if ((pathname === '/api/admin/auth/login' || pathname === '/api/admin/login') && req.method === 'POST') {
@@ -85,6 +111,9 @@ module.exports = async (req, res) => {
       }));
     }
   }
+
+  // Rewrite req.url to original pathname so serverHandler finds the exact static file/route
+  req.url = pathname;
 
   // 3. FALLBACK TO FULL SERVER HANDLER (FOR STATIC PAGES & ASSETS)
   try {
