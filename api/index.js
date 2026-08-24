@@ -3,7 +3,25 @@ const fs = require('fs');
 const crypto = require('crypto');
 
 const SALT = 'calinex_salt_secure_2026';
-const DEFAULT_HASH = 'c8297d09011a2511d0ef6e424fd735380ae1b06d3299586dfc778e3b8dd3749363631e480d3c24be2adc9dee97a1f12d7df9b33425b297df4c2bf8fa70e54892';
+const DEFAULT_HASH = crypto.scryptSync('Calinexusa123', SALT, 64).toString('hex');
+
+function parseServerlessBody(req) {
+  return new Promise((resolve) => {
+    if (req.body && typeof req.body === 'object') return resolve(req.body);
+    if (typeof req.body === 'string') {
+      try { return resolve(JSON.parse(req.body)); } catch(e) { return resolve({}); }
+    }
+    let data = '';
+    req.on('data', chunk => { data += chunk; });
+    req.on('end', () => {
+      try { resolve(JSON.parse(data || '{}')); } catch(e) { resolve({}); }
+    });
+    req.on('error', () => resolve({}));
+    if (req.readableEnded || req.complete) {
+      try { resolve(JSON.parse(data || '{}')); } catch(e) { resolve({}); }
+    }
+  });
+}
 
 module.exports = async (req, res) => {
   const url = new URL(req.url, `http://${req.headers.host || 'localhost'}`);
@@ -11,20 +29,7 @@ module.exports = async (req, res) => {
 
   // 1. ADMIN AUTH LOGIN API (/api/admin/auth/login or /api/admin/login)
   if ((pathname === '/api/admin/auth/login' || pathname === '/api/admin/login') && req.method === 'POST') {
-    let bodyStr = '';
-    req.on('data', chunk => { bodyStr += chunk; });
-
-    let body = {};
-    if (req.body && typeof req.body === 'object') {
-      body = req.body;
-    } else {
-      await new Promise(r => {
-        req.on('end', r);
-        setTimeout(r, 200);
-      });
-      try { body = JSON.parse(bodyStr || '{}'); } catch(e) {}
-    }
-
+    const body = await parseServerlessBody(req);
     const { email, password } = body;
     const defaultEmail = (process.env.ADMIN_EMAIL || 'hello@calinex.us').toLowerCase();
 
@@ -81,7 +86,7 @@ module.exports = async (req, res) => {
     }
   }
 
-  // 3. FALLBACK TO FULL SERVER HANDLER
+  // 3. FALLBACK TO FULL SERVER HANDLER (FOR STATIC PAGES & ASSETS)
   try {
     const serverHandler = require('../server.js');
     return await serverHandler(req, res);
