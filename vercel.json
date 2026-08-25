@@ -33,6 +33,14 @@
     {
       "src": "js/*",
       "use": "@vercel/static"
+    },
+    {
+      "src": "services/**/*.html",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "services/*.html",
+      "use": "@vercel/static"
     }
   ],
   "routes": [
@@ -45,15 +53,15 @@
       "dest": "/api/index.js"
     },
     {
-      "src": "/admin",
+      "src": "/admin$",
       "dest": "/api/index.js"
     },
     {
-      "src": "/about",
+      "src": "/about$",
       "dest": "/about.html"
     },
     {
-      "src": "/services",
+      "src": "/services$",
       "dest": "/services.html"
     },
     {
