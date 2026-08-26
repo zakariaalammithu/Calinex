@@ -33,6 +33,21 @@ module.exports = async (req, res) => {
   const url = new URL(req.url, `http://${req.headers.host || 'localhost'}`);
   const pathname = url.pathname;
 
+  // Serve sitemap.xml and robots.txt
+  if (pathname === '/sitemap.xml' || pathname === '/robots.txt') {
+    const fs = require('fs');
+    const path = require('path');
+    const file = pathname === '/sitemap.xml' ? 'sitemap.xml' : 'robots.txt';
+    const type = pathname === '/sitemap.xml' ? 'application/xml' : 'text/plain';
+    try {
+      const content = fs.readFileSync(path.join(__dirname, '..', file), 'utf8');
+      res.setHeader('Content-Type', type);
+      return res.status(200).send(content);
+    } catch(e) {
+      return res.status(404).send('Not Found');
+    }
+  }
+
   // 1. ADMIN AUTH LOGIN API (/api/admin/auth/login or /api/admin/login)
   if ((pathname === '/api/admin/auth/login' || pathname === '/api/admin/login') && req.method === 'POST') {
     const body = await parseServerlessBody(req);

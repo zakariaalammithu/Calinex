@@ -42,23 +42,15 @@
       "src": "services/*.html",
       "use": "@vercel/static"
     }
-    {
-      "src": "sitemap.xml",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "robots.txt",
-      "use": "@vercel/static"
-    }
   ],
   "routes": [
     {
       "src": "/sitemap.xml$",
-      "dest": "/sitemap.xml"
+      "dest": "/api/index.js"
     },
     {
       "src": "/robots.txt$",
-      "dest": "/robots.txt"
+      "dest": "/api/index.js"
     },
     {
       "src": "/api/(.*)",
