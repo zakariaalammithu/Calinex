@@ -1,0 +1,362 @@
+[
+  {
+    "id": "kodezi",
+    "slug": "kodezi",
+    "title": "Kodezi",
+    "category": "AI codebase platform",
+    "description": "Kodezi the AI code generator built for SaaS software to speed up coding, reduce bugs, and boost developer productivity",
+    "fullDescription": "Kodezi the AI code generator built for SaaS software to speed up coding, reduce bugs, and boost developer productivity",
+    "client": "Kodezi",
+    "services": "AI, B2B/B2C, SaaS, Websites",
+    "location": "United States",
+    "date": "2025",
+    "metricNumber": "$1.8M",
+    "metricLabel": "seed-funded",
+    "image": "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3b69488d9cfd0f31763daf_Kodezi.png",
+    "srcset": "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3b69488d9cfd0f31763daf_Kodezi-p-500.png 500w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3b69488d9cfd0f31763daf_Kodezi-p-800.png 800w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3b69488d9cfd0f31763daf_Kodezi-p-1080.png 1080w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3b69488d9cfd0f31763daf_Kodezi.png 1264w",
+    "gallery": [
+      "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3b69488d9cfd0f31763daf_Kodezi.png"
+    ],
+    "tags": [
+      "AI",
+      "B2B/B2C",
+      "SaaS",
+      "Websites"
+    ],
+    "link": "/case-studies.html/kodezi",
+    "status": "published",
+    "featured": true,
+    "order": 1,
+    "createdAt": "2026-08-26T16:28:10.498Z",
+    "updatedAt": "2026-08-26T16:28:10.507Z"
+  },
+  {
+    "id": "off-white",
+    "slug": "off-white",
+    "title": "Off-White",
+    "category": "E-commerce",
+    "description": "Off White partnered with our B2B web design agency to create a sleek e-commerce",
+    "fullDescription": "Off White partnered with our B2B web design agency to create a sleek e-commerce",
+    "client": "Off-White",
+    "services": "Websites, B2B/B2C",
+    "location": "United States",
+    "date": "2025",
+    "metricNumber": "+28%",
+    "metricLabel": "converstion uplift",
+    "image": "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3b6894bc0be9f20156d21d_off-white.png",
+    "srcset": "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3b6894bc0be9f20156d21d_off-white-p-500.png 500w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3b6894bc0be9f20156d21d_off-white-p-800.png 800w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3b6894bc0be9f20156d21d_off-white-p-1080.png 1080w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3b6894bc0be9f20156d21d_off-white.png 1264w",
+    "gallery": [
+      "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3b6894bc0be9f20156d21d_off-white.png"
+    ],
+    "tags": [
+      "Websites",
+      "B2B/B2C"
+    ],
+    "link": "/case-studies.html/off-white",
+    "status": "published",
+    "featured": true,
+    "order": 2,
+    "createdAt": "2026-08-26T16:28:10.508Z",
+    "updatedAt": "2026-08-26T16:28:10.508Z"
+  },
+  {
+    "id": "tournated",
+    "slug": "tournated",
+    "title": "Tournated",
+    "category": "Sports platform",
+    "description": "Our SaaS dashboard and web app design simplified esports and sports tournaments",
+    "fullDescription": "Our SaaS dashboard and web app design simplified esports and sports tournaments",
+    "client": "Tournated",
+    "services": "Websites, SaaS, B2B/B2C",
+    "location": "United States",
+    "date": "2025",
+    "metricNumber": "155%",
+    "metricLabel": "Faster Onboarding",
+    "image": "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3b68734390568f3551662c_Tournated.png",
+    "srcset": "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3b68734390568f3551662c_Tournated-p-500.png 500w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3b68734390568f3551662c_Tournated-p-800.png 800w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3b68734390568f3551662c_Tournated-p-1080.png 1080w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3b68734390568f3551662c_Tournated.png 1264w",
+    "gallery": [
+      "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3b68734390568f3551662c_Tournated.png"
+    ],
+    "tags": [
+      "Websites",
+      "SaaS",
+      "B2B/B2C"
+    ],
+    "link": "/case-studies.html/tournated",
+    "status": "published",
+    "featured": true,
+    "order": 3,
+    "createdAt": "2026-08-26T16:28:10.508Z",
+    "updatedAt": "2026-08-26T16:28:10.508Z"
+  },
+  {
+    "id": "callai",
+    "slug": "callai",
+    "title": "CallAI",
+    "category": "AI voice agent",
+    "description": "We designed CallAI from the ground up, a no-code platform that lets any business build AI voice agents, automate call workflows, and never miss a lead again.",
+    "fullDescription": "We designed CallAI from the ground up, a no-code platform that lets any business build AI voice agents, automate call workflows, and never miss a lead again.",
+    "client": "CallAI",
+    "services": "Websites, SaaS, B2B/B2C, AI",
+    "location": "United States",
+    "date": "2025",
+    "metricNumber": "40%",
+    "metricLabel": "Dev handoff faster",
+    "image": "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3b6a114c24b72c5835c9a4_call-ai.png",
+    "srcset": "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3b6a114c24b72c5835c9a4_call-ai-p-500.png 500w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3b6a114c24b72c5835c9a4_call-ai-p-800.png 800w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3b6a114c24b72c5835c9a4_call-ai-p-1080.png 1080w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3b6a114c24b72c5835c9a4_call-ai.png 1264w",
+    "gallery": [
+      "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3b6a114c24b72c5835c9a4_call-ai.png"
+    ],
+    "tags": [
+      "Websites",
+      "SaaS",
+      "B2B/B2C",
+      "AI"
+    ],
+    "link": "/case-studies.html/callai",
+    "status": "published",
+    "featured": false,
+    "order": 4,
+    "createdAt": "2026-08-26T16:28:10.508Z",
+    "updatedAt": "2026-08-26T16:28:10.508Z"
+  },
+  {
+    "id": "spacebook",
+    "slug": "spacebook",
+    "title": "Spacebook",
+    "category": "Accounting software",
+    "description": "A accounting dashboard for SaaS software, designed to track spending, cut errors",
+    "fullDescription": "A accounting dashboard for SaaS software, designed to track spending, cut errors",
+    "client": "Spacebook",
+    "services": "Websites, SaaS, B2B/B2C",
+    "location": "United States",
+    "date": "2025",
+    "metricNumber": "+35%",
+    "metricLabel": "higher user retention",
+    "image": "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3b69756815d2818b7652bd_Spacebook.png",
+    "srcset": "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3b69756815d2818b7652bd_Spacebook-p-500.png 500w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3b69756815d2818b7652bd_Spacebook-p-800.png 800w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3b69756815d2818b7652bd_Spacebook-p-1080.png 1080w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3b69756815d2818b7652bd_Spacebook.png 1264w",
+    "gallery": [
+      "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3b69756815d2818b7652bd_Spacebook.png"
+    ],
+    "tags": [
+      "Websites",
+      "SaaS",
+      "B2B/B2C"
+    ],
+    "link": "/case-studies.html/spacebook",
+    "status": "published",
+    "featured": false,
+    "order": 5,
+    "createdAt": "2026-08-26T16:28:10.508Z",
+    "updatedAt": "2026-08-26T16:28:10.508Z"
+  },
+  {
+    "id": "rooda",
+    "slug": "rooda",
+    "title": "Rooda",
+    "category": "Smart mobility",
+    "description": "A transport app that combines car rides and electric scooter rentals with live maps",
+    "fullDescription": "A transport app that combines car rides and electric scooter rentals with live maps",
+    "client": "Rooda",
+    "services": "Mobile apps, B2B/B2C",
+    "location": "United States",
+    "date": "2025",
+    "metricNumber": "+28%",
+    "metricLabel": "saved each ride",
+    "image": "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3b6a00c59c5b918c005ab6_Rooda.png",
+    "srcset": "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3b6a00c59c5b918c005ab6_Rooda-p-500.png 500w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3b6a00c59c5b918c005ab6_Rooda-p-800.png 800w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3b6a00c59c5b918c005ab6_Rooda-p-1080.png 1080w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3b6a00c59c5b918c005ab6_Rooda.png 1264w",
+    "gallery": [
+      "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3b6a00c59c5b918c005ab6_Rooda.png"
+    ],
+    "tags": [
+      "Mobile apps",
+      "B2B/B2C"
+    ],
+    "link": "/case-studies.html/rooda",
+    "status": "published",
+    "featured": false,
+    "order": 6,
+    "createdAt": "2026-08-26T16:28:10.508Z",
+    "updatedAt": "2026-08-26T16:28:10.508Z"
+  },
+  {
+    "id": "better-ai",
+    "slug": "better-ai",
+    "title": "Better AI",
+    "category": "AI booking app",
+    "description": "BetterAI is an AI app for everyday booking, food, travel, doctors, and groceries managed in one simple AI-powered service",
+    "fullDescription": "BetterAI is an AI app for everyday booking, food, travel, doctors, and groceries managed in one simple AI-powered service",
+    "client": "Better AI",
+    "services": "Mobile apps, B2B/B2C, AI",
+    "location": "United States",
+    "date": "2025",
+    "metricNumber": "2x",
+    "metricLabel": "Booking completions doubled",
+    "image": "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3b698d0b01528fc5a88e2c_BetterAI.png",
+    "srcset": "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3b698d0b01528fc5a88e2c_BetterAI-p-500.png 500w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3b698d0b01528fc5a88e2c_BetterAI-p-800.png 800w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3b698d0b01528fc5a88e2c_BetterAI-p-1080.png 1080w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3b698d0b01528fc5a88e2c_BetterAI.png 1264w",
+    "gallery": [
+      "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3b698d0b01528fc5a88e2c_BetterAI.png"
+    ],
+    "tags": [
+      "Mobile apps",
+      "B2B/B2C",
+      "AI"
+    ],
+    "link": "/case-studies.html/better-ai",
+    "status": "published",
+    "featured": false,
+    "order": 7,
+    "createdAt": "2026-08-26T16:28:10.508Z",
+    "updatedAt": "2026-08-26T16:28:10.508Z"
+  },
+  {
+    "id": "hoolis",
+    "slug": "hoolis",
+    "title": "Hoolis",
+    "category": "Real estate",
+    "description": "Our real estate app design transformed property search into a clear, modern",
+    "fullDescription": "Our real estate app design transformed property search into a clear, modern",
+    "client": "Hoolis",
+    "services": "Mobile apps, Real estate",
+    "location": "United States",
+    "date": "2025",
+    "metricNumber": "+69%",
+    "metricLabel": "increase user activity",
+    "image": "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3b69c83718a004377e6d8f_Hoolis.png",
+    "srcset": "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3b69c83718a004377e6d8f_Hoolis-p-500.png 500w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3b69c83718a004377e6d8f_Hoolis-p-800.png 800w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3b69c83718a004377e6d8f_Hoolis-p-1080.png 1080w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3b69c83718a004377e6d8f_Hoolis.png 1264w",
+    "gallery": [
+      "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3b69c83718a004377e6d8f_Hoolis.png"
+    ],
+    "tags": [
+      "Mobile apps",
+      "Real estate"
+    ],
+    "link": "/case-studies.html/hoolis",
+    "status": "published",
+    "featured": false,
+    "order": 8,
+    "createdAt": "2026-08-26T16:28:10.508Z",
+    "updatedAt": "2026-08-26T16:28:10.508Z"
+  },
+  {
+    "id": "open-hub",
+    "slug": "open-hub",
+    "title": "Open Hub",
+    "category": "CRM web app",
+    "description": "Openhub CRM webapp was redesigned, API integration plus UX updates drove higher",
+    "fullDescription": "Openhub CRM webapp was redesigned, API integration plus UX updates drove higher",
+    "client": "Open Hub",
+    "services": "B2B/B2C, SaaS, Websites",
+    "location": "United States",
+    "date": "2025",
+    "metricNumber": "+72%",
+    "metricLabel": "higher user retention",
+    "image": "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3b69aa1d857f042f889b1b_Openhub.png",
+    "srcset": "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3b69aa1d857f042f889b1b_Openhub-p-500.png 500w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3b69aa1d857f042f889b1b_Openhub-p-800.png 800w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3b69aa1d857f042f889b1b_Openhub-p-1080.png 1080w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3b69aa1d857f042f889b1b_Openhub.png 1264w",
+    "gallery": [
+      "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3b69aa1d857f042f889b1b_Openhub.png"
+    ],
+    "tags": [
+      "B2B/B2C",
+      "SaaS",
+      "Websites"
+    ],
+    "link": "/case-studies.html/open-hub",
+    "status": "published",
+    "featured": false,
+    "order": 9,
+    "createdAt": "2026-08-26T16:28:10.508Z",
+    "updatedAt": "2026-08-26T16:28:10.508Z"
+  },
+  {
+    "id": "solon-network",
+    "slug": "solon-network",
+    "title": "Solon Network",
+    "category": "Blockchain NFT",
+    "description": "Solon is a fintech app for blockchain tech and NFTs, helping users swap crypto, manage assets, and join governance with confidence.",
+    "fullDescription": "Solon is a fintech app for blockchain tech and NFTs, helping users swap crypto, manage assets, and join governance with confidence.",
+    "client": "Solon Network",
+    "services": "Websites, Fintech, Blockchain/Web3",
+    "location": "United States",
+    "date": "2025",
+    "metricNumber": "+58%",
+    "metricLabel": "faster onboarding",
+    "image": "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3b68f55cdf54b5cff42f48_Solon.png",
+    "srcset": "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3b68f55cdf54b5cff42f48_Solon-p-500.png 500w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3b68f55cdf54b5cff42f48_Solon-p-800.png 800w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3b68f55cdf54b5cff42f48_Solon-p-1080.png 1080w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3b68f55cdf54b5cff42f48_Solon.png 1264w",
+    "gallery": [
+      "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3b68f55cdf54b5cff42f48_Solon.png"
+    ],
+    "tags": [
+      "Websites",
+      "Fintech",
+      "Blockchain/Web3"
+    ],
+    "link": "/case-studies.html/solon-network",
+    "status": "published",
+    "featured": false,
+    "order": 10,
+    "createdAt": "2026-08-26T16:28:10.508Z",
+    "updatedAt": "2026-08-26T16:28:10.508Z"
+  },
+  {
+    "id": "mediqo",
+    "slug": "mediqo",
+    "title": "Mediqo",
+    "category": "Healthcare app",
+    "description": "Mediqo, a healthcare platform where patients book doctors, order medicine",
+    "fullDescription": "Mediqo, a healthcare platform where patients book doctors, order medicine",
+    "client": "Mediqo",
+    "services": "Mobile apps, Healthcare, B2B/B2C",
+    "location": "United States",
+    "date": "2025",
+    "metricNumber": "420+",
+    "metricLabel": "dev hours saved",
+    "image": "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3b69ddcaf62338e8da31cf_Mediqo.png",
+    "srcset": "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3b69ddcaf62338e8da31cf_Mediqo-p-500.png 500w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3b69ddcaf62338e8da31cf_Mediqo-p-800.png 800w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3b69ddcaf62338e8da31cf_Mediqo-p-1080.png 1080w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3b69ddcaf62338e8da31cf_Mediqo.png 1264w",
+    "gallery": [
+      "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3b69ddcaf62338e8da31cf_Mediqo.png"
+    ],
+    "tags": [
+      "Mobile apps",
+      "Healthcare",
+      "B2B/B2C"
+    ],
+    "link": "/case-studies.html/mediqo",
+    "status": "published",
+    "featured": false,
+    "order": 11,
+    "createdAt": "2026-08-26T16:28:10.508Z",
+    "updatedAt": "2026-08-26T16:28:10.508Z"
+  },
+  {
+    "id": "sendwave",
+    "slug": "sendwave",
+    "title": "Sendwave",
+    "category": "AI email marketing",
+    "description": "Sendwave, an email marketing platform that lets businesses create campaigns in minutes",
+    "fullDescription": "Sendwave, an email marketing platform that lets businesses create campaigns in minutes",
+    "client": "Sendwave",
+    "services": "Websites, SaaS, B2B/B2C, AI",
+    "location": "United States",
+    "date": "2025",
+    "metricNumber": "19 → 76",
+    "metricLabel": "NPS market jump",
+    "image": "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a0001c820b1bcba43848d1a_sandwave-by-wavespace.avif",
+    "srcset": "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a0001c820b1bcba43848d1a_sandwave-by-wavespace-p-500.avif 500w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a0001c820b1bcba43848d1a_sandwave-by-wavespace-p-800.avif 800w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a0001c820b1bcba43848d1a_sandwave-by-wavespace.avif 1264w",
+    "gallery": [
+      "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a0001c820b1bcba43848d1a_sandwave-by-wavespace.avif"
+    ],
+    "tags": [
+      "Websites",
+      "SaaS",
+      "B2B/B2C",
+      "AI"
+    ],
+    "link": "/case-studies.html/sendwave",
+    "status": "published",
+    "featured": false,
+    "order": 12,
+    "createdAt": "2026-08-26T16:28:10.508Z",
+    "updatedAt": "2026-08-26T16:28:10.508Z"
+  }
+]

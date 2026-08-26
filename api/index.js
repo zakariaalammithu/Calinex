@@ -85,26 +85,14 @@ module.exports = async (req, res) => {
     }
   }
 
-  // 2. PUBLIC FORM SUBMIT API (/api/public/submit-form)
-  if (pathname === '/api/public/submit-form') {
-    if (req.method === 'OPTIONS') {
-      res.writeHead(204, {
-        'Access-Control-Allow-Origin': '*',
-        'Access-Control-Allow-Headers': 'Content-Type, Authorization',
-        'Access-Control-Allow-Methods': 'GET, POST, OPTIONS'
-      });
-      return res.end();
-    }
-    if (req.method === 'POST') {
-      res.writeHead(200, {
-        'Content-Type': 'application/json',
-        'Access-Control-Allow-Origin': '*'
-      });
-      return res.end(JSON.stringify({
-        success: true,
-        message: 'Thank you! Your submission has been received!'
-      }));
-    }
+  if (pathname.startsWith('/api/public/')) {
+    const { handlePublicApi } = require('../lib/api-public');
+    return handlePublicApi(req, res);
+  }
+
+  if (pathname.startsWith('/api/admin/')) {
+    const { handleAdminApi } = require('../lib/api-admin');
+    return handleAdminApi(req, res);
   }
 
   res.writeHead(200, { 'Content-Type': 'application/json' });

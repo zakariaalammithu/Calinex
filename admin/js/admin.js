@@ -1455,7 +1455,7 @@ async function loadCmsTabContent() {
     panel.innerHTML = `<div class="data-table-wrap"><table class="data-table"><thead><tr><th>Order</th><th>Service</th><th>Slug</th></tr></thead><tbody>${(data.services || []).map(s => `<tr><td>#${s.display_order}</td><td><strong>${escapeHtml(s.name)}</strong></td><td><code>${escapeHtml(s.slug)}</code></td></tr>`).join('')}</tbody></table></div>`;
   } else if (cmsActiveTab === 'case-studies') {
     const data = await apiFetch('/api/admin/cms/case-studies');
-    panel.innerHTML = `<div class="data-table-wrap"><table class="data-table"><thead><tr><th>Project</th><th>Client</th><th>Status</th></tr></thead><tbody>${(data.caseStudies || []).map(c => `<tr><td><strong>${escapeHtml(c.project_name)}</strong></td><td>${escapeHtml(c.client || '—')}</td><td><span class="status-badge ${c.status}">${c.status}</span></td></tr>`).join('')}</tbody></table></div>`;
+    renderCaseStudiesCmsTab(panel, (data && data.caseStudies) ? data.caseStudies : []);
   } else if (cmsActiveTab === 'testimonials') {
     const data = await apiFetch('/api/admin/cms/testimonials');
     panel.innerHTML = `<div class="data-table-wrap"><table class="data-table"><thead><tr><th>Client</th><th>Company</th><th>Rating</th></tr></thead><tbody>${(data.testimonials || []).map(t => `<tr><td><strong>${escapeHtml(t.client_name)}</strong></td><td>${escapeHtml(t.company || '—')}</td><td>★ ${t.rating}</td></tr>`).join('')}</tbody></table></div>`;
@@ -1469,7 +1469,361 @@ async function loadCmsTabContent() {
 }
 
 function openCreateCmsItemModal() {
-  alert(`To create or edit ${cmsActiveTab} items, use the dedicated management fields.`);
+  if (cmsActiveTab === 'case-studies') {
+    openEditCaseStudyModal(null);
+  } else {
+    alert(`To create or edit ${cmsActiveTab} items, use the dedicated management fields.`);
+  }
+}
+
+/**
+ * ====================================================================
+ * CASE STUDIES CMS TAB MANAGEMENT
+ * ====================================================================
+ */
+function renderCaseStudiesCmsTab(panel, caseStudies) {
+  if (!caseStudies || caseStudies.length === 0) {
+    panel.innerHTML = `
+      <div style="padding: 40px; text-align: center;">
+        <p style="color: var(--text-muted); font-size: 15px;">No case studies found.</p>
+        <button type="button" class="btn-primary" onclick="openEditCaseStudyModal(null)" style="margin-top: 12px;">+ Add New Case Study</button>
+      </div>
+    `;
+    return;
+  }
+
+  window._adminCaseStudies = caseStudies;
+
+  let rowsHtml = caseStudies.map((cs, idx) => {
+    const isFirst = idx === 0;
+    const isLast = idx === caseStudies.length - 1;
+    const statusClass = cs.status === 'published' ? 'published' : 'archived';
+    const statusText = cs.status === 'published' ? 'Published' : 'Unpublished';
+    const tagBadges = (cs.tags || []).map(t => `<span style="display:inline-block; padding: 2px 6px; font-size: 11px; background: rgba(59,130,246,0.1); color: var(--accent-primary); border-radius: 4px; margin-right: 4px; margin-bottom: 2px;">${escapeHtml(t)}</span>`).join('');
+
+    return `
+      <tr>
+        <td style="width: 70px; text-align: center;">
+          <div style="display: flex; flex-direction: column; align-items: center; gap: 2px;">
+            <span style="font-weight: 700; font-size: 12px; color: var(--text-muted);">#${cs.order || (idx + 1)}</span>
+            <div style="display: flex; gap: 2px;">
+              <button type="button" style="padding: 2px 5px; font-size: 10px; cursor: pointer; background: var(--bg-card-subtle); border: 1px solid var(--border-subtle); border-radius: 3px;" ${isFirst ? 'disabled' : ''} onclick="moveCaseStudyOrder('${cs.id}', -1)">▲</button>
+              <button type="button" style="padding: 2px 5px; font-size: 10px; cursor: pointer; background: var(--bg-card-subtle); border: 1px solid var(--border-subtle); border-radius: 3px;" ${isLast ? 'disabled' : ''} onclick="moveCaseStudyOrder('${cs.id}', 1)">▼</button>
+            </div>
+          </div>
+        </td>
+        <td style="width: 80px;">
+          <img src="${cs.image || 'https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3b69488d9cfd0f31763daf_Kodezi.png'}" alt="${escapeHtml(cs.title)}" style="width: 64px; height: 42px; object-fit: cover; border-radius: 6px; border: 1px solid var(--border-subtle);">
+        </td>
+        <td>
+          <div style="font-weight: 700; font-size: 14px; color: var(--text-primary);">${escapeHtml(cs.title)}</div>
+          <div style="font-size: 12px; color: var(--text-muted);">${escapeHtml(cs.category || '')}</div>
+          <div style="font-size: 11px; color: var(--text-secondary); margin-top: 2px;"><code>/case-studies.html/${escapeHtml(cs.slug || cs.id)}</code></div>
+        </td>
+        <td>
+          <div style="font-weight: 800; font-size: 14px; color: var(--accent-primary);">${escapeHtml(cs.metricNumber || '—')}</div>
+          <div style="font-size: 11px; color: var(--text-muted); text-transform: uppercase;">${escapeHtml(cs.metricLabel || '')}</div>
+        </td>
+        <td style="max-width: 180px;">${tagBadges || '—'}</td>
+        <td style="width: 100px;">
+          <span class="status-badge ${statusClass}">${statusText}</span>
+        </td>
+        <td style="width: 160px; text-align: right;">
+          <div style="display: inline-flex; gap: 6px;">
+            <button type="button" class="btn-secondary" style="padding: 5px 10px; font-size: 12px;" onclick="openEditCaseStudyModal('${cs.id}')">✏️ Edit</button>
+            <button type="button" class="btn-secondary" style="padding: 5px 10px; font-size: 12px;" onclick="toggleCaseStudyStatus('${cs.id}', '${cs.status}')">${cs.status === 'published' ? 'Unpublish' : 'Publish'}</button>
+            <button type="button" class="btn-secondary danger" style="padding: 5px 10px; font-size: 12px;" onclick="confirmDeleteCaseStudy('${cs.id}', '${escapeHtml(cs.title)}')">🗑️</button>
+          </div>
+        </td>
+      </tr>
+    `;
+  }).join('');
+
+  panel.innerHTML = `
+    <div style="padding: 16px 20px; border-bottom: 1px solid var(--border-subtle); display: flex; justify-content: space-between; align-items: center; background: var(--bg-card-subtle);">
+      <div>
+        <h3 style="margin: 0; font-size: 15px; font-weight: 700;">Case Studies (${caseStudies.length})</h3>
+        <p style="margin: 4px 0 0 0; font-size: 12px; color: var(--text-muted);">Manage existing projects, reorder, upload images, or publish new Case Studies.</p>
+      </div>
+      <button type="button" class="btn-primary" onclick="openEditCaseStudyModal(null)">+ Add New Case Study</button>
+    </div>
+    <div class="data-table-wrap">
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th style="text-align: center;">Order</th>
+            <th>Image</th>
+            <th>Project &amp; URL</th>
+            <th>Metric Stat</th>
+            <th>Filter Tags</th>
+            <th>Status</th>
+            <th style="text-align: right;">Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          ${rowsHtml}
+        </tbody>
+      </table>
+    </div>
+  `;
+}
+
+function openEditCaseStudyModal(studyId) {
+  const studies = window._adminCaseStudies || [];
+  const study = studyId ? studies.find(s => s.id === studyId || s.slug === studyId) : null;
+  const isEdit = !!study;
+
+  const modalTitle = isEdit ? `Edit Case Study: ${escapeHtml(study.title)}` : 'Add New Case Study';
+  const modalBody = `
+    <form id="caseStudyForm" onsubmit="event.preventDefault(); saveCaseStudyFromModal('${study ? study.id : ''}');">
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+        <div class="form-group">
+          <label class="form-label" for="csTitle">Project Title / Name *</label>
+          <input type="text" id="csTitle" class="form-input" required value="${study ? escapeHtml(study.title) : ''}" placeholder="e.g. Kodezi" oninput="autoGenerateCsSlug(this.value)">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="csSlug">URL Slug *</label>
+          <input type="text" id="csSlug" class="form-input" required value="${study ? escapeHtml(study.slug) : ''}" placeholder="e.g. kodezi">
+        </div>
+      </div>
+
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 12px;">
+        <div class="form-group">
+          <label class="form-label" for="csCategory">Industry / Subtitle</label>
+          <input type="text" id="csCategory" class="form-input" value="${study ? escapeHtml(study.category || '') : ''}" placeholder="e.g. AI codebase platform">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="csClient">Client / Company Name</label>
+          <input type="text" id="csClient" class="form-input" value="${study ? escapeHtml(study.client || '') : ''}" placeholder="e.g. Kodezi Inc.">
+        </div>
+      </div>
+
+      <div class="form-group" style="margin-top: 12px;">
+        <label class="form-label" for="csDescription">Short Description</label>
+        <textarea id="csDescription" class="form-input" rows="2" placeholder="Brief summary displayed on case study cards">${study ? escapeHtml(study.description || '') : ''}</textarea>
+      </div>
+
+      <div class="form-group" style="margin-top: 12px;">
+        <label class="form-label" for="csFullDescription">Full Project Details / Content</label>
+        <textarea id="csFullDescription" class="form-input" rows="3" placeholder="Detailed project breakdown, challenges, solutions, and impact">${study ? escapeHtml(study.fullDescription || study.description || '') : ''}</textarea>
+      </div>
+
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 12px;">
+        <div class="form-group">
+          <label class="form-label" for="csMetricNumber">Metric Stat Value</label>
+          <input type="text" id="csMetricNumber" class="form-input" value="${study ? escapeHtml(study.metricNumber || '') : ''}" placeholder="e.g. $1.8M or +28%">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="csMetricLabel">Metric Stat Label</label>
+          <input type="text" id="csMetricLabel" class="form-input" value="${study ? escapeHtml(study.metricLabel || '') : ''}" placeholder="e.g. seed-funded or conversion uplift">
+        </div>
+      </div>
+
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 12px;">
+        <div class="form-group">
+          <label class="form-label" for="csServices">Services Provided</label>
+          <input type="text" id="csServices" class="form-input" value="${study ? escapeHtml(study.services || '') : ''}" placeholder="e.g. UI/UX Design, Webflow Development">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="csOrder">Display Order Position</label>
+          <input type="number" id="csOrder" class="form-input" value="${study ? (study.order || 1) : ((window._adminCaseStudies || []).length + 1)}">
+        </div>
+      </div>
+
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 12px;">
+        <div class="form-group">
+          <label class="form-label" for="csLocation">Location / Country</label>
+          <input type="text" id="csLocation" class="form-input" value="${study ? escapeHtml(study.location || 'United States') : 'United States'}" placeholder="e.g. United States">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="csDate">Year / Date</label>
+          <input type="text" id="csDate" class="form-input" value="${study ? escapeHtml(study.date || '2025') : '2025'}" placeholder="e.g. 2025">
+        </div>
+      </div>
+
+      <div class="form-group" style="margin-top: 12px;">
+        <label class="form-label" for="csGallery">Gallery Images (Comma-separated URLs)</label>
+        <textarea id="csGallery" class="form-input" rows="2" placeholder="Image URLs separated by comma">${study && Array.isArray(study.gallery) ? escapeHtml(study.gallery.join(', ')) : ''}</textarea>
+      </div>
+
+      <div class="form-group" style="margin-top: 12px;">
+        <label class="form-label">Category Filter Tags (Select all that apply)</label>
+        <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 6px; padding: 10px; background: var(--bg-card-subtle); border-radius: 6px; border: 1px solid var(--border-subtle);">
+          ${['Websites', 'Mobile apps', 'SaaS', 'AI', 'Healthcare', 'Fintech', 'Real estate', 'Blockchain/Web3', 'B2B/B2C'].map(tag => {
+            const checked = study && (study.tags || []).includes(tag) ? 'checked' : '';
+            return `<label style="display: flex; align-items: center; gap: 5px; font-size: 13px; cursor: pointer;"><input type="checkbox" name="csTags" value="${tag}" ${checked}> ${tag}</label>`;
+          }).join('')}
+        </div>
+      </div>
+
+      <div class="form-group" style="margin-top: 12px;">
+        <label class="form-label">Cover / Card Image</label>
+        <div style="display: flex; gap: 12px; align-items: center;">
+          <input type="file" id="csImageFileInput" accept="image/*" style="display: none;" onchange="handleCsFileSelected(this)">
+          <button type="button" class="btn-secondary" onclick="document.getElementById('csImageFileInput').click()">📷 Upload Image</button>
+          <input type="text" id="csImageUrl" class="form-input" style="flex: 1;" value="${study ? escapeHtml(study.image || '') : ''}" placeholder="or enter Image URL..." oninput="document.getElementById('csImgPreview').src = this.value">
+        </div>
+        <div style="margin-top: 8px; text-align: center; background: var(--bg-card-subtle); padding: 10px; border-radius: 6px;">
+          <img id="csImgPreview" src="${study ? (study.image || '') : ''}" style="max-height: 140px; max-width: 100%; object-fit: contain; border-radius: 4px;" onerror="this.style.display='none'" onload="this.style.display='inline-block'">
+        </div>
+      </div>
+
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 12px;">
+        <div class="form-group">
+          <label class="form-label" for="csStatus">Publication Status</label>
+          <select id="csStatus" class="form-input">
+            <option value="published" ${(!study || study.status === 'published') ? 'selected' : ''}>Published (Live on site)</option>
+            <option value="unpublished" ${(study && study.status === 'unpublished') ? 'selected' : ''}>Unpublished (Draft / Hidden)</option>
+          </select>
+        </div>
+        <div class="form-group" style="display: flex; align-items: center; margin-top: 24px;">
+          <label style="display: flex; align-items: center; gap: 8px; font-size: 13px; font-weight: 600; cursor: pointer;">
+            <input type="checkbox" id="csFeatured" ${(study && study.featured) ? 'checked' : ''}> Feature on Homepage / Highlights
+          </label>
+        </div>
+      </div>
+    </form>
+  `;
+
+  document.getElementById('universalModalTitle').textContent = modalTitle;
+  document.getElementById('universalModalBody').innerHTML = modalBody;
+  
+  const saveBtn = document.getElementById('saveUniversalModal');
+  saveBtn.textContent = isEdit ? 'Save Changes' : 'Publish Case Study';
+  saveBtn.onclick = () => saveCaseStudyFromModal(study ? study.id : null);
+
+  openUniversalModal();
+}
+
+function autoGenerateCsSlug(title) {
+  const slugInput = document.getElementById('csSlug');
+  if (slugInput && !slugInput.dataset.userEdited) {
+    slugInput.value = title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
+  }
+}
+
+async function handleCsFileSelected(input) {
+  if (!input.files || !input.files[0]) return;
+  const file = input.files[0];
+  const reader = new FileReader();
+  reader.onload = async (e) => {
+    const dataUrl = e.target.result;
+    document.getElementById('csImgPreview').src = dataUrl;
+    document.getElementById('csImgPreview').style.display = 'inline-block';
+    
+    const res = await apiFetch('/api/admin/cms/upload', {
+      method: 'POST',
+      body: JSON.stringify({ filename: file.name, dataUrl: dataUrl })
+    });
+    if (res && res.success && res.url) {
+      document.getElementById('csImageUrl').value = res.url;
+    } else {
+      document.getElementById('csImageUrl').value = dataUrl;
+    }
+  };
+  reader.readAsDataURL(file);
+}
+
+async function saveCaseStudyFromModal(studyId) {
+  const title = document.getElementById('csTitle').value.trim();
+  const slug = document.getElementById('csSlug').value.trim();
+  if (!title || !slug) {
+    alert('Project Title and URL Slug are required.');
+    return;
+  }
+
+  const selectedTags = [...document.querySelectorAll('input[name="csTags"]:checked')].map(cb => cb.value);
+
+  const payload = {
+    id: studyId || slug,
+    slug: slug,
+    title: title,
+    category: document.getElementById('csCategory').value.trim(),
+    description: document.getElementById('csDescription').value.trim(),
+    fullDescription: document.getElementById('csFullDescription').value.trim(),
+    client: document.getElementById('csClient').value.trim() || title,
+    services: document.getElementById('csServices').value.trim(),
+    location: (document.getElementById('csLocation')?.value || 'United States').trim(),
+    date: (document.getElementById('csDate')?.value || '2025').trim(),
+    gallery: (document.getElementById('csGallery')?.value || '').split(',').map(s => s.trim()).filter(Boolean),
+    metricNumber: document.getElementById('csMetricNumber').value.trim(),
+    metricLabel: document.getElementById('csMetricLabel').value.trim(),
+    image: document.getElementById('csImageUrl').value.trim() || 'https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3b69488d9cfd0f31763daf_Kodezi.png',
+    order: Number(document.getElementById('csOrder').value) || 1,
+    status: document.getElementById('csStatus').value,
+    featured: document.getElementById('csFeatured').checked,
+    tags: selectedTags.length > 0 ? selectedTags : ['Websites']
+  };
+
+  const res = await apiFetch('/api/admin/cms/case-studies', {
+    method: 'POST',
+    body: JSON.stringify(payload)
+  });
+
+  if (res && res.success) {
+    closeUniversalModal();
+    loadCmsTabContent();
+  } else {
+    alert('Failed to save Case Study: ' + ((res && res.error) || 'Unknown error'));
+  }
+}
+
+async function confirmDeleteCaseStudy(studyId, studyTitle) {
+  if (!confirm(`Are you sure you want to delete "${studyTitle}"?\n\nThis action cannot be undone.`)) {
+    return;
+  }
+
+  const res = await apiFetch('/api/admin/cms/case-studies/delete', {
+    method: 'POST',
+    body: JSON.stringify({ id: studyId })
+  });
+
+  if (res && res.success) {
+    loadCmsTabContent();
+  } else {
+    alert('Failed to delete Case Study: ' + ((res && res.error) || 'Unknown error'));
+  }
+}
+
+async function toggleCaseStudyStatus(studyId, currentStatus) {
+  const studies = window._adminCaseStudies || [];
+  const target = studies.find(s => s.id === studyId || s.slug === studyId);
+  if (!target) return;
+
+  target.status = currentStatus === 'published' ? 'unpublished' : 'published';
+
+  const res = await apiFetch('/api/admin/cms/case-studies', {
+    method: 'POST',
+    body: JSON.stringify(target)
+  });
+
+  if (res && res.success) {
+    loadCmsTabContent();
+  }
+}
+
+async function moveCaseStudyOrder(studyId, direction) {
+  const studies = window._adminCaseStudies || [];
+  const idx = studies.findIndex(s => s.id === studyId || s.slug === studyId);
+  if (idx < 0) return;
+
+  const targetIdx = idx + direction;
+  if (targetIdx < 0 || targetIdx >= studies.length) return;
+
+  const currentOrder = studies[idx].order || (idx + 1);
+  const targetOrder = studies[targetIdx].order || (targetIdx + 1);
+
+  studies[idx].order = targetOrder;
+  studies[targetIdx].order = currentOrder;
+
+  const res = await apiFetch('/api/admin/cms/case-studies/reorder', {
+    method: 'POST',
+    body: JSON.stringify({ items: studies.map(s => ({ id: s.id, order: s.order })) })
+  });
+
+  if (res && res.success) {
+    loadCmsTabContent();
+  }
 }
 
 /**
