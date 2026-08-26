@@ -48,43 +48,6 @@ module.exports = async (req, res) => {
     }
   }
 
-  // 1. ADMIN AUTH LOGIN API (/api/admin/auth/login or /api/admin/login)
-  if ((pathname === '/api/admin/auth/login' || pathname === '/api/admin/login') && req.method === 'POST') {
-    const body = await parseServerlessBody(req);
-    const { email, password } = body;
-    const defaultEmail = (process.env.ADMIN_EMAIL || 'hello@calinex.us').toLowerCase();
-
-    if (!email || !password) {
-      res.writeHead(400, { 'Content-Type': 'application/json' });
-      return res.end(JSON.stringify({ success: false, error: 'Email and password are required' }));
-    }
-
-    let isValid = false;
-    if (process.env.ADMIN_PASSWORD) {
-      isValid = (email.trim().toLowerCase() === defaultEmail && password === process.env.ADMIN_PASSWORD);
-    } else {
-      const inputHash = crypto.scryptSync(password, SALT, 64).toString('hex');
-      isValid = (email.trim().toLowerCase() === defaultEmail && inputHash === DEFAULT_HASH);
-    }
-
-    if (isValid) {
-      const token = `session_${Date.now()}_${crypto.randomBytes(8).toString('hex')}`;
-      res.writeHead(200, {
-        'Content-Type': 'application/json',
-        'Set-Cookie': `calinex_session=${token}; Path=/; HttpOnly; SameSite=Lax`
-      });
-      return res.end(JSON.stringify({
-        success: true,
-        message: 'Authentication successful',
-        token: token,
-        user: { name: 'MD Sharafat Ullah', email: defaultEmail, role_name: 'Super Admin' }
-      }));
-    } else {
-      res.writeHead(401, { 'Content-Type': 'application/json' });
-      return res.end(JSON.stringify({ success: false, error: 'Invalid email or password' }));
-    }
-  }
-
   if (pathname.startsWith('/api/public/')) {
     const { handlePublicApi } = require('../lib/api-public');
     return handlePublicApi(req, res);
