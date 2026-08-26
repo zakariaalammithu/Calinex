@@ -3,4 +3,4 @@ Allow: /
 Disallow: /admin/
 Disallow: /api/
 
-Sitemap: https://calinex.us/sitemap.xml
+Sitemap: https://calinex.vercel.app/sitemap.xml

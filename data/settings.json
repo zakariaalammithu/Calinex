@@ -1,6 +1,6 @@
 {
   "siteName": "CALINEX",
-  "notificationEmail": "admin@calinex.us",
+  "notificationEmail": "admin@calinex.vercel.app",
   "resendApiKey": "re_test_123456789",
   "resendFromEmail": "onboarding@resend.dev",
   "openaiApiKey": "sk-test-openai123",
