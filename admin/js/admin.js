@@ -56,7 +56,7 @@ async function checkAuth() {
 
     const res = await fetch('/api/admin/auth/me', { headers });
     if (!res.ok) {
-      window.location.href = '/admin/login';
+      window.location.href = '/admin-login.html';
       return false;
     }
 
@@ -66,12 +66,12 @@ async function checkAuth() {
       renderUserProfile(currentUser);
       return true;
     } else {
-      window.location.href = '/admin/login';
+      window.location.href = '/admin-login.html';
       return false;
     }
   } catch (err) {
     console.error('Auth verification failed:', err);
-    window.location.href = '/admin/login';
+    window.location.href = '/admin-login.html';
     return false;
   }
 }

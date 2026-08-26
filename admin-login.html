@@ -257,10 +257,10 @@
     const token = localStorage.getItem('calinex_admin_token');
     if (token) {
       // Check if existing token is valid
-      fetch('/api/admin/stats', {
+      fetch('/api/admin/dashboard/stats', {
         headers: { 'Authorization': 'Bearer ' + token }
       }).then(res => {
-        if (res.ok) window.location.href = '/admin.html';
+        if (res.ok) window.location.href = '/admin';
       });
     }
 
@@ -290,7 +290,7 @@
         if (res.ok && data.success) {
           localStorage.setItem('calinex_admin_token', data.token);
           localStorage.setItem('calinex_admin_email', data.email);
-          window.location.href = '/admin.html';
+          window.location.href = '/admin';
         } else {
           alertBox.textContent = data.message || 'Invalid credentials. Please check your password.';
           alertBox.className = 'login-alert error';
