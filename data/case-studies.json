@@ -12,8 +12,8 @@
     "date": "2025",
     "metricNumber": "$1.8M",
     "metricLabel": "seed-funded",
-    "image": "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3b69488d9cfd0f31763daf_Kodezi.png",
-    "srcset": "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3b69488d9cfd0f31763daf_Kodezi-p-500.png 500w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3b69488d9cfd0f31763daf_Kodezi-p-800.png 800w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3b69488d9cfd0f31763daf_Kodezi-p-1080.png 1080w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3b69488d9cfd0f31763daf_Kodezi.png 1264w",
+    "image": "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a99412e4ba570adec0633a0_Kodezi.png",
+    "srcset": "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a99412e4ba570adec0633a0_Kodezi-p-500.png 500w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a99412e4ba570adec0633a0_Kodezi-p-800.png 800w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a99412e4ba570adec0633a0_Kodezi-p-1080.png 1080w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a99412e4ba570adec0633a0_Kodezi.png 1264w",
     "gallery": [
       "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3b69488d9cfd0f31763daf_Kodezi.png"
     ],
@@ -24,11 +24,12 @@
       "Websites"
     ],
     "link": "/case-studies.html/kodezi",
+    "externalUrl": "https://kodezi.com/",
     "status": "published",
     "featured": true,
     "order": 1,
     "createdAt": "2026-08-26T16:28:10.498Z",
-    "updatedAt": "2026-08-26T16:28:10.507Z"
+    "updatedAt": "2026-09-04T17:14:42.077Z"
   },
   {
     "id": "off-white",
@@ -43,8 +44,8 @@
     "date": "2025",
     "metricNumber": "+28%",
     "metricLabel": "converstion uplift",
-    "image": "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3b6894bc0be9f20156d21d_off-white.png",
-    "srcset": "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3b6894bc0be9f20156d21d_off-white-p-500.png 500w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3b6894bc0be9f20156d21d_off-white-p-800.png 800w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3b6894bc0be9f20156d21d_off-white-p-1080.png 1080w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3b6894bc0be9f20156d21d_off-white.png 1264w",
+    "image": "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a9940d49a2f67c2af117a60_off-white.png",
+    "srcset": "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a9940d49a2f67c2af117a60_off-white-p-500.png 500w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a9940d49a2f67c2af117a60_off-white-p-800.png 800w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a9940d49a2f67c2af117a60_off-white-p-1080.png 1080w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a9940d49a2f67c2af117a60_off-white.png 1264w",
     "gallery": [
       "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3b6894bc0be9f20156d21d_off-white.png"
     ],
@@ -53,11 +54,12 @@
       "B2B/B2C"
     ],
     "link": "/case-studies.html/off-white",
+    "externalUrl": null,
     "status": "published",
     "featured": true,
     "order": 2,
     "createdAt": "2026-08-26T16:28:10.508Z",
-    "updatedAt": "2026-08-26T16:28:10.508Z"
+    "updatedAt": "2026-09-04T17:14:42.126Z"
   },
   {
     "id": "tournated",
@@ -72,8 +74,8 @@
     "date": "2025",
     "metricNumber": "155%",
     "metricLabel": "Faster Onboarding",
-    "image": "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3b68734390568f3551662c_Tournated.png",
-    "srcset": "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3b68734390568f3551662c_Tournated-p-500.png 500w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3b68734390568f3551662c_Tournated-p-800.png 800w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3b68734390568f3551662c_Tournated-p-1080.png 1080w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3b68734390568f3551662c_Tournated.png 1264w",
+    "image": "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a993fe05a5ff9004588ec19_Tournated.png",
+    "srcset": "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a993fe05a5ff9004588ec19_Tournated-p-500.png 500w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a993fe05a5ff9004588ec19_Tournated-p-800.png 800w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a993fe05a5ff9004588ec19_Tournated-p-1080.png 1080w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a993fe05a5ff9004588ec19_Tournated.png 1264w",
     "gallery": [
       "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3b68734390568f3551662c_Tournated.png"
     ],
@@ -83,11 +85,12 @@
       "B2B/B2C"
     ],
     "link": "/case-studies.html/tournated",
+    "externalUrl": "https://www.tournated.com/",
     "status": "published",
     "featured": true,
     "order": 3,
     "createdAt": "2026-08-26T16:28:10.508Z",
-    "updatedAt": "2026-08-26T16:28:10.508Z"
+    "updatedAt": "2026-09-04T17:14:42.126Z"
   },
   {
     "id": "callai",
@@ -102,8 +105,8 @@
     "date": "2025",
     "metricNumber": "40%",
     "metricLabel": "Dev handoff faster",
-    "image": "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3b6a114c24b72c5835c9a4_call-ai.png",
-    "srcset": "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3b6a114c24b72c5835c9a4_call-ai-p-500.png 500w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3b6a114c24b72c5835c9a4_call-ai-p-800.png 800w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3b6a114c24b72c5835c9a4_call-ai-p-1080.png 1080w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3b6a114c24b72c5835c9a4_call-ai.png 1264w",
+    "image": "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a994802f7726409a9dc8feb_CallAI.png",
+    "srcset": "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a994802f7726409a9dc8feb_CallAI-p-500.png 500w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a994802f7726409a9dc8feb_CallAI-p-800.png 800w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a994802f7726409a9dc8feb_CallAI-p-1080.png 1080w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a994802f7726409a9dc8feb_CallAI.png 1264w",
     "gallery": [
       "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3b6a114c24b72c5835c9a4_call-ai.png"
     ],
@@ -114,11 +117,12 @@
       "AI"
     ],
     "link": "/case-studies.html/callai",
+    "externalUrl": null,
     "status": "published",
     "featured": false,
     "order": 4,
     "createdAt": "2026-08-26T16:28:10.508Z",
-    "updatedAt": "2026-08-26T16:28:10.508Z"
+    "updatedAt": "2026-09-04T17:14:42.126Z"
   },
   {
     "id": "spacebook",
@@ -133,8 +137,8 @@
     "date": "2025",
     "metricNumber": "+35%",
     "metricLabel": "higher user retention",
-    "image": "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3b69756815d2818b7652bd_Spacebook.png",
-    "srcset": "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3b69756815d2818b7652bd_Spacebook-p-500.png 500w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3b69756815d2818b7652bd_Spacebook-p-800.png 800w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3b69756815d2818b7652bd_Spacebook-p-1080.png 1080w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3b69756815d2818b7652bd_Spacebook.png 1264w",
+    "image": "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a994148b042d47f50128283_Spacebook.png",
+    "srcset": "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a994148b042d47f50128283_Spacebook-p-500.png 500w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a994148b042d47f50128283_Spacebook-p-800.png 800w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a994148b042d47f50128283_Spacebook-p-1080.png 1080w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a994148b042d47f50128283_Spacebook.png 1264w",
     "gallery": [
       "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3b69756815d2818b7652bd_Spacebook.png"
     ],
@@ -144,11 +148,12 @@
       "B2B/B2C"
     ],
     "link": "/case-studies.html/spacebook",
+    "externalUrl": null,
     "status": "published",
     "featured": false,
     "order": 5,
     "createdAt": "2026-08-26T16:28:10.508Z",
-    "updatedAt": "2026-08-26T16:28:10.508Z"
+    "updatedAt": "2026-09-04T17:14:42.126Z"
   },
   {
     "id": "rooda",
@@ -163,8 +168,8 @@
     "date": "2025",
     "metricNumber": "+28%",
     "metricLabel": "saved each ride",
-    "image": "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3b6a00c59c5b918c005ab6_Rooda.png",
-    "srcset": "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3b6a00c59c5b918c005ab6_Rooda-p-500.png 500w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3b6a00c59c5b918c005ab6_Rooda-p-800.png 800w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3b6a00c59c5b918c005ab6_Rooda-p-1080.png 1080w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3b6a00c59c5b918c005ab6_Rooda.png 1264w",
+    "image": "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a99479f12b43d612c541ecf_Rooda.png",
+    "srcset": "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a99479f12b43d612c541ecf_Rooda-p-500.png 500w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a99479f12b43d612c541ecf_Rooda-p-800.png 800w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a99479f12b43d612c541ecf_Rooda-p-1080.png 1080w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a99479f12b43d612c541ecf_Rooda.png 1264w",
     "gallery": [
       "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3b6a00c59c5b918c005ab6_Rooda.png"
     ],
@@ -173,11 +178,12 @@
       "B2B/B2C"
     ],
     "link": "/case-studies.html/rooda",
+    "externalUrl": null,
     "status": "published",
     "featured": false,
     "order": 6,
     "createdAt": "2026-08-26T16:28:10.508Z",
-    "updatedAt": "2026-08-26T16:28:10.508Z"
+    "updatedAt": "2026-09-04T17:14:42.126Z"
   },
   {
     "id": "better-ai",
@@ -192,8 +198,8 @@
     "date": "2025",
     "metricNumber": "2x",
     "metricLabel": "Booking completions doubled",
-    "image": "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3b698d0b01528fc5a88e2c_BetterAI.png",
-    "srcset": "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3b698d0b01528fc5a88e2c_BetterAI-p-500.png 500w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3b698d0b01528fc5a88e2c_BetterAI-p-800.png 800w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3b698d0b01528fc5a88e2c_BetterAI-p-1080.png 1080w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3b698d0b01528fc5a88e2c_BetterAI.png 1264w",
+    "image": "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a99415f12b43d612c4ec396_BetterAI.png",
+    "srcset": "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a99415f12b43d612c4ec396_BetterAI-p-500.png 500w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a99415f12b43d612c4ec396_BetterAI-p-800.png 800w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a99415f12b43d612c4ec396_BetterAI-p-1080.png 1080w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a99415f12b43d612c4ec396_BetterAI.png 1264w",
     "gallery": [
       "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3b698d0b01528fc5a88e2c_BetterAI.png"
     ],
@@ -203,11 +209,12 @@
       "AI"
     ],
     "link": "/case-studies.html/better-ai",
+    "externalUrl": null,
     "status": "published",
     "featured": false,
     "order": 7,
     "createdAt": "2026-08-26T16:28:10.508Z",
-    "updatedAt": "2026-08-26T16:28:10.508Z"
+    "updatedAt": "2026-09-04T17:14:42.126Z"
   },
   {
     "id": "hoolis",
@@ -222,8 +229,8 @@
     "date": "2025",
     "metricNumber": "+69%",
     "metricLabel": "increase user activity",
-    "image": "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3b69c83718a004377e6d8f_Hoolis.png",
-    "srcset": "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3b69c83718a004377e6d8f_Hoolis-p-500.png 500w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3b69c83718a004377e6d8f_Hoolis-p-800.png 800w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3b69c83718a004377e6d8f_Hoolis-p-1080.png 1080w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3b69c83718a004377e6d8f_Hoolis.png 1264w",
+    "image": "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a994215894568fd53c4bc47_Hoolis.png",
+    "srcset": "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a994215894568fd53c4bc47_Hoolis-p-500.png 500w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a994215894568fd53c4bc47_Hoolis-p-800.png 800w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a994215894568fd53c4bc47_Hoolis-p-1080.png 1080w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a994215894568fd53c4bc47_Hoolis.png 1264w",
     "gallery": [
       "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3b69c83718a004377e6d8f_Hoolis.png"
     ],
@@ -232,11 +239,12 @@
       "Real estate"
     ],
     "link": "/case-studies.html/hoolis",
+    "externalUrl": null,
     "status": "published",
     "featured": false,
     "order": 8,
     "createdAt": "2026-08-26T16:28:10.508Z",
-    "updatedAt": "2026-08-26T16:28:10.508Z"
+    "updatedAt": "2026-09-04T17:14:42.126Z"
   },
   {
     "id": "open-hub",
@@ -251,8 +259,8 @@
     "date": "2025",
     "metricNumber": "+72%",
     "metricLabel": "higher user retention",
-    "image": "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3b69aa1d857f042f889b1b_Openhub.png",
-    "srcset": "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3b69aa1d857f042f889b1b_Openhub-p-500.png 500w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3b69aa1d857f042f889b1b_Openhub-p-800.png 800w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3b69aa1d857f042f889b1b_Openhub-p-1080.png 1080w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3b69aa1d857f042f889b1b_Openhub.png 1264w",
+    "image": "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a9941764cb744f81ebd7174_Openhub.png",
+    "srcset": "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a9941764cb744f81ebd7174_Openhub-p-500.png 500w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a9941764cb744f81ebd7174_Openhub-p-800.png 800w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a9941764cb744f81ebd7174_Openhub-p-1080.png 1080w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a9941764cb744f81ebd7174_Openhub.png 1264w",
     "gallery": [
       "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3b69aa1d857f042f889b1b_Openhub.png"
     ],
@@ -262,11 +270,12 @@
       "Websites"
     ],
     "link": "/case-studies.html/open-hub",
+    "externalUrl": null,
     "status": "published",
     "featured": false,
     "order": 9,
     "createdAt": "2026-08-26T16:28:10.508Z",
-    "updatedAt": "2026-08-26T16:28:10.508Z"
+    "updatedAt": "2026-09-04T17:14:42.126Z"
   },
   {
     "id": "solon-network",
@@ -292,11 +301,12 @@
       "Blockchain/Web3"
     ],
     "link": "/case-studies.html/solon-network",
+    "externalUrl": "https://www.solon.finance/",
     "status": "published",
     "featured": false,
     "order": 10,
     "createdAt": "2026-08-26T16:28:10.508Z",
-    "updatedAt": "2026-08-26T16:28:10.508Z"
+    "updatedAt": "2026-09-04T17:14:42.126Z"
   },
   {
     "id": "mediqo",
@@ -311,8 +321,8 @@
     "date": "2025",
     "metricNumber": "420+",
     "metricLabel": "dev hours saved",
-    "image": "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3b69ddcaf62338e8da31cf_Mediqo.png",
-    "srcset": "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3b69ddcaf62338e8da31cf_Mediqo-p-500.png 500w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3b69ddcaf62338e8da31cf_Mediqo-p-800.png 800w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3b69ddcaf62338e8da31cf_Mediqo-p-1080.png 1080w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3b69ddcaf62338e8da31cf_Mediqo.png 1264w",
+    "image": "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a99422e04624183630709a7_Mediqo.png",
+    "srcset": "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a99422e04624183630709a7_Mediqo-p-500.png 500w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a99422e04624183630709a7_Mediqo-p-800.png 800w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a99422e04624183630709a7_Mediqo-p-1080.png 1080w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a99422e04624183630709a7_Mediqo.png 1264w",
     "gallery": [
       "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3b69ddcaf62338e8da31cf_Mediqo.png"
     ],
@@ -322,11 +332,12 @@
       "B2B/B2C"
     ],
     "link": "/case-studies.html/mediqo",
+    "externalUrl": null,
     "status": "published",
     "featured": false,
     "order": 11,
     "createdAt": "2026-08-26T16:28:10.508Z",
-    "updatedAt": "2026-08-26T16:28:10.508Z"
+    "updatedAt": "2026-09-04T17:14:42.126Z"
   },
   {
     "id": "sendwave",
@@ -341,8 +352,8 @@
     "date": "2025",
     "metricNumber": "19 → 76",
     "metricLabel": "NPS market jump",
-    "image": "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a0001c820b1bcba43848d1a_sandwave-by-wavespace.avif",
-    "srcset": "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a0001c820b1bcba43848d1a_sandwave-by-wavespace-p-500.avif 500w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a0001c820b1bcba43848d1a_sandwave-by-wavespace-p-800.avif 800w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a0001c820b1bcba43848d1a_sandwave-by-wavespace.avif 1264w",
+    "image": "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a9947275781890469719b12_Sendwave.png",
+    "srcset": "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a9947275781890469719b12_Sendwave-p-500.png 500w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a9947275781890469719b12_Sendwave-p-800.png 800w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a9947275781890469719b12_Sendwave.png 1264w",
     "gallery": [
       "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a0001c820b1bcba43848d1a_sandwave-by-wavespace.avif"
     ],
@@ -353,10 +364,823 @@
       "AI"
     ],
     "link": "/case-studies.html/sendwave",
+    "externalUrl": null,
     "status": "published",
     "featured": false,
     "order": 12,
     "createdAt": "2026-08-26T16:28:10.508Z",
-    "updatedAt": "2026-08-26T16:28:10.508Z"
+    "updatedAt": "2026-09-04T17:14:42.127Z"
+  },
+  {
+    "id": "quicky",
+    "slug": "quicky",
+    "title": "Quicky",
+    "category": "Websites",
+    "description": "Finance app Quicky Quicky is a fintech SaaS app to send money, split bills, and track expenses quickly $3.2M monthly txn growth Read case study",
+    "fullDescription": "Finance app Quicky Quicky is a fintech SaaS app to send money, split bills, and track expenses quickly $3.2M monthly txn growth Read case study",
+    "client": "Quicky",
+    "services": "Websites",
+    "location": "United States",
+    "date": "2025",
+    "metricNumber": "+40%",
+    "metricLabel": "Growth & Conversion",
+    "image": "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a9940ea19e94744dde5697d_Quicky.png",
+    "srcset": "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a9940ea19e94744dde5697d_Quicky-p-500.png 500w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a9940ea19e94744dde5697d_Quicky-p-800.png 800w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a9940ea19e94744dde5697d_Quicky-p-1080.png 1080w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a9940ea19e94744dde5697d_Quicky.png 1264w",
+    "gallery": [
+      "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a9940ea19e94744dde5697d_Quicky.png"
+    ],
+    "tags": [
+      "Websites"
+    ],
+    "link": "/case-studies.html/quicky",
+    "externalUrl": null,
+    "status": "published",
+    "featured": false,
+    "order": 13,
+    "createdAt": "2026-08-26T16:28:10.508Z",
+    "updatedAt": "2026-09-04T17:14:42.132Z"
+  },
+  {
+    "id": "brainwind",
+    "slug": "brainwind",
+    "title": "Brainwind",
+    "category": "Websites",
+    "description": "content chatbot Brainwind We simplified workflows and reduced friction by redesigning Brainwind +45% new user sign-up rise Read case study",
+    "fullDescription": "content chatbot Brainwind We simplified workflows and reduced friction by redesigning Brainwind +45% new user sign-up rise Read case study",
+    "client": "Brainwind",
+    "services": "Websites",
+    "location": "United States",
+    "date": "2025",
+    "metricNumber": "+45%",
+    "metricLabel": "new user sign",
+    "image": "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a99488aea2799875664ca3a_Brainwind.png",
+    "srcset": "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a99488aea2799875664ca3a_Brainwind-p-500.png 500w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a99488aea2799875664ca3a_Brainwind-p-800.png 800w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a99488aea2799875664ca3a_Brainwind-p-1080.png 1080w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a99488aea2799875664ca3a_Brainwind.png 1264w",
+    "gallery": [
+      "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a99488aea2799875664ca3a_Brainwind.png"
+    ],
+    "tags": [
+      "Websites"
+    ],
+    "link": "/case-studies.html/brainwind",
+    "externalUrl": null,
+    "status": "published",
+    "featured": false,
+    "order": 14,
+    "createdAt": "2026-08-26T16:28:10.508Z",
+    "updatedAt": "2026-09-04T17:14:42.139Z"
+  },
+  {
+    "id": "zeroessay",
+    "slug": "zeroessay",
+    "title": "ZeroEssay",
+    "category": "Websites",
+    "description": "writing tool ZeroEssay A clean, modern web app designed for rewriting text, humanizing AI-generated +120% increase in MRR Read case study No items found.",
+    "fullDescription": "writing tool ZeroEssay A clean, modern web app designed for rewriting text, humanizing AI-generated +120% increase in MRR Read case study No items found.",
+    "client": "ZeroEssay",
+    "services": "Websites",
+    "location": "United States",
+    "date": "2025",
+    "metricNumber": "+120%",
+    "metricLabel": "increase in MRR Read case stud",
+    "image": "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a9948ac5a5ff90045904ec8_ZeroEssay.png",
+    "srcset": "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a9948ac5a5ff90045904ec8_ZeroEssay-p-500.png 500w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a9948ac5a5ff90045904ec8_ZeroEssay-p-800.png 800w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a9948ac5a5ff90045904ec8_ZeroEssay.png 1264w",
+    "gallery": [
+      "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a9948ac5a5ff90045904ec8_ZeroEssay.png"
+    ],
+    "tags": [
+      "Websites"
+    ],
+    "link": "/case-studies.html/zeroessay",
+    "externalUrl": "https://zeroessay.com/",
+    "status": "published",
+    "featured": false,
+    "order": 15,
+    "createdAt": "2026-08-26T16:28:10.508Z",
+    "updatedAt": "2026-09-04T17:14:42.139Z"
+  },
+  {
+    "id": "heygen",
+    "slug": "heygen",
+    "title": "Heygen (LiveAvatar)",
+    "category": "Websites",
+    "description": "video avatar platform Heygen (LiveAvatar) HeyGen is the AI avatar platform that turns text into realistic talking-head videos. We designed the LiveAvatar log...",
+    "fullDescription": "video avatar platform Heygen (LiveAvatar) HeyGen is the AI avatar platform that turns text into realistic talking-head videos. We designed the LiveAvatar log...",
+    "client": "Heygen (LiveAvatar)",
+    "services": "Websites",
+    "location": "United States",
+    "date": "2025",
+    "metricNumber": "+40%",
+    "metricLabel": "Growth & Conversion",
+    "image": "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a9948c51d3584a85f0b2f47_Heygen%20(LiveAvatar).png",
+    "srcset": "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a9948c51d3584a85f0b2f47_Heygen%20(LiveAvatar)-p-500.png 500w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a9948c51d3584a85f0b2f47_Heygen%20(LiveAvatar)-p-800.png 800w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a9948c51d3584a85f0b2f47_Heygen%20(LiveAvatar)-p-1080.png 1080w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a9948c51d3584a85f0b2f47_Heygen%20(LiveAvatar).png 1264w",
+    "gallery": [
+      "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a9948c51d3584a85f0b2f47_Heygen%20(LiveAvatar).png"
+    ],
+    "tags": [
+      "Websites"
+    ],
+    "link": "/case-studies.html/heygen",
+    "externalUrl": "https://www.heygen.com/",
+    "status": "published",
+    "featured": false,
+    "order": 16,
+    "createdAt": "2026-08-26T16:28:10.508Z",
+    "updatedAt": "2026-09-04T17:14:42.139Z"
+  },
+  {
+    "id": "connectome",
+    "slug": "connectome",
+    "title": "Connectome",
+    "category": "Websites",
+    "description": "healthcare app Connectome We redesigned the entire iOS mobile experience, onboarding, dashboard, records 200% increase in subscription See live website",
+    "fullDescription": "healthcare app Connectome We redesigned the entire iOS mobile experience, onboarding, dashboard, records 200% increase in subscription See live website",
+    "client": "Connectome",
+    "services": "Websites",
+    "location": "United States",
+    "date": "2025",
+    "metricNumber": "200%",
+    "metricLabel": "increase in subscription See l",
+    "image": "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a9949a796131f0a19c2ad21_Connectome.png",
+    "srcset": "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a9949a796131f0a19c2ad21_Connectome-p-500.png 500w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a9949a796131f0a19c2ad21_Connectome-p-800.png 800w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a9949a796131f0a19c2ad21_Connectome-p-1080.png 1080w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a9949a796131f0a19c2ad21_Connectome.png 1264w",
+    "gallery": [
+      "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a9949a796131f0a19c2ad21_Connectome.png"
+    ],
+    "tags": [
+      "Websites"
+    ],
+    "link": "/case-studies.html/connectome",
+    "externalUrl": "https://www.connectome.care/",
+    "status": "published",
+    "featured": false,
+    "order": 17,
+    "createdAt": "2026-08-26T16:28:10.508Z",
+    "updatedAt": "2026-09-04T17:14:42.139Z"
+  },
+  {
+    "id": "persana-ai",
+    "slug": "persana-ai",
+    "title": "Persana AI",
+    "category": "Websites",
+    "description": "sales platform Persana AI Persana AI is the AI sales platform that helps GTM teams find, enrich, and convert leads +45% new user sign-up rise See live website",
+    "fullDescription": "sales platform Persana AI Persana AI is the AI sales platform that helps GTM teams find, enrich, and convert leads +45% new user sign-up rise See live website",
+    "client": "Persana AI",
+    "services": "Websites",
+    "location": "United States",
+    "date": "2025",
+    "metricNumber": "+45%",
+    "metricLabel": "new user sign",
+    "image": "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a9949b5892794f9a4b810f0_Persana%20AI.png",
+    "srcset": "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a9949b5892794f9a4b810f0_Persana%20AI-p-500.png 500w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a9949b5892794f9a4b810f0_Persana%20AI-p-800.png 800w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a9949b5892794f9a4b810f0_Persana%20AI-p-1080.png 1080w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a9949b5892794f9a4b810f0_Persana%20AI.png 1264w",
+    "gallery": [
+      "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a9949b5892794f9a4b810f0_Persana%20AI.png"
+    ],
+    "tags": [
+      "Websites"
+    ],
+    "link": "/case-studies.html/persana-ai",
+    "externalUrl": "https://persana.ai/",
+    "status": "published",
+    "featured": false,
+    "order": 18,
+    "createdAt": "2026-08-26T16:28:10.508Z",
+    "updatedAt": "2026-09-04T17:14:42.139Z"
+  },
+  {
+    "id": "delve",
+    "slug": "delve",
+    "title": "Delve",
+    "category": "Websites",
+    "description": "compliance platform Delve Delve AI agents eliminate compliance busywork by automating evidence collection, continuous monitoring, and security workflows. We ...",
+    "fullDescription": "compliance platform Delve Delve AI agents eliminate compliance busywork by automating evidence collection, continuous monitoring, and security workflows. We ...",
+    "client": "Delve",
+    "services": "Websites",
+    "location": "United States",
+    "date": "2025",
+    "metricNumber": "+40%",
+    "metricLabel": "Growth & Conversion",
+    "image": "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a9949c2a77024f4c580eec7_Delve.png",
+    "srcset": "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a9949c2a77024f4c580eec7_Delve-p-500.png 500w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a9949c2a77024f4c580eec7_Delve-p-800.png 800w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a9949c2a77024f4c580eec7_Delve-p-1080.png 1080w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a9949c2a77024f4c580eec7_Delve.png 1264w",
+    "gallery": [
+      "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a9949c2a77024f4c580eec7_Delve.png"
+    ],
+    "tags": [
+      "Websites"
+    ],
+    "link": "/case-studies.html/delve",
+    "externalUrl": "https://delve.co/",
+    "status": "published",
+    "featured": false,
+    "order": 19,
+    "createdAt": "2026-08-26T16:28:10.508Z",
+    "updatedAt": "2026-09-04T17:14:42.139Z"
+  },
+  {
+    "id": "cwh",
+    "slug": "cwh",
+    "title": "Corporate Women's Health",
+    "category": "Websites",
+    "description": "Women&#x27;s health platform CWH We handled Corporate Women&#x27;s Health&#x27;s full site customization and Webflow 4 weeks under site launched See live web...",
+    "fullDescription": "Women&#x27;s health platform CWH We handled Corporate Women&#x27;s Health&#x27;s full site customization and Webflow 4 weeks under site launched See live web...",
+    "client": "Corporate Women's Health",
+    "services": "Websites",
+    "location": "United States",
+    "date": "2025",
+    "metricNumber": "4",
+    "metricLabel": "weeks under site launched See",
+    "image": "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a9949dc0c526ed3b6d2ae75_CWH.png",
+    "srcset": "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a9949dc0c526ed3b6d2ae75_CWH-p-500.png 500w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a9949dc0c526ed3b6d2ae75_CWH-p-800.png 800w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a9949dc0c526ed3b6d2ae75_CWH-p-1080.png 1080w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a9949dc0c526ed3b6d2ae75_CWH.png 1264w",
+    "gallery": [
+      "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a9949dc0c526ed3b6d2ae75_CWH.png"
+    ],
+    "tags": [
+      "Websites"
+    ],
+    "link": "/case-studies.html/cwh",
+    "externalUrl": "https://www.corporatewomenshealth.co.uk/",
+    "status": "published",
+    "featured": false,
+    "order": 20,
+    "createdAt": "2026-08-26T16:28:10.508Z",
+    "updatedAt": "2026-09-04T17:14:42.139Z"
+  },
+  {
+    "id": "schedulebot",
+    "slug": "schedulebot",
+    "title": "ScheduleBot",
+    "category": "Websites",
+    "description": "booking platform ScheduleBot ScheduleBot is built for HVAC, plumbing. We redesigned the site, shipped it on Webflow +150% increase in peak traffic See live w...",
+    "fullDescription": "booking platform ScheduleBot ScheduleBot is built for HVAC, plumbing. We redesigned the site, shipped it on Webflow +150% increase in peak traffic See live w...",
+    "client": "ScheduleBot",
+    "services": "Websites",
+    "location": "United States",
+    "date": "2025",
+    "metricNumber": "+150%",
+    "metricLabel": "increase in peak traffic See l",
+    "image": "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a994ae416408f423afcd668_Schedulebot.png",
+    "srcset": "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a994ae416408f423afcd668_Schedulebot-p-500.png 500w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a994ae416408f423afcd668_Schedulebot-p-800.png 800w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a994ae416408f423afcd668_Schedulebot.png 1264w",
+    "gallery": [
+      "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a994ae416408f423afcd668_Schedulebot.png"
+    ],
+    "tags": [
+      "Websites"
+    ],
+    "link": "/case-studies.html/schedulebot",
+    "externalUrl": "https://www.getschedulebot.com/",
+    "status": "published",
+    "featured": false,
+    "order": 21,
+    "createdAt": "2026-08-26T16:28:10.508Z",
+    "updatedAt": "2026-09-04T17:14:42.139Z"
+  },
+  {
+    "id": "recruitly",
+    "slug": "recruitly",
+    "title": "Recruitly",
+    "category": "Websites",
+    "description": "Recruiting CRM platform Recruitly We designed Recruitly&#x27;s product UI, CRM, ATS, and AI matching in one recruitment platform. It&#x27;s the all-in-one pl...",
+    "fullDescription": "Recruiting CRM platform Recruitly We designed Recruitly&#x27;s product UI, CRM, ATS, and AI matching in one recruitment platform. It&#x27;s the all-in-one pl...",
+    "client": "Recruitly",
+    "services": "Websites",
+    "location": "United States",
+    "date": "2025",
+    "metricNumber": "5",
+    "metricLabel": "Ease of Use on Capterra See li",
+    "image": "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a994c7e1b4fae54aa0808cd_Recruitly.png",
+    "srcset": "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a994c7e1b4fae54aa0808cd_Recruitly-p-500.png 500w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a994c7e1b4fae54aa0808cd_Recruitly-p-800.png 800w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a994c7e1b4fae54aa0808cd_Recruitly-p-1080.png 1080w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a994c7e1b4fae54aa0808cd_Recruitly.png 1264w",
+    "gallery": [
+      "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a994c7e1b4fae54aa0808cd_Recruitly.png"
+    ],
+    "tags": [
+      "Websites"
+    ],
+    "link": "/case-studies.html/recruitly",
+    "externalUrl": "https://recruitly.io/",
+    "status": "published",
+    "featured": false,
+    "order": 22,
+    "createdAt": "2026-08-26T16:28:10.508Z",
+    "updatedAt": "2026-09-04T17:14:42.139Z"
+  },
+  {
+    "id": "dragonfly-ai",
+    "slug": "dragonfly-ai",
+    "title": "Dragonfly AI",
+    "category": "Websites",
+    "description": "creative platform Dragonfly AI Dragonfly AI predicts how creative will perform across every channel. We designed their graphic elements and video assets +195...",
+    "fullDescription": "creative platform Dragonfly AI Dragonfly AI predicts how creative will perform across every channel. We designed their graphic elements and video assets +195...",
+    "client": "Dragonfly AI",
+    "services": "Websites",
+    "location": "United States",
+    "date": "2025",
+    "metricNumber": "+195%",
+    "metricLabel": "year",
+    "image": "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a994c8ef7726409a9dfb277_Dragonfly%20AI.png",
+    "srcset": "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a994c8ef7726409a9dfb277_Dragonfly%20AI-p-500.png 500w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a994c8ef7726409a9dfb277_Dragonfly%20AI-p-800.png 800w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a994c8ef7726409a9dfb277_Dragonfly%20AI-p-1080.png 1080w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a994c8ef7726409a9dfb277_Dragonfly%20AI.png 1264w",
+    "gallery": [
+      "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a994c8ef7726409a9dfb277_Dragonfly%20AI.png"
+    ],
+    "tags": [
+      "Websites"
+    ],
+    "link": "/case-studies.html/dragonfly-ai",
+    "externalUrl": "https://dragonflyai.co/",
+    "status": "published",
+    "featured": false,
+    "order": 23,
+    "createdAt": "2026-08-26T16:28:10.508Z",
+    "updatedAt": "2026-09-04T17:14:42.139Z"
+  },
+  {
+    "id": "collectiveshift",
+    "slug": "collectiveshift",
+    "title": "Collective Shift",
+    "category": "Websites",
+    "description": "Crypto research platform Collectiveshift Collective Shift is the crypto education and research community for retail investors. We designed their full website...",
+    "fullDescription": "Crypto research platform Collectiveshift Collective Shift is the crypto education and research community for retail investors. We designed their full website...",
+    "client": "Collective Shift",
+    "services": "Websites",
+    "location": "United States",
+    "date": "2025",
+    "metricNumber": "000+",
+    "metricLabel": "active paid members See live w",
+    "image": "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a994c9a19e94744ddf11276_Collectiveshift.png",
+    "srcset": "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a994c9a19e94744ddf11276_Collectiveshift-p-500.png 500w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a994c9a19e94744ddf11276_Collectiveshift-p-800.png 800w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a994c9a19e94744ddf11276_Collectiveshift-p-1080.png 1080w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a994c9a19e94744ddf11276_Collectiveshift.png 1264w",
+    "gallery": [
+      "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a994c9a19e94744ddf11276_Collectiveshift.png"
+    ],
+    "tags": [
+      "Websites"
+    ],
+    "link": "/case-studies.html/collectiveshift",
+    "externalUrl": "https://collectiveshift.io/",
+    "status": "published",
+    "featured": false,
+    "order": 24,
+    "createdAt": "2026-08-26T16:28:10.508Z",
+    "updatedAt": "2026-09-04T17:14:42.139Z"
+  },
+  {
+    "id": "luxara",
+    "slug": "luxara",
+    "title": "Luxara",
+    "category": "Websites",
+    "description": "Luxury ecommerce Luxara We fully designed and developed Luxara on Shopify. Luxara sells handmade, eco-friendly luxury mattresses direct to Australian homes. ...",
+    "fullDescription": "Luxury ecommerce Luxara We fully designed and developed Luxara on Shopify. Luxara sells handmade, eco-friendly luxury mattresses direct to Australian homes. ...",
+    "client": "Luxara",
+    "services": "Websites",
+    "location": "United States",
+    "date": "2025",
+    "metricNumber": "690",
+    "metricLabel": "premium product price See live",
+    "image": "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a994ca61d3584a85f0de85e_Luxara.png",
+    "srcset": "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a994ca61d3584a85f0de85e_Luxara-p-500.png 500w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a994ca61d3584a85f0de85e_Luxara-p-800.png 800w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a994ca61d3584a85f0de85e_Luxara-p-1080.png 1080w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a994ca61d3584a85f0de85e_Luxara.png 1264w",
+    "gallery": [
+      "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a994ca61d3584a85f0de85e_Luxara.png"
+    ],
+    "tags": [
+      "Websites"
+    ],
+    "link": "/case-studies.html/luxara",
+    "externalUrl": "https://luxara.com.au/",
+    "status": "published",
+    "featured": false,
+    "order": 25,
+    "createdAt": "2026-08-26T16:28:10.508Z",
+    "updatedAt": "2026-09-04T17:14:42.139Z"
+  },
+  {
+    "id": "stake",
+    "slug": "stake",
+    "title": "Stake",
+    "category": "Websites",
+    "description": "Proptech fintech Stake We designed Stake&#x27;s full website, the renter-first fintech network paying cash back on rent across 20,000+ properties. +130% high...",
+    "fullDescription": "Proptech fintech Stake We designed Stake&#x27;s full website, the renter-first fintech network paying cash back on rent across 20,000+ properties. +130% high...",
+    "client": "Stake",
+    "services": "Websites",
+    "location": "United States",
+    "date": "2025",
+    "metricNumber": "000+",
+    "metricLabel": "properties",
+    "image": "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a994cbcd6c253a6c89631d6_Getyourstake.png",
+    "srcset": "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a994cbcd6c253a6c89631d6_Getyourstake-p-500.png 500w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a994cbcd6c253a6c89631d6_Getyourstake-p-800.png 800w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a994cbcd6c253a6c89631d6_Getyourstake-p-1080.png 1080w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a994cbcd6c253a6c89631d6_Getyourstake.png 1264w",
+    "gallery": [
+      "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a994cbcd6c253a6c89631d6_Getyourstake.png"
+    ],
+    "tags": [
+      "Websites"
+    ],
+    "link": "/case-studies.html/stake",
+    "externalUrl": "https://www.stake.rent/",
+    "status": "published",
+    "featured": false,
+    "order": 26,
+    "createdAt": "2026-08-26T16:28:10.508Z",
+    "updatedAt": "2026-09-04T17:14:42.139Z"
+  },
+  {
+    "id": "calen360",
+    "slug": "calen360",
+    "title": "calen360",
+    "category": "Websites",
+    "description": "Scheduling tool calen360 Calen360 syncs work and personal calendars into one view. We designed and built the full website on Webflow 5+ page Full Webflow bui...",
+    "fullDescription": "Scheduling tool calen360 Calen360 syncs work and personal calendars into one view. We designed and built the full website on Webflow 5+ page Full Webflow bui...",
+    "client": "calen360",
+    "services": "Websites",
+    "location": "United States",
+    "date": "2025",
+    "metricNumber": "360",
+    "metricLabel": "Calen",
+    "image": "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a994cca0c526ed3b6d4cf91_calen360.png",
+    "srcset": "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a994cca0c526ed3b6d4cf91_calen360-p-500.png 500w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a994cca0c526ed3b6d4cf91_calen360-p-800.png 800w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a994cca0c526ed3b6d4cf91_calen360-p-1080.png 1080w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a994cca0c526ed3b6d4cf91_calen360.png 1264w",
+    "gallery": [
+      "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a994cca0c526ed3b6d4cf91_calen360.png"
+    ],
+    "tags": [
+      "Websites"
+    ],
+    "link": "/case-studies.html/calen360",
+    "externalUrl": "https://www.calen360.com/",
+    "status": "published",
+    "featured": false,
+    "order": 27,
+    "createdAt": "2026-08-26T16:28:10.508Z",
+    "updatedAt": "2026-09-04T17:14:42.139Z"
+  },
+  {
+    "id": "autobi",
+    "slug": "autobi",
+    "title": "AutoBi",
+    "category": "Websites",
+    "description": "Automotive BI platform AutoBi We designed, built, and animated AutoBI, the BI platform giving dealerships real-time sales and after-sales insights +170% VHC ...",
+    "fullDescription": "Automotive BI platform AutoBi We designed, built, and animated AutoBI, the BI platform giving dealerships real-time sales and after-sales insights +170% VHC ...",
+    "client": "AutoBi",
+    "services": "Websites",
+    "location": "United States",
+    "date": "2025",
+    "metricNumber": "+170%",
+    "metricLabel": "VHC completion uplift See live",
+    "image": "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3a24de29ac04b8751010e7_Autobi.png",
+    "srcset": "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3a24de29ac04b8751010e7_Autobi-p-500.png 500w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3a24de29ac04b8751010e7_Autobi-p-800.png 800w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3a24de29ac04b8751010e7_Autobi-p-1080.png 1080w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3a24de29ac04b8751010e7_Autobi.png 1264w",
+    "gallery": [
+      "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3a24de29ac04b8751010e7_Autobi.png"
+    ],
+    "tags": [
+      "Websites"
+    ],
+    "link": "/case-studies.html/autobi",
+    "externalUrl": "https://www.autobi.co/",
+    "status": "published",
+    "featured": false,
+    "order": 28,
+    "createdAt": "2026-08-26T16:28:10.508Z",
+    "updatedAt": "2026-09-04T17:14:42.139Z"
+  },
+  {
+    "id": "cerebra",
+    "slug": "cerebra",
+    "title": "Cerebra",
+    "category": "Websites",
+    "description": "Enterprise cybersecurity Cerebra We designed and built Cerebra, the regional cybersecurity platform protecting Saudi banks, government, and enterprise teams....",
+    "fullDescription": "Enterprise cybersecurity Cerebra We designed and built Cerebra, the regional cybersecurity platform protecting Saudi banks, government, and enterprise teams....",
+    "client": "Cerebra",
+    "services": "Websites",
+    "location": "United States",
+    "date": "2025",
+    "metricNumber": "+40%",
+    "metricLabel": "Growth & Conversion",
+    "image": "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a99504eea279987566a7576_Cerebra.png",
+    "srcset": "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a99504eea279987566a7576_Cerebra-p-500.png 500w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a99504eea279987566a7576_Cerebra-p-800.png 800w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a99504eea279987566a7576_Cerebra-p-1080.png 1080w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a99504eea279987566a7576_Cerebra.png 1264w",
+    "gallery": [
+      "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a99504eea279987566a7576_Cerebra.png"
+    ],
+    "tags": [
+      "Websites"
+    ],
+    "link": "/case-studies.html/cerebra",
+    "externalUrl": "https://cerebra.sa/",
+    "status": "published",
+    "featured": false,
+    "order": 29,
+    "createdAt": "2026-08-26T16:28:10.508Z",
+    "updatedAt": "2026-09-04T17:14:42.139Z"
+  },
+  {
+    "id": "accepty",
+    "slug": "accepty",
+    "title": "Accepty",
+    "category": "Websites",
+    "description": "infrastructure Accepty Accepty is the financial infrastructure for global businesses. We designed and build. 99.9% uptime across services See live website",
+    "fullDescription": "infrastructure Accepty Accepty is the financial infrastructure for global businesses. We designed and build. 99.9% uptime across services See live website",
+    "client": "Accepty",
+    "services": "Websites",
+    "location": "United States",
+    "date": "2025",
+    "metricNumber": "99.9%",
+    "metricLabel": "uptime across services See liv",
+    "image": "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a9950601b4fae54aa0ab9e9_Accepty.png",
+    "srcset": "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a9950601b4fae54aa0ab9e9_Accepty-p-500.png 500w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a9950601b4fae54aa0ab9e9_Accepty-p-800.png 800w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a9950601b4fae54aa0ab9e9_Accepty-p-1080.png 1080w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a9950601b4fae54aa0ab9e9_Accepty.png 1264w",
+    "gallery": [
+      "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a9950601b4fae54aa0ab9e9_Accepty.png"
+    ],
+    "tags": [
+      "Websites"
+    ],
+    "link": "/case-studies.html/accepty",
+    "externalUrl": "https://accepty.io/",
+    "status": "published",
+    "featured": false,
+    "order": 30,
+    "createdAt": "2026-08-26T16:28:10.508Z",
+    "updatedAt": "2026-09-04T17:14:42.139Z"
+  },
+  {
+    "id": "agentamp",
+    "slug": "agentamp",
+    "title": "AgentAmp",
+    "category": "Websites",
+    "description": "CRM AgentAmp We designed the AgentAmp mobile app, an AI-powered real estate CRM for agents to manage leads, pipeline, and listings. Multi-module CRM shipped ...",
+    "fullDescription": "CRM AgentAmp We designed the AgentAmp mobile app, an AI-powered real estate CRM for agents to manage leads, pipeline, and listings. Multi-module CRM shipped ...",
+    "client": "AgentAmp",
+    "services": "Websites",
+    "location": "United States",
+    "date": "2025",
+    "metricNumber": "+40%",
+    "metricLabel": "Growth & Conversion",
+    "image": "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a99507312b43d612c5b2e5f_AgentAmp.png",
+    "srcset": "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a99507312b43d612c5b2e5f_AgentAmp-p-500.png 500w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a99507312b43d612c5b2e5f_AgentAmp-p-800.png 800w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a99507312b43d612c5b2e5f_AgentAmp-p-1080.png 1080w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a99507312b43d612c5b2e5f_AgentAmp.png 1264w",
+    "gallery": [
+      "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a99507312b43d612c5b2e5f_AgentAmp.png"
+    ],
+    "tags": [
+      "Websites"
+    ],
+    "link": "/case-studies.html/agentamp",
+    "externalUrl": null,
+    "status": "published",
+    "featured": false,
+    "order": 31,
+    "createdAt": "2026-08-26T16:28:10.508Z",
+    "updatedAt": "2026-09-04T17:14:42.139Z"
+  },
+  {
+    "id": "max-wallet",
+    "slug": "max-wallet",
+    "title": "Max Wallet",
+    "category": "Websites",
+    "description": "Web3 wallet app Max Wallet We designed the full mobile UX for an AI-powered crypto wallet, onboarding, send, swap, buy, and NFT flows. 2.5x faster onboarding...",
+    "fullDescription": "Web3 wallet app Max Wallet We designed the full mobile UX for an AI-powered crypto wallet, onboarding, send, swap, buy, and NFT flows. 2.5x faster onboarding...",
+    "client": "Max Wallet",
+    "services": "Websites",
+    "location": "United States",
+    "date": "2025",
+    "metricNumber": "3",
+    "metricLabel": "wallet app Max Wallet We desig",
+    "image": "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a99508cea279987566a9857_Max%20Wallet.png",
+    "srcset": "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a99508cea279987566a9857_Max%20Wallet-p-500.png 500w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a99508cea279987566a9857_Max%20Wallet-p-800.png 800w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a99508cea279987566a9857_Max%20Wallet-p-1080.png 1080w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a99508cea279987566a9857_Max%20Wallet.png 1264w",
+    "gallery": [
+      "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a99508cea279987566a9857_Max%20Wallet.png"
+    ],
+    "tags": [
+      "Websites"
+    ],
+    "link": "/case-studies.html/max-wallet",
+    "externalUrl": null,
+    "status": "published",
+    "featured": false,
+    "order": 32,
+    "createdAt": "2026-08-26T16:28:10.508Z",
+    "updatedAt": "2026-09-04T17:14:42.139Z"
+  },
+  {
+    "id": "zusgpt",
+    "slug": "zusgpt",
+    "title": "ZusGPT",
+    "category": "Websites",
+    "description": "EdTech AI ZusGPT ZusGPT is an AI writing and study platform used by 2M+ students. We designed the homepage, and whole web app UI. 2.1M+ users on the platform...",
+    "fullDescription": "EdTech AI ZusGPT ZusGPT is an AI writing and study platform used by 2M+ students. We designed the homepage, and whole web app UI. 2.1M+ users on the platform...",
+    "client": "ZusGPT",
+    "services": "Websites",
+    "location": "United States",
+    "date": "2025",
+    "metricNumber": "+40%",
+    "metricLabel": "Growth & Conversion",
+    "image": "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a99509cc78704f5131aaf96_ZusGPT.png",
+    "srcset": "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a99509cc78704f5131aaf96_ZusGPT-p-500.png 500w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a99509cc78704f5131aaf96_ZusGPT-p-800.png 800w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a99509cc78704f5131aaf96_ZusGPT-p-1080.png 1080w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a99509cc78704f5131aaf96_ZusGPT.png 1264w",
+    "gallery": [
+      "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a99509cc78704f5131aaf96_ZusGPT.png"
+    ],
+    "tags": [
+      "Websites"
+    ],
+    "link": "/case-studies.html/zusgpt",
+    "externalUrl": null,
+    "status": "published",
+    "featured": false,
+    "order": 33,
+    "createdAt": "2026-08-26T16:28:10.508Z",
+    "updatedAt": "2026-09-04T17:14:42.139Z"
+  },
+  {
+    "id": "to-do-app",
+    "slug": "to-do-app",
+    "title": "To Do App",
+    "category": "Websites",
+    "description": "Task management app To Do App Our self-guided design includes a task and goal-management mobile app, onboarding, theming, productivity stats, custom navigati...",
+    "fullDescription": "Task management app To Do App Our self-guided design includes a task and goal-management mobile app, onboarding, theming, productivity stats, custom navigati...",
+    "client": "To Do App",
+    "services": "Websites",
+    "location": "United States",
+    "date": "2025",
+    "metricNumber": "100+",
+    "metricLabel": "scr End",
+    "image": "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a9950acf7726409a9e2c23a_To%20Do%20App.png",
+    "srcset": "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a9950acf7726409a9e2c23a_To%20Do%20App-p-500.png 500w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a9950acf7726409a9e2c23a_To%20Do%20App-p-800.png 800w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a9950acf7726409a9e2c23a_To%20Do%20App.png 1264w",
+    "gallery": [
+      "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a9950acf7726409a9e2c23a_To%20Do%20App.png"
+    ],
+    "tags": [
+      "Websites"
+    ],
+    "link": "/case-studies.html/to-do-app",
+    "externalUrl": null,
+    "status": "published",
+    "featured": false,
+    "order": 34,
+    "createdAt": "2026-08-26T16:28:10.508Z",
+    "updatedAt": "2026-09-04T17:14:42.139Z"
+  },
+  {
+    "id": "saia",
+    "slug": "saia",
+    "title": "Saia",
+    "category": "Websites",
+    "description": "Medical association Saia SAIA is the French medical interns union defending residents in Alsace. We designed and built the full website. 4.5k+ active members...",
+    "fullDescription": "Medical association Saia SAIA is the French medical interns union defending residents in Alsace. We designed and built the full website. 4.5k+ active members...",
+    "client": "Saia",
+    "services": "Websites",
+    "location": "United States",
+    "date": "2025",
+    "metricNumber": "+40%",
+    "metricLabel": "Growth & Conversion",
+    "image": "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a9950bf8d48ce8268af6d23_Saia.png",
+    "srcset": "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a9950bf8d48ce8268af6d23_Saia-p-500.png 500w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a9950bf8d48ce8268af6d23_Saia-p-800.png 800w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a9950bf8d48ce8268af6d23_Saia-p-1080.png 1080w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a9950bf8d48ce8268af6d23_Saia.png 1264w",
+    "gallery": [
+      "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a9950bf8d48ce8268af6d23_Saia.png"
+    ],
+    "tags": [
+      "Websites"
+    ],
+    "link": "/case-studies.html/saia",
+    "externalUrl": null,
+    "status": "published",
+    "featured": false,
+    "order": 35,
+    "createdAt": "2026-08-26T16:28:10.508Z",
+    "updatedAt": "2026-09-04T17:14:42.139Z"
+  },
+  {
+    "id": "police-narratives-ai",
+    "slug": "police-narratives-ai",
+    "title": "Police Narratives AI",
+    "category": "Websites",
+    "description": "Law enforcement AI Police Narratives AI Narratives AI helps law enforcement turn voice recordings into professional reports. We designed the full web app exp...",
+    "fullDescription": "Law enforcement AI Police Narratives AI Narratives AI helps law enforcement turn voice recordings into professional reports. We designed the full web app exp...",
+    "client": "Police Narratives AI",
+    "services": "Websites",
+    "location": "United States",
+    "date": "2025",
+    "metricNumber": "2",
+    "metricLabel": "hours report writing time See",
+    "image": "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a9950d1c78704f5131aeb40_Police%20Narratives%20AI.png",
+    "srcset": "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a9950d1c78704f5131aeb40_Police%20Narratives%20AI-p-500.png 500w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a9950d1c78704f5131aeb40_Police%20Narratives%20AI-p-800.png 800w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a9950d1c78704f5131aeb40_Police%20Narratives%20AI-p-1080.png 1080w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a9950d1c78704f5131aeb40_Police%20Narratives%20AI.png 1264w",
+    "gallery": [
+      "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a9950d1c78704f5131aeb40_Police%20Narratives%20AI.png"
+    ],
+    "tags": [
+      "Websites"
+    ],
+    "link": "/case-studies.html/police-narratives-ai",
+    "externalUrl": null,
+    "status": "published",
+    "featured": false,
+    "order": 36,
+    "createdAt": "2026-08-26T16:28:10.508Z",
+    "updatedAt": "2026-09-04T17:14:42.139Z"
+  },
+  {
+    "id": "lifetales",
+    "slug": "lifetales",
+    "title": "LifeTales",
+    "category": "Websites",
+    "description": "Storytelling app LifeTales We designed the full product for LifeTales, a mobile app for families to record, edit, and share elder interviews. 40+ screens des...",
+    "fullDescription": "Storytelling app LifeTales We designed the full product for LifeTales, a mobile app for families to record, edit, and share elder interviews. 40+ screens des...",
+    "client": "LifeTales",
+    "services": "Websites",
+    "location": "United States",
+    "date": "2025",
+    "metricNumber": "40+",
+    "metricLabel": "screens designed end",
+    "image": "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a9950e0c78704f5131af168_LifeTales.png",
+    "srcset": "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a9950e0c78704f5131af168_LifeTales-p-500.png 500w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a9950e0c78704f5131af168_LifeTales-p-800.png 800w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a9950e0c78704f5131af168_LifeTales-p-1080.png 1080w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a9950e0c78704f5131af168_LifeTales.png 1264w",
+    "gallery": [
+      "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a9950e0c78704f5131af168_LifeTales.png"
+    ],
+    "tags": [
+      "Websites"
+    ],
+    "link": "/case-studies.html/lifetales",
+    "externalUrl": null,
+    "status": "published",
+    "featured": false,
+    "order": 37,
+    "createdAt": "2026-08-26T16:28:10.508Z",
+    "updatedAt": "2026-09-04T17:14:42.139Z"
+  },
+  {
+    "id": "cagedbird-hr",
+    "slug": "cagedbird-hr",
+    "title": "CagedBird HR",
+    "category": "Websites",
+    "description": "HR consulting service CagedBird HR We designed Caged Bird&#x27;s website, the independent HR service for employees facing workplace challenges. 40+ design sy...",
+    "fullDescription": "HR consulting service CagedBird HR We designed Caged Bird&#x27;s website, the independent HR service for employees facing workplace challenges. 40+ design sy...",
+    "client": "CagedBird HR",
+    "services": "Websites",
+    "location": "United States",
+    "date": "2025",
+    "metricNumber": "40+",
+    "metricLabel": "design system built See live w",
+    "image": "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a9950f0892794f9a4bdc7ce_CagedBird%20HR.png",
+    "srcset": "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a9950f0892794f9a4bdc7ce_CagedBird%20HR-p-500.png 500w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a9950f0892794f9a4bdc7ce_CagedBird%20HR-p-800.png 800w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a9950f0892794f9a4bdc7ce_CagedBird%20HR-p-1080.png 1080w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a9950f0892794f9a4bdc7ce_CagedBird%20HR.png 1264w",
+    "gallery": [
+      "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a9950f0892794f9a4bdc7ce_CagedBird%20HR.png"
+    ],
+    "tags": [
+      "Websites"
+    ],
+    "link": "/case-studies.html/cagedbird-hr",
+    "externalUrl": null,
+    "status": "published",
+    "featured": false,
+    "order": 38,
+    "createdAt": "2026-08-26T16:28:10.508Z",
+    "updatedAt": "2026-09-04T17:14:42.139Z"
+  },
+  {
+    "id": "inertia-growth",
+    "slug": "inertia-growth",
+    "title": "Inertia Growth",
+    "category": "Websites",
+    "description": "B2B growth marketing Inertia Growth Inertia Growth is the AI-powered growth marketing agency for B2B SaaS. We designed and built the full Webflow site. +135%...",
+    "fullDescription": "B2B growth marketing Inertia Growth Inertia Growth is the AI-powered growth marketing agency for B2B SaaS. We designed and built the full Webflow site. +135%...",
+    "client": "Inertia Growth",
+    "services": "Websites",
+    "location": "United States",
+    "date": "2025",
+    "metricNumber": "+135%",
+    "metricLabel": "MQL conversion uplift See live",
+    "image": "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a99510019e94744ddf511a3_Inertia%20Growth.png",
+    "srcset": "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a99510019e94744ddf511a3_Inertia%20Growth-p-500.png 500w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a99510019e94744ddf511a3_Inertia%20Growth-p-800.png 800w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a99510019e94744ddf511a3_Inertia%20Growth-p-1080.png 1080w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a99510019e94744ddf511a3_Inertia%20Growth.png 1264w",
+    "gallery": [
+      "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a99510019e94744ddf511a3_Inertia%20Growth.png"
+    ],
+    "tags": [
+      "Websites"
+    ],
+    "link": "/case-studies.html/inertia-growth",
+    "externalUrl": null,
+    "status": "published",
+    "featured": false,
+    "order": 39,
+    "createdAt": "2026-08-26T16:28:10.508Z",
+    "updatedAt": "2026-09-04T17:14:42.139Z"
+  },
+  {
+    "id": "betterfit",
+    "slug": "betterfit",
+    "title": "Betterfit",
+    "category": "Websites",
+    "description": "Fitness tracking app Betterfit We designed the entire BetterFit, a mobile fitness app with workout creation, progress tracking, and multilingual support. &lt...",
+    "fullDescription": "Fitness tracking app Betterfit We designed the entire BetterFit, a mobile fitness app with workout creation, progress tracking, and multilingual support. &lt...",
+    "client": "Betterfit",
+    "services": "Websites",
+    "location": "United States",
+    "date": "2025",
+    "metricNumber": "60",
+    "metricLabel": "sec signup to first workout Vi",
+    "image": "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a995110ea279987566adebe_Betterfit.png",
+    "srcset": "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a995110ea279987566adebe_Betterfit-p-500.png 500w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a995110ea279987566adebe_Betterfit-p-800.png 800w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a995110ea279987566adebe_Betterfit-p-1080.png 1080w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a995110ea279987566adebe_Betterfit.png 1264w",
+    "gallery": [
+      "https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a995110ea279987566adebe_Betterfit.png"
+    ],
+    "tags": [
+      "Websites"
+    ],
+    "link": "/case-studies.html/betterfit",
+    "externalUrl": null,
+    "status": "published",
+    "featured": false,
+    "order": 40,
+    "createdAt": "2026-08-26T16:28:10.508Z",
+    "updatedAt": "2026-09-04T17:14:42.139Z"
   }
 ]

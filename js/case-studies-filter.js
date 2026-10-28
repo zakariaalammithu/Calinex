@@ -44,12 +44,17 @@ function renderCaseStudiesGrid(container, caseStudies) {
   const html = published.map(cs => {
     const isLarge = cs.featured ? 'is-large' : '';
     const tagsHtml = (cs.tags || []).map(t => `<div role="listitem" class="w-dyn-item"><div fs-list-value="${escapeHtml(t)}" fs-list-field="category">${escapeHtml(t)}</div></div>`).join('');
-    const linkUrl = cs.link || (`/case-studies.html/${cs.slug || cs.id}`);
+    
+    const hasExternalUrl = Boolean(cs.externalUrl && typeof cs.externalUrl === 'string' && cs.externalUrl.trim().length > 0);
+    const linkAttrs = hasExternalUrl 
+      ? `href="${escapeHtml(cs.externalUrl.trim())}" target="_blank" rel="noopener noreferrer"` 
+      : 'style="cursor: default;"';
+    const buttonText = hasExternalUrl ? 'Visit Live Website' : 'Read case study';
     const imgSrc = cs.image || 'https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3b69488d9cfd0f31763daf_Kodezi.png';
 
     return `
       <div role="listitem" class="cs-items w-dyn-item ${isLarge}">
-        <a href="${escapeHtml(linkUrl)}" class="cs-card-lg w-inline-block">
+        <a ${linkAttrs} class="cs-card-lg w-inline-block">
           <div class="cs-card-contetnt">
             <div class="cs-content-flex">
               <div class="cs-card-content-cover">
@@ -70,7 +75,7 @@ function renderCaseStudiesGrid(container, caseStudies) {
                 </div>
                 <div class="inner-container button-wrap">
                   <div class="button-arrow sm">
-                    <div class="button-text">Read case study</div>
+                    <div class="button-text">${buttonText}</div>
                     <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 12 12" fill="none" class="arrow-16 md">
                       <path d="M11.5 6.77417L6.72534 11.5488L5.81468 10.6382L9.03469 7.41817H0.5V6.13017H9.03469L5.81468 2.91017L6.72534 1.99951L11.5 6.77417Z" fill="currentColor"></path>
                     </svg>

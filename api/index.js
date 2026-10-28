@@ -1,7 +1,3 @@
-const crypto = require('crypto');
-
-const SALT = 'calinex_salt_secure_2026';
-const DEFAULT_HASH = crypto.scryptSync('Calinexusa123', SALT, 64).toString('hex');
 
 function parseServerlessBody(req) {
   return new Promise((resolve) => {
