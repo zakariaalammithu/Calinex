@@ -1519,6 +1519,7 @@ function renderCaseStudiesCmsTab(panel, caseStudies) {
           <div style="font-weight: 700; font-size: 14px; color: var(--text-primary);">${escapeHtml(cs.title)}</div>
           <div style="font-size: 12px; color: var(--text-muted);">${escapeHtml(cs.category || '')}</div>
           <div style="font-size: 11px; color: var(--text-secondary); margin-top: 2px;"><code>/case-studies.html/${escapeHtml(cs.slug || cs.id)}</code></div>
+          ${cs.externalUrl ? `<div style="font-size: 11px; margin-top: 2px;"><a href="${escapeHtml(cs.externalUrl)}" target="_blank" rel="noopener noreferrer" style="color: var(--accent-primary);">↗ ${escapeHtml(cs.externalUrl)}</a></div>` : `<div style="font-size: 11px; color: var(--text-muted); margin-top: 2px;">No live-website link yet</div>`}
         </td>
         <td>
           <div style="font-weight: 800; font-size: 14px; color: var(--accent-primary);">${escapeHtml(cs.metricNumber || '—')}</div>
@@ -1596,6 +1597,11 @@ function openEditCaseStudyModal(studyId) {
           <label class="form-label" for="csClient">Client / Company Name</label>
           <input type="text" id="csClient" class="form-input" value="${study ? escapeHtml(study.client || '') : ''}" placeholder="e.g. Kodezi Inc.">
         </div>
+      </div>
+
+      <div class="form-group" style="margin-top: 12px;">
+        <label class="form-label" for="csExternalUrl">Live Website URL (example site — card links here as “Visit Live Website”)</label>
+        <input type="url" id="csExternalUrl" class="form-input" value="${study ? escapeHtml(study.externalUrl || '') : ''}" placeholder="e.g. https://kodezi.com/">
       </div>
 
       <div class="form-group" style="margin-top: 12px;">
@@ -1748,6 +1754,7 @@ async function saveCaseStudyFromModal(studyId) {
     gallery: (document.getElementById('csGallery')?.value || '').split(',').map(s => s.trim()).filter(Boolean),
     metricNumber: document.getElementById('csMetricNumber').value.trim(),
     metricLabel: document.getElementById('csMetricLabel').value.trim(),
+    externalUrl: (document.getElementById('csExternalUrl')?.value || '').trim(),
     image: document.getElementById('csImageUrl').value.trim() || 'https://cdn.prod.website-files.com/6655d16113e6966ef4eb1054/6a3b69488d9cfd0f31763daf_Kodezi.png',
     order: Number(document.getElementById('csOrder').value) || 1,
     status: document.getElementById('csStatus').value,
